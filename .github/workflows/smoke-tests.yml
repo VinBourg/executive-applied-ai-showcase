@@ -35,7 +35,8 @@ jobs:
             10_Dashboard_Brief_Generator/app.py \
             11_n8n_AI_Support_Automation/app.py \
             12_Agentic_Research_Briefing/app.py \
-            13_AI_SQL_Analytics_Copilot/app.py
+            13_AI_SQL_Analytics_Copilot/app.py \
+            15_n8n_Document_Intake_Approval/app.py
 
       - name: Run core demos
         run: |
@@ -52,3 +53,4 @@ jobs:
           python 11_n8n_AI_Support_Automation/app.py
           python 12_Agentic_Research_Briefing/app.py
           python 13_AI_SQL_Analytics_Copilot/app.py
+          python 15_n8n_Document_Intake_Approval/app.py

@@ -122,6 +122,16 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 - Automatisation intelligente.
 - Support operationnel, fluidification des workflows et adoption metier.
 
+### n8n Document Intake Approval
+**Ce que cela demontre**
+- Classification documentaire, extraction de champs et validation de regles.
+- Routage vers approbation automatique ou validation humaine selon le risque.
+- Conception d'un workflow tres proche de ce qui se vend reellement en mission.
+
+**Pourquoi c'est coherent avec le CV**
+- IA automation, workflow design, logique de controle et usage metier.
+- Positionnement freelance tres credible sur des cas d'usage operations / finance / legal ops.
+
 ## 4. IA agentic et orchestration
 
 ### Agentic Knowledge Routing
@@ -151,8 +161,8 @@ Si l'objectif est de rester tres vendeur et tres coherent avec le CV actuel, les
 1. `01_RAG_Knowledge_Assistant`
 2. `13_AI_SQL_Analytics_Copilot`
 3. `09_n8n_Lead_Enrichment_Automation`
-4. `08_Agentic_Knowledge_Routing`
-5. `03_KPI_Reporting_Pipeline`
+4. `15_n8n_Document_Intake_Approval`
+5. `08_Agentic_Knowledge_Routing`
 
 ## Positionnement global qui ressort
 

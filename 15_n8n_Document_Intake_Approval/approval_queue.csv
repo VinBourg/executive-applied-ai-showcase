@@ -1,0 +1,5 @@
+document_name,document_type,decision,route_team,sender,received_at,missing_fields
+INV_AlpinePayments_2048.pdf,invoice,auto_approved,finance-operations,billing@alpine-payments.com,2026-04-18T09:20:00,
+Invoice_MachinaSystems_991.pdf,invoice,manual_review,finance-operations,accounts@machina-systems.com,2026-04-18T10:05:00,
+SwissAdvisory_Onboarding_Request.docx,onboarding_request,operations_approval,customer-operations,ops@swissadvisorytech.com,2026-04-18T11:15:00,
+NordLedger_Contract_Change_Request.pdf,contract_change,legal_and_business_approval,legal-operations,legal@nordledger-insurance.com,2026-04-18T14:40:00,

@@ -1,0 +1,30 @@
+[
+  {
+    "document_name": "INV_AlpinePayments_2048.pdf",
+    "source": "email",
+    "sender": "billing@alpine-payments.com",
+    "received_at": "2026-04-18T09:20:00",
+    "raw_text": "Document Type: Invoice\nVendor: Alpine Payments\nInvoice ID: INV-2048\nAmount EUR: 4800\nDue Date: 2026-05-05\nPurchase Order: PO-7711\nCost Center: OPS-21\nSummary: Automation workshop and support setup"
+  },
+  {
+    "document_name": "Invoice_MachinaSystems_991.pdf",
+    "source": "email",
+    "sender": "accounts@machina-systems.com",
+    "received_at": "2026-04-18T10:05:00",
+    "raw_text": "Document Type: Invoice\nVendor: Machina Systems\nInvoice ID: INV-991\nAmount EUR: 12800\nDue Date: 2026-05-10\nCost Center: IT-44\nSummary: Deployment support and process configuration"
+  },
+  {
+    "document_name": "SwissAdvisory_Onboarding_Request.docx",
+    "source": "form",
+    "sender": "ops@swissadvisorytech.com",
+    "received_at": "2026-04-18T11:15:00",
+    "raw_text": "Document Type: Onboarding Request\nCompany: Swiss Advisory Tech\nRequested Go-Live: 2026-05-15\nRequested Users: 18\nSponsor: Head of Operations\nScope: AI workflow automation pilot\nData Sensitivity: Medium"
+  },
+  {
+    "document_name": "NordLedger_Contract_Change_Request.pdf",
+    "source": "email",
+    "sender": "legal@nordledger-insurance.com",
+    "received_at": "2026-04-18T14:40:00",
+    "raw_text": "Document Type: Contract Change\nCounterparty: NordLedger Insurance\nEffective Date: 2026-05-01\nChange Summary: Extend the pilot scope to document intake automation and approval routing.\nBusiness Owner: Chief Operating Officer\nValue Impact EUR: 185000"
+  }
+]

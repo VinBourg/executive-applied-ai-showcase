@@ -1,0 +1,17 @@
+{
+  "name": "AI Document Intake and Approval Routing",
+  "business_goal": "Convert inbound operational documents into classified, validated and approval-ready records with a clear human-in-the-loop path.",
+  "nodes": [
+    {"name": "Email or Form Trigger", "type": "n8n-nodes-base.emailReadImap"},
+    {"name": "Attachment Intake", "type": "n8n-nodes-base.moveBinaryData"},
+    {"name": "OCR or Text Extraction", "type": "n8n-nodes-base.httpRequest"},
+    {"name": "AI Document Classification", "type": "n8n-nodes-base.openAi"},
+    {"name": "AI Field Extraction", "type": "n8n-nodes-base.code"},
+    {"name": "Validation Rules", "type": "n8n-nodes-base.if"},
+    {"name": "Approval Decision", "type": "n8n-nodes-base.switch"},
+    {"name": "Human Approval", "type": "n8n-nodes-base.form"},
+    {"name": "ERP or CRM Update", "type": "n8n-nodes-base.httpRequest"},
+    {"name": "Slack Notification", "type": "n8n-nodes-base.slack"},
+    {"name": "Archive and Audit Log", "type": "n8n-nodes-base.googleDrive"}
+  ]
+}
