@@ -42,7 +42,7 @@ If you want the fastest cross-section of the repository, start here:
 2. `13_AI_SQL_Analytics_Copilot`
 3. `09_n8n_Lead_Enrichment_Automation`
 4. `15_n8n_Document_Intake_Approval`
-5. `08_Agentic_Knowledge_Routing`
+5. `14_LLM_Evaluation_Guardrails`
 
 ## Flagship Projects
 
@@ -52,12 +52,13 @@ If the objective is to assess the most market-relevant and recruiter-friendly ex
 - `13_AI_SQL_Analytics_Copilot`
 - `09_n8n_Lead_Enrichment_Automation`
 - `15_n8n_Document_Intake_Approval`
+- `14_LLM_Evaluation_Guardrails`
 - `08_Agentic_Knowledge_Routing`
 
 If you want to review by theme:
 
 - Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`, `13_AI_SQL_Analytics_Copilot`
-- Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`
+- Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`, `14_LLM_Evaluation_Guardrails`
 - n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`, `15_n8n_Document_Intake_Approval`
 - Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`
 
@@ -78,6 +79,7 @@ If you want to review by theme:
 | `11_n8n_AI_Support_Automation` | AI ticket classification, routing logic, operational automation design | Support automation, AI-assisted triage, response drafting |
 | `12_Agentic_Research_Briefing` | Multi-step research planning, executive synthesis logic, structured briefing outputs | Pre-meeting research, advisory preparation, decision-support briefing |
 | `13_AI_SQL_Analytics_Copilot` | Business-question routing, SQL generation logic, analytics synthesis and copilot-style answering | AI-assisted analytics, SQL copilot, decision-ready portfolio review |
+| `14_LLM_Evaluation_Guardrails` | Output scoring, groundedness checks, policy control and fallback routing | LLM quality control, guardrails, production-minded GenAI delivery |
 | `15_n8n_Document_Intake_Approval` | Document classification, field extraction, validation rules and human-in-the-loop approval routing | Document automation, internal approvals, compliance-friendly workflow orchestration |
 
 ## What This Repository Signals
@@ -86,6 +88,7 @@ This showcase is meant to reflect a profile able to combine:
 - Applied AI and LLM workflow design,
 - business-oriented analytics,
 - SQL-based reasoning,
+- LLM evaluation and guardrail discipline,
 - n8n-style automation thinking,
 - agentic planning and synthesis,
 - compact and disciplined implementation.
@@ -110,6 +113,7 @@ python3 10_Dashboard_Brief_Generator/app.py
 python3 11_n8n_AI_Support_Automation/app.py
 python3 12_Agentic_Research_Briefing/app.py
 python3 13_AI_SQL_Analytics_Copilot/app.py
+python3 14_LLM_Evaluation_Guardrails/app.py
 python3 15_n8n_Document_Intake_Approval/app.py
 ```
 
@@ -129,6 +133,7 @@ This repository is not positioned as a production system.
 It is a selective showcase of significant know-how consistent with my CV:
 - business-oriented Applied AI,
 - LLM workflows and AI enablement,
+- LLM evaluation and guardrail logic,
 - predictive analytics and fraud-related reasoning,
 - KPI reporting and dashboard framing,
 - n8n-style AI automation,

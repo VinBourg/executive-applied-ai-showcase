@@ -1,0 +1,71 @@
+[
+  {
+    "case_id": "support_backlog_note",
+    "use_case": "Executive support note",
+    "prompt": "Write a concise management note explaining the backlog increase and the next actions.",
+    "context": [
+      "Backlog increased because reopened tickets rose by 18 percent this week.",
+      "SLA breaches remain concentrated in high-priority payment issues.",
+      "Operations policy requires weekly review of backlog, SLA and root causes."
+    ],
+    "requirements": {
+      "required_terms": ["backlog", "SLA"],
+      "forbidden_terms": ["guarantee", "100%"],
+      "max_sentences": 4,
+      "needs_actions": true
+    },
+    "model_output": "Backlog increased mainly because reopened tickets rose and SLA pressure remains concentrated in high-priority payment issues. Review backlog, SLA breaches and root causes in the weekly operations meeting. Assign a senior analyst to repeated payment issues and publish the top recurring causes to the knowledge base."
+  },
+  {
+    "case_id": "fraud_driver_summary",
+    "use_case": "Fraud analyst note",
+    "prompt": "Summarize the main fraud-risk drivers for high-value international transfers.",
+    "context": [
+      "High-value transfers with a new beneficiary require enhanced review.",
+      "Fraud monitoring notes highlight unusual time windows and foreign transfer patterns.",
+      "Operational guidance requires interpretable risk explanations for analysts."
+    ],
+    "requirements": {
+      "required_terms": ["beneficiary", "review"],
+      "forbidden_terms": ["guarantee", "100%"],
+      "max_sentences": 4,
+      "needs_actions": false
+    },
+    "model_output": "Ninety-five percent of fraudulent transfers involve a new beneficiary and always occur at night. Analysts should prioritize any foreign transfer because it is almost certainly fraudulent."
+  },
+  {
+    "case_id": "invoice_response_draft",
+    "use_case": "Finance response draft",
+    "prompt": "Draft a short reply to a vendor about invoice review status.",
+    "context": [
+      "Invoices above 5000 EUR require manager approval before posting.",
+      "Invoices without a purchase order cannot be auto-approved.",
+      "Finance operations should avoid promising same-day payment until approval is confirmed."
+    ],
+    "requirements": {
+      "required_terms": ["approval"],
+      "forbidden_terms": ["same-day payment", "guarantee"],
+      "max_sentences": 3,
+      "needs_actions": false
+    },
+    "model_output": "Your invoice will be paid today and no further approval is needed. We guarantee same-day payment once the document reaches finance."
+  },
+  {
+    "case_id": "onboarding_summary",
+    "use_case": "Onboarding project summary",
+    "prompt": "Prepare a short summary for an onboarding request with medium data sensitivity.",
+    "context": [
+      "Requested users: 18.",
+      "Requested go-live date: 2026-05-15.",
+      "Data sensitivity is medium and requires standard validation before approval.",
+      "Operations wants a short summary plus the next validation step."
+    ],
+    "requirements": {
+      "required_terms": ["medium", "validation"],
+      "forbidden_terms": ["guarantee", "no review needed"],
+      "max_sentences": 4,
+      "needs_actions": true
+    },
+    "model_output": "The onboarding request targets 18 users for a 2026-05-15 go-live. The summary is operationally clear. Prepare the implementation track and confirm the remaining checks with operations."
+  }
+]

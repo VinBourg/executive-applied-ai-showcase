@@ -1,0 +1,7 @@
+company_name,segment,recommendation,renewal_window_days
+AgriNova,AgriFood,urgent review,18
+AtlasPay,Banking,urgent review,55
+FlowRetail,Retail,renewal stabilization,27
+PureFoods,AgriFood,monitor,24
+Northbank,Banking,monitor,45
+SwissAdvisory,Insurance,monitor,61

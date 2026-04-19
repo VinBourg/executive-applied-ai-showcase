@@ -36,6 +36,7 @@ jobs:
             11_n8n_AI_Support_Automation/app.py \
             12_Agentic_Research_Briefing/app.py \
             13_AI_SQL_Analytics_Copilot/app.py \
+            14_LLM_Evaluation_Guardrails/app.py \
             15_n8n_Document_Intake_Approval/app.py
 
       - name: Run core demos
@@ -53,4 +54,5 @@ jobs:
           python 11_n8n_AI_Support_Automation/app.py
           python 12_Agentic_Research_Briefing/app.py
           python 13_AI_SQL_Analytics_Copilot/app.py
+          python 14_LLM_Evaluation_Guardrails/app.py
           python 15_n8n_Document_Intake_Approval/app.py

@@ -1,0 +1,5 @@
+case_id,use_case,overall_score,decision,groundedness,policy,format,actionability,unsupported_claims,policy_violations,missing_required_terms
+support_backlog_note,Executive support note,96.0,approve,90,100,100,100,0,0,0
+fraud_driver_summary,Fraud analyst note,56.0,fallback_to_human_review,0,100,80,100,2,0,1
+invoice_response_draft,Finance response draft,43.5,block,15,10,100,100,2,2,0
+onboarding_summary,Onboarding project summary,79.5,approve_with_review,80,100,60,70,0,0,2

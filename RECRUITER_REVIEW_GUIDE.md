@@ -8,13 +8,13 @@ If you want the fastest high-signal review of this repository, open these folder
 2. `13_AI_SQL_Analytics_Copilot`
 3. `09_n8n_Lead_Enrichment_Automation`
 4. `15_n8n_Document_Intake_Approval`
-5. `08_Agentic_Knowledge_Routing`
+5. `14_LLM_Evaluation_Guardrails`
 
-This sequence gives a quick reading of the profile across Applied AI, AI-assisted analytics, AI automation, agentic workflow design and decision-support delivery.
+This sequence gives a quick reading of the profile across Applied AI, AI-assisted analytics, AI automation, LLM quality control and decision-support delivery.
 
 ## Review paths by hiring focus
 
-- Applied AI / GenAI: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`
+- Applied AI / GenAI: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`, `14_LLM_Evaluation_Guardrails`
 - Analytics / Decision Science: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `13_AI_SQL_Analytics_Copilot`
 - AI Automation / n8n: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`, `15_n8n_Document_Intake_Approval`
 - Agentic / AI orchestration: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`
@@ -46,11 +46,11 @@ This example shows:
 - rule-based validation before approval,
 - explicit human-in-the-loop routing where automation should stop.
 
-### 5. Agentic Knowledge Routing
+### 5. LLM Evaluation Guardrails
 This example shows:
-- task decomposition into planning, retrieval, analysis and synthesis,
-- explainable agentic workflow design,
-- a readable orchestration style for business requests.
+- groundedness and policy checks on business-oriented LLM outputs,
+- approval, review and block decisions,
+- a more production-minded approach to GenAI delivery.
 
 ## What this says about the profile
 
@@ -58,6 +58,7 @@ This repository reflects a profile able to:
 - design useful Applied AI workflows,
 - translate business questions into analytics logic and SQL outputs,
 - connect LLM usage with business relevance,
+- evaluate LLM outputs with explicit guardrails instead of intuition alone,
 - handle predictive analytics and structured data work,
 - design n8n-style automation for business teams,
 - structure document workflows with validation and approval gates,

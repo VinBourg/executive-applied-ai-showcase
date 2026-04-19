@@ -1,7 +1,11 @@
-You are writing an executive brochure.
+You are writing a concise executive brochure.
 Product: InsightPilot AI
 Audience: operations leaders in banking and industry
-Problem: teams lose time searching for information and preparing repetitive reporting outputs
-Solution: an AI assistant that combines knowledge retrieval, summarization and workflow automation
+Tone: executive, concrete, premium and business-oriented
+Must include: problem framing, solution angle, proof points, call to action
+Avoid: generic hype, technical jargon overload, claims without proof
+Problem: Teams lose time searching for information and preparing repetitive reporting outputs.
+Solution: An ai assistant that combines knowledge retrieval, summarization and workflow automation.
 Proof points: faster access to validated knowledge, more consistent reporting outputs, reduced manual effort on repetitive tasks
-Task: write a concise, premium brochure draft in a professional tone.
+Call to action: Start with a focused pilot on one reporting or knowledge workflow, then scale from proven usage.
+Task: produce a premium one-page brochure draft with short sections and strong business readability.

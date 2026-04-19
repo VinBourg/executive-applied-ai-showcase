@@ -21,16 +21,32 @@ Head of Operations, Support Manager, Team Leads
 - SLA compliance rate
 - Reopened ticket rate
 - Average resolution time
-- Tickets by category and team
+- Tickets by category
 
 ## Recommended Filters
 - date, priority, category, team
 
 ## Suggested Pages
-- Executive overview
-- Backlog and SLA analysis
-- Team performance view
-- Category and root-cause analysis
+### Executive overview
+- Purpose: Give management a one-screen summary of backlog, SLA and risk signals.
+- Widget: Backlog KPI card
+- Widget: SLA KPI card
+- Widget: Trend chart
+- Widget: Top risk categories
+
+### Backlog and SLA analysis
+- Purpose: Explain where the backlog is concentrated and where SLA pressure is rising.
+- Widget: Category heatmap
+- Widget: SLA by team
+- Widget: Priority breakdown
+- Widget: Reopened rate trend
+
+### Team performance view
+- Purpose: Help team leads identify stabilization needs and staffing gaps.
+- Widget: Resolution time by team
+- Widget: Open tickets by team
+- Widget: Escalation volume
+- Widget: Shift load view
 
 ## Delivery Note
 This dashboard should be designed for fast management review and clear operational follow-up rather than decorative reporting.

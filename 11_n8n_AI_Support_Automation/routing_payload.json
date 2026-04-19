@@ -1,0 +1,17 @@
+{
+  "workflow": "AI Support Intake and Routing",
+  "customer": "Northbank",
+  "subject": "Urgent issue with repeated transfer failures",
+  "assigned_team": "payments-support",
+  "priority": "high",
+  "priority_score": 95,
+  "sla_target": "15 minutes",
+  "signals": {
+    "payments": true,
+    "access": false,
+    "urgent": true,
+    "repeated_issue": true,
+    "cutoff_risk": true
+  },
+  "draft_reply": "Hello Northbank, your request has been routed to payments-support. The issue is currently classified as high priority and is being reviewed with a target first update within 15 minutes."
+}

@@ -1,0 +1,5 @@
+name,probability,risk_band,action,drivers
+Suspicious transfer,0.9999,critical,Block and escalate to fraud operations immediately.,foreign transfer=1 raises risk | transaction amount=980 raises risk | 24h transaction velocity=5 raises risk
+Borderline case,0.6678,high,Hold for analyst review before execution.,foreign transfer=1 raises risk | transaction amount=420 reduces risk | night-time execution=0 reduces risk
+Corporate supplier payment,0.0173,low,Allow with routine monitoring.,foreign transfer=0 reduces risk | 24h transaction velocity=2 reduces risk | night-time execution=0 reduces risk
+Low-risk card payment,0.0001,low,Allow with routine monitoring.,foreign transfer=0 reduces risk | transaction amount=140 reduces risk | 24h transaction velocity=1 reduces risk

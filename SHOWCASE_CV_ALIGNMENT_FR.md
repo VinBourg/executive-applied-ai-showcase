@@ -25,6 +25,16 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 - Generation de contenus, workflows LLM, automatisation intelligente.
 - AI enablement et usages business concrets.
 
+### LLM Evaluation Guardrails
+**Ce que cela demontre**
+- Evaluation de sorties LLM avec un rubric explicite.
+- Detection de reponses non fondees, risques de politique et manque de format.
+- Logique claire de fallback, review ou blocage.
+
+**Pourquoi c'est coherent avec le CV**
+- Positionnement Applied AI serieux et credible.
+- Montre que les workflows LLM sont traites comme des systemes a controler, pas seulement a demo.
+
 ## 2. Data, analytics et decision support
 
 ### Fraud Risk Scoring
@@ -162,13 +172,14 @@ Si l'objectif est de rester tres vendeur et tres coherent avec le CV actuel, les
 2. `13_AI_SQL_Analytics_Copilot`
 3. `09_n8n_Lead_Enrichment_Automation`
 4. `15_n8n_Document_Intake_Approval`
-5. `08_Agentic_Knowledge_Routing`
+5. `14_LLM_Evaluation_Guardrails`
 
 ## Positionnement global qui ressort
 
 Le dossier met en valeur un profil capable de :
 - concevoir des usages IA concrets,
 - articuler LLM, data et metier,
+- controler la qualite de sorties LLM avec des garde-fous explicites,
 - produire des livrables lisibles pour la decision,
 - structurer des workflows n8n et agentic,
 - garder une execution simple, propre et orientee valeur.

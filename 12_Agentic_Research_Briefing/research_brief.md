@@ -6,22 +6,37 @@ SwissPay Solutions (Banking technology, Switzerland)
 ## Objective
 Prepare a concise advisory note on where Applied AI and workflow automation can create business value.
 
-## Signals Collected
-- Strong operations footprint
-- Growing demand for faster support and reporting cycles
-- Interest in AI enablement and automation
+## Context
+- Review context: Weekly support operations review
+- SLA compliance rate: 0.82
+- Reopened rate: 0.31
+- Backlog growth pct: 18
+- High-priority ticket growth pct: 22
+- Most affected team: Payments Support
 
 ## Agentic Workflow
 - Planner: define the decision-oriented research angle
 - Researcher: gather company and operational signals
-- Analyzer: identify Applied AI and automation opportunities
-- Synthesizer: prepare a concise advisory note
+- Analyzer: prioritize AI and automation opportunity areas
+- Synthesizer: prepare an advisory note and next-step agenda
 
-## Potential Opportunity Areas
-- AI assistants for internal knowledge access
-- workflow automation for support and reporting
-- decision-support dashboards for operations visibility
-- targeted AI enablement for business teams
+## Ranked Opportunity Areas
+### Support intelligence cockpit
+- Fit score: `82`
+- Why now: Backlog and SLA pressure justify fast operational visibility.
 
-## Advisory Angle
-Focus on fast, pragmatic use cases with measurable operational value rather than broad transformation language.
+### Workflow automation for management reporting
+- Fit score: `80`
+- Why now: Growing high-priority load makes reporting automation valuable.
+
+### Knowledge assistant for operations teams
+- Fit score: `78`
+- Why now: Reopened issues suggest missing or weak knowledge reuse.
+
+## Recommended Advisory Angle
+Focus first on operational use cases with measurable impact on backlog visibility, escalation quality and management reporting speed.
+
+## Suggested Meeting Agenda
+- Confirm the most painful operational bottlenecks.
+- Validate which reporting and support steps are still too manual.
+- Align on one short pilot with measurable success criteria.

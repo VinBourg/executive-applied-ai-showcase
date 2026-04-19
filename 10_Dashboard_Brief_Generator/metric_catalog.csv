@@ -1,0 +1,6 @@
+metric_name,definition,business_value
+Backlog volume,Open tickets not yet resolved,Tracks workload accumulation
+SLA compliance rate,Share of tickets handled within SLA,Shows service discipline
+Reopened ticket rate,Share of tickets reopened after closure,Highlights quality issues
+Average resolution time,Average time from open to close,Measures delivery speed
+Tickets by category,Distribution of tickets by problem type,Identifies main drivers
