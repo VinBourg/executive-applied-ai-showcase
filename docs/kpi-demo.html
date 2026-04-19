@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPI Demo - Executive Applied AI Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="kpi-demo">
+    <div class="page-shell">
+      <section class="hero">
+        <h2>KPI Reporting Demo</h2>
+        <p>
+          Static dashboard preview built from the `03_KPI_Reporting_Pipeline` outputs.
+          It is intentionally simple: no build step, no framework, just a clean deployment-ready proof of delivery.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="index.html">Back to Demo Hub</a>
+          <a class="button button-secondary" href="https://github.com/VinBourg/executive-applied-ai-showcase/tree/main/03_KPI_Reporting_Pipeline">Open Source Folder</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Executive KPI Snapshot</h3>
+        <div id="kpi-metrics" class="grid metrics"></div>
+      </section>
+
+      <section class="section">
+        <h3>Performance by Category</h3>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Tickets</th>
+                <th>Avg Resolution</th>
+                <th>SLA Compliance</th>
+                <th>Risk</th>
+              </tr>
+            </thead>
+            <tbody id="category-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Alert Digest</h3>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Severity</th>
+                <th>Owner</th>
+                <th>Signal</th>
+                <th>Recommended Action</th>
+              </tr>
+            </thead>
+            <tbody id="alert-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Immediate Actions</h3>
+        <ul id="kpi-actions" class="clean-list"></ul>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

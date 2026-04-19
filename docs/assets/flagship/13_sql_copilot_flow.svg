@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI SQL Analytics Copilot Flow</title>
+  <desc id="desc">Visual flow showing how the analytics copilot turns business questions into SQL, interpretation and executive outputs.</desc>
+  <rect width="1200" height="720" fill="#f4efe5"/>
+  <rect x="48" y="42" width="1104" height="636" rx="28" fill="#14324a"/>
+  <rect x="48" y="42" width="1104" height="636" rx="28" fill="none" stroke="#c8a46e" stroke-width="2"/>
+  <text x="90" y="118" fill="#f6f0e6" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700">13 AI SQL Analytics Copilot</text>
+  <text x="90" y="158" fill="#d6dfeb" font-family="Arial, Helvetica, sans-serif" font-size="22">Question routing, SQL execution and executive follow-up in one compact decision-support flow.</text>
+  <rect x="92" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="124" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Question</text>
+  <text x="124" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Risk review</text>
+  <text x="124" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Segment pressure</text>
+  <text x="124" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Growth focus</text>
+  <rect x="356" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="386" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Route</text>
+  <text x="386" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Intent detection</text>
+  <text x="386" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Decision owner</text>
+  <text x="386" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Priority</text>
+  <rect x="620" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="654" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Analyze</text>
+  <text x="654" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Generated SQL</text>
+  <text x="654" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Portfolio rows</text>
+  <text x="654" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Business signal</text>
+  <rect x="884" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="918" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Act</text>
+  <text x="918" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Executive memo</text>
+  <text x="918" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Route log</text>
+  <text x="918" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Action queue</text>
+  <path d="M312 294 H356" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M576 294 H620" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M840 294 H884" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="348,282 368,294 348,306" fill="#c8a46e"/>
+  <polygon points="612,282 632,294 612,306" fill="#c8a46e"/>
+  <polygon points="876,282 896,294 876,306" fill="#c8a46e"/>
+  <text x="92" y="452" fill="#f2d29b" font-family="Georgia, 'Times New Roman', serif" font-size="24">Operational deliverables</text>
+  <rect x="92" y="486" width="248" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="124" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">executive_memo.md</text>
+  <rect x="358" y="486" width="260" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="390" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">copilot_route_log.csv</text>
+  <rect x="636" y="486" width="298" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="668" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">portfolio_action_queue.csv</text>
+  <text x="92" y="606" fill="#f6f0e6" font-family="Arial, Helvetica, sans-serif" font-size="22">Value signal: analytics that end in follow-up ownership, not just query output.</text>
+</svg>

@@ -3,28 +3,60 @@
     "company": "Alpine Payments",
     "industry": "Banking",
     "country": "Switzerland",
+    "region": "Zurich",
     "employees": 850,
-    "signal": "Looking for AI workflow automation and support efficiency improvements before a Q3 pilot."
+    "department": "COO Office",
+    "estimated_arr_k": 180,
+    "signal": "Looking for AI workflow automation, support efficiency and a knowledge assistant before a Q3 pilot."
   },
   {
-    "company": "NordLedger Insurance",
+    "company": "Helvetic Claims Network",
     "industry": "Insurance",
-    "country": "Germany",
-    "employees": 1400,
-    "signal": "Exploring LLM copilots for claims knowledge access and reporting automation."
+    "country": "Switzerland",
+    "region": "Geneva",
+    "employees": 1200,
+    "department": "Claims Operations",
+    "estimated_arr_k": 220,
+    "signal": "Exploring LLM copilots for claims knowledge access, document intake automation and reporting controls before renewal season."
   },
   {
-    "company": "TerraRetail",
+    "company": "Paris Retail Systems",
     "industry": "Retail",
     "country": "France",
+    "region": "Paris",
     "employees": 420,
-    "signal": "Needs dashboard automation and better lead qualification from inbound campaigns."
+    "department": "Revenue Operations",
+    "estimated_arr_k": 95,
+    "signal": "Needs dashboard automation, lead qualification and inbound campaign routing before the summer launch."
   },
   {
-    "company": "Machina Systems",
+    "company": "Lyon Industrial Services",
     "industry": "Industry",
-    "country": "Belgium",
-    "employees": 260,
-    "signal": "Interested in AI support routing but without an immediate automation budget."
+    "country": "France",
+    "region": "Lyon",
+    "employees": 680,
+    "department": "Shared Services",
+    "estimated_arr_k": 130,
+    "signal": "Interested in AI support routing, document approvals and service KPI reporting with a clear pilot scope."
+  },
+  {
+    "company": "Hudson Capital Ops",
+    "industry": "Banking",
+    "country": "United States",
+    "region": "New York",
+    "employees": 1900,
+    "department": "Operations Transformation",
+    "estimated_arr_k": 260,
+    "signal": "Looking for agentic workflow automation, SQL analytics copilot support and governance-ready rollout for East Coast operations."
+  },
+  {
+    "company": "Boston Service Grid",
+    "industry": "Industry",
+    "country": "United States",
+    "region": "Boston",
+    "employees": 760,
+    "department": "Service Excellence",
+    "estimated_arr_k": 145,
+    "signal": "Evaluating AI support automation, RAG knowledge assistants and field-service reporting before budget lock."
   }
 ]

@@ -1,5 +1,7 @@
 # Cloud Data Platform Governance
 
+<img src="../docs/assets/flagship/16_governance_flow.svg" alt="Cloud Data Platform Governance visual flow" width="100%">
+
 A cloud data platform example focused on data quality, governance ownership, release readiness and trusted downstream use for BI, analytics and AI.
 
 ## Business problem

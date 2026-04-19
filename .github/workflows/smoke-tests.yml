@@ -32,6 +32,7 @@ jobs:
             07_Time_Series_Forecasting/app.py \
             08_Agentic_Knowledge_Routing/app.py \
             09_n8n_Lead_Enrichment_Automation/app.py \
+            09_n8n_Lead_Enrichment_Automation/test_lead_enrichment.py \
             10_Dashboard_Brief_Generator/app.py \
             11_n8n_AI_Support_Automation/app.py \
             12_Agentic_Research_Briefing/app.py \
@@ -52,6 +53,7 @@ jobs:
           python 07_Time_Series_Forecasting/app.py
           python 08_Agentic_Knowledge_Routing/app.py
           python 09_n8n_Lead_Enrichment_Automation/app.py
+          python 09_n8n_Lead_Enrichment_Automation/test_lead_enrichment.py
           python 10_Dashboard_Brief_Generator/app.py
           python 11_n8n_AI_Support_Automation/app.py
           python 12_Agentic_Research_Briefing/app.py

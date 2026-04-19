@@ -1,45 +1,51 @@
 # n8n Lead Enrichment Automation
 
-A compact n8n-oriented automation example for lead enrichment, scoring and routing, designed to show practical AI automation logic that business teams can immediately understand.
+<img src="../docs/assets/flagship/09_lead_flow.svg" alt="n8n Lead Enrichment Automation visual flow" width="100%">
 
-## Why it matters
+A lead-qualification workflow that enriches inbound opportunities, scores them for France, Switzerland and the US East Coast, then writes CRM-ready and outreach-ready outputs.
 
-This example demonstrates:
-- AI automation design in n8n,
-- structured lead enrichment workflow logic,
-- CRM-oriented routing and prioritization,
-- pragmatic automation thinking for business teams.
+## Business problem
 
-## Business relevance
+Inbound leads often arrive without enough context for an efficient commercial response.
+The operational need is to route them quickly toward the right offer angle, the right owner and the right next step.
 
-- lead enrichment automation,
-- AI-assisted qualification,
-- CRM update workflows,
-- sales enablement automation.
+## What the program does
 
-## Files
+- enriches and scores inbound leads across industry, geography, department, urgency and revenue potential,
+- maps each signal to an offer angle that matches the showcase capabilities,
+- routes the best leads toward the right owner and next action,
+- writes outputs that could feed CRM, outreach planning and sales review,
+- keeps the logic readable enough to map directly to an n8n workflow.
 
-- `app.py`
-  Runs the qualification logic and writes a readable report.
-- `workflow.json`
-  Compact n8n-style workflow definition.
-- `sample_leads.json`
-  Ranked lead examples aligned with AI automation use cases.
-- `sample_lead.json`
-  Single lead example kept as a quick inspection file.
+## Operational outputs
+
 - `qualification_report.md`
-  Generated output showing prioritization and routing logic.
+  Ranked review of the qualified lead set.
+- `lead_scorecard.csv`
+  Full scoring table with owner and follow-up fields.
+- `crm_sync_payload.json`
+  Top-priority payload for CRM or orchestration sync.
+- `sequence_plan.md`
+  Outreach guidance for high, medium and low-priority cohorts.
+
+## Market fit
+
+- France: dashboard automation, lead qualification and workflow acceleration use cases.
+- Switzerland: claims, finance and document-heavy internal automation opportunities.
+- USA East: operations transformation, analytics copilot and governance-aware automation programs.
 
 ## Run
 
 ```bash
 python3 app.py
+python3 test_lead_enrichment.py
 ```
 
-## What a recruiter should see quickly
+## Review in 60 seconds
 
-This folder shows how an inbound lead flow can become:
-- structured qualification,
-- business-oriented prioritization,
-- clear next-step routing,
-- an automation pattern that maps naturally to n8n.
+Open `qualification_report.md`, then `lead_scorecard.csv`, then `crm_sync_payload.json`.
+That sequence shows the value quickly:
+- concrete qualification logic,
+- market-aware scoring,
+- CRM-ready routing,
+- immediate sales follow-up assets.

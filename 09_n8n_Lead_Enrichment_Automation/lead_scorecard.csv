@@ -1,0 +1,7 @@
+company,market_label,industry,department,score,priority,offer_angle,recommended_owner,next_step,industry_fit,geography_fit,department_fit,company_scale,revenue_potential,buying_signal,urgency
+Hudson Capital Ops,USA East (New York),Banking,Operations Transformation,93.8,high,AI SQL analytics copilot and executive reporting,Decision-support consultant,Partner-led discovery within 48 hours,22,24,14,18,18,34,4
+Helvetic Claims Network,Switzerland (Geneva),Insurance,Claims Operations,91.7,high,Document intake automation with approvals,Automation and operations consultant,Partner-led discovery within 48 hours,20,21,13,15,18,34,10
+Alpine Payments,Switzerland (Zurich),Banking,COO Office,87.5,medium,AI support automation and ticket routing,Automation consultant,Qualified discovery call with tailored walkthrough,22,21,12,12,14,34,10
+Boston Service Grid,USA East (Boston),Industry,Service Excellence,81.2,medium,AI support automation and ticket routing,Automation consultant,Qualified discovery call with tailored walkthrough,18,24,11,12,10,34,7
+Lyon Industrial Services,France (Lyon),Industry,Shared Services,74.2,medium,Document intake automation with approvals,Automation and operations consultant,Qualified discovery call with tailored walkthrough,18,18,10,12,10,34,4
+Paris Retail Systems,France (Paris),Retail,Revenue Operations,58.1,low,AI-assisted reporting and decision-support automation,Analytics and AI consultant,Nurture with focused use-case brief,14,19,11,9,6,20,4

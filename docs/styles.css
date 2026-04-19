@@ -1,0 +1,266 @@
+:root {
+  --bg: #f4efe5;
+  --paper: #fbf7f0;
+  --ink: #16324a;
+  --ink-soft: #536b7d;
+  --accent: #c8a46e;
+  --accent-soft: #ead9ba;
+  --panel: #102a40;
+  --panel-soft: #173954;
+  --success: #3d6f5b;
+  --warning: #996228;
+  --danger: #9a493f;
+  --border: rgba(22, 50, 74, 0.12);
+  --shadow: 0 22px 50px rgba(14, 34, 53, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, rgba(200, 164, 110, 0.24), transparent 24%),
+    linear-gradient(180deg, #f8f3eb 0%, var(--bg) 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  width: min(1180px, calc(100vw - 40px));
+  margin: 0 auto;
+  padding: 32px 0 64px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 42px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--panel) 0%, var(--panel-soft) 100%);
+  color: #f7f1e8;
+  box-shadow: var(--shadow);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -110px;
+  top: -90px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(200, 164, 110, 0.22);
+}
+
+.hero h1,
+.hero h2 {
+  margin: 0 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+}
+
+.hero p {
+  max-width: 760px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #d8e3ed;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: var(--ink);
+}
+
+.button-secondary {
+  border: 1px solid rgba(247, 241, 232, 0.24);
+  color: #f7f1e8;
+}
+
+.section {
+  margin-top: 28px;
+  padding: 30px;
+  border-radius: 24px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.section h3 {
+  margin: 0 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+}
+
+.muted {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.pill-row,
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f3ebdc;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.grid.metrics {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.grid.cards {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.metric-card,
+.flagship-card,
+.mini-panel {
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background: #fffdfa;
+}
+
+.metric-value {
+  margin: 10px 0 4px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.metric-label {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.flagship-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.flagship-card h4,
+.mini-panel h4 {
+  margin: 16px 0 10px;
+  font-size: 1.15rem;
+}
+
+.flagship-card p,
+.mini-panel p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.table-shell {
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdfa;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(22, 50, 74, 0.08);
+  font-size: 0.96rem;
+}
+
+th {
+  background: #f4ebdc;
+  color: var(--ink);
+}
+
+.severity-high {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.severity-medium {
+  color: var(--warning);
+  font-weight: 700;
+}
+
+.risk-high {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.risk-low {
+  color: var(--success);
+  font-weight: 700;
+}
+
+ul.clean-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.two-column {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    width: min(1180px, calc(100vw - 24px));
+    padding-top: 18px;
+  }
+
+  .hero,
+  .section {
+    padding: 22px;
+    border-radius: 22px;
+  }
+}

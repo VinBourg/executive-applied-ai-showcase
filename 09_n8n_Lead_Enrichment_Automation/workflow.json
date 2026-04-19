@@ -3,12 +3,16 @@
   "nodes": [
     {"name": "Webhook", "type": "n8n-nodes-base.webhook"},
     {"name": "Normalize Lead", "type": "n8n-nodes-base.set"},
-    {"name": "AI Enrichment Prompt", "type": "n8n-nodes-base.openAi"},
-    {"name": "Lead Scoring", "type": "n8n-nodes-base.code"},
+    {"name": "Firmographic Enrichment", "type": "n8n-nodes-base.httpRequest"},
+    {"name": "Buying Signal Parser", "type": "n8n-nodes-base.openAi"},
     {"name": "Offer Angle Mapping", "type": "n8n-nodes-base.code"},
+    {"name": "Qualification Scoring", "type": "n8n-nodes-base.code"},
+    {"name": "CRM Task Builder", "type": "n8n-nodes-base.code"},
     {"name": "CRM Update", "type": "n8n-nodes-base.httpRequest"},
     {"name": "Slack Notification", "type": "n8n-nodes-base.slack"},
-    {"name": "Sequence Trigger", "type": "n8n-nodes-base.httpRequest"}
+    {"name": "Sequence Trigger", "type": "n8n-nodes-base.httpRequest"},
+    {"name": "Account Owner Queue", "type": "n8n-nodes-base.googleSheets"}
   ],
-  "business_goal": "Turn inbound leads into structured qualification, offer-angle and routing actions that sales teams can act on immediately."
+  "business_goal": "Turn inbound leads from France, Switzerland and the US East Coast into qualified opportunities, CRM-ready actions and immediate outreach guidance.",
+  "markets": "France, Switzerland, USA East"
 }

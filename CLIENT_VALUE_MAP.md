@@ -14,7 +14,7 @@ This repository is meant to be read through a client-value lens, not only throug
 | `06_Customer_Segmentation_Clustering` | Commercial teams need portfolio segmentation | segmentation report and segment action file | more targeted account planning |
 | `07_Time_Series_Forecasting` | Operations need staffing anticipation | forecast report and staffing plan | better preparation for demand peaks |
 | `08_Agentic_Knowledge_Routing` | Teams need explainable orchestration of AI tasks | execution plan report | clearer task routing and delivery planning |
-| `09_n8n_Lead_Enrichment_Automation` | Sales teams need automated qualification | qualification report | faster lead prioritization |
+| `09_n8n_Lead_Enrichment_Automation` | Sales teams need automated qualification and clear ownership routing | qualification report, scorecard, CRM payload, sequence plan | faster lead prioritization and cleaner commercial follow-up |
 | `10_Dashboard_Brief_Generator` | Analytics teams need cleaner scoping from business requests | dashboard spec, metric catalog, wireframe notes | less ambiguity before dashboard build |
 | `11_n8n_AI_Support_Automation` | Support teams need better intake and routing | routing report and payload | shorter intake time and stronger SLA discipline |
 | `12_Agentic_Research_Briefing` | Advisory or sales teams need meeting preparation | research brief and opportunity map | better account preparation |

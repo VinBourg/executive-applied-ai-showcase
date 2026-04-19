@@ -1,7 +1,10 @@
 {
-  "company": "Alpine Payments",
+  "company": "Hudson Capital Ops",
   "industry": "Banking",
-  "country": "Switzerland",
-  "employees": 850,
-  "signal": "Looking for AI workflow automation and support efficiency improvements before a Q3 pilot."
+  "country": "United States",
+  "region": "New York",
+  "employees": 1900,
+  "department": "Operations Transformation",
+  "estimated_arr_k": 260,
+  "signal": "Looking for agentic workflow automation, SQL analytics copilot support and governance-ready rollout for East Coast operations."
 }

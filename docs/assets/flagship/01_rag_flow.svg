@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">RAG Knowledge Assistant Flow</title>
+  <desc id="desc">Visual flow showing how the RAG knowledge assistant turns internal knowledge into grounded answers and traceable outputs.</desc>
+  <rect width="1200" height="720" fill="#f4efe5"/>
+  <rect x="48" y="42" width="1104" height="636" rx="28" fill="#14324a"/>
+  <rect x="48" y="42" width="1104" height="636" rx="28" fill="none" stroke="#c8a46e" stroke-width="2"/>
+  <text x="90" y="118" fill="#f6f0e6" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700">01 RAG Knowledge Assistant</text>
+  <text x="90" y="158" fill="#d6dfeb" font-family="Arial, Helvetica, sans-serif" font-size="22">Grounded internal AI assistant with retrieval traceability and reusable business outputs.</text>
+  <rect x="92" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="122" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Inputs</text>
+  <text x="122" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Policies</text>
+  <text x="122" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Checklists</text>
+  <text x="122" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Support notes</text>
+  <rect x="356" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="384" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Logic</text>
+  <text x="384" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Intent detection</text>
+  <text x="384" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Retrieval scoring</text>
+  <text x="384" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Answer assembly</text>
+  <rect x="620" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="652" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Answer</text>
+  <text x="652" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Grounded response</text>
+  <text x="652" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Action points</text>
+  <text x="652" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Evidence note</text>
+  <rect x="884" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="918" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Outputs</text>
+  <text x="918" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Portfolio view</text>
+  <text x="918" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Trace file</text>
+  <text x="918" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Scorecard</text>
+  <path d="M312 294 H356" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M576 294 H620" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M840 294 H884" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="348,282 368,294 348,306" fill="#c8a46e"/>
+  <polygon points="612,282 632,294 612,306" fill="#c8a46e"/>
+  <polygon points="876,282 896,294 876,306" fill="#c8a46e"/>
+  <text x="92" y="452" fill="#f2d29b" font-family="Georgia, 'Times New Roman', serif" font-size="24">Operational deliverables</text>
+  <rect x="92" y="486" width="262" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="124" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">demo_response.md</text>
+  <rect x="372" y="486" width="278" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="404" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">retrieval_trace.json</text>
+  <rect x="668" y="486" width="274" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="700" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">query_scorecard.csv</text>
+  <text x="92" y="606" fill="#f6f0e6" font-family="Arial, Helvetica, sans-serif" font-size="22">Value signal: business-facing assistant with evidence, not a generic chatbot.</text>
+</svg>

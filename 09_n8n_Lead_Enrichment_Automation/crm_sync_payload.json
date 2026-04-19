@@ -1,0 +1,54 @@
+{
+  "workflow_name": "AI Lead Enrichment and Qualification",
+  "business_goal": "Turn inbound leads from France, Switzerland and the US East Coast into qualified opportunities, CRM-ready actions and immediate outreach guidance.",
+  "sync_batch": [
+    {
+      "company": "Hudson Capital Ops",
+      "market": "USA East (New York)",
+      "priority": "high",
+      "score": 93.8,
+      "offer_angle": "AI SQL analytics copilot and executive reporting",
+      "owner": "Decision-support consultant",
+      "next_step": "Partner-led discovery within 48 hours",
+      "sequence_theme": "Decision support, KPI review and executive operating rhythm",
+      "tags": [
+        "banking",
+        "united-states",
+        "high",
+        "ai-automation"
+      ]
+    },
+    {
+      "company": "Helvetic Claims Network",
+      "market": "Switzerland (Geneva)",
+      "priority": "high",
+      "score": 91.7,
+      "offer_angle": "Document intake automation with approvals",
+      "owner": "Automation and operations consultant",
+      "next_step": "Partner-led discovery within 48 hours",
+      "sequence_theme": "Document workflow, auditability and human-in-the-loop controls",
+      "tags": [
+        "insurance",
+        "switzerland",
+        "high",
+        "ai-automation"
+      ]
+    },
+    {
+      "company": "Alpine Payments",
+      "market": "Switzerland (Zurich)",
+      "priority": "medium",
+      "score": 87.5,
+      "offer_angle": "AI support automation and ticket routing",
+      "owner": "Automation consultant",
+      "next_step": "Qualified discovery call with tailored walkthrough",
+      "sequence_theme": "Support routing, backlog control and service efficiency",
+      "tags": [
+        "banking",
+        "switzerland",
+        "medium",
+        "ai-automation"
+      ]
+    }
+  ]
+}

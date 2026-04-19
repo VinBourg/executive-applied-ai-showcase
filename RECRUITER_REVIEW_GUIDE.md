@@ -41,7 +41,8 @@ This example shows:
 This example shows:
 - AI automation logic that maps cleanly to an n8n workflow,
 - lead qualification and routing thinking,
-- business-oriented orchestration rather than abstract experimentation.
+- business-oriented orchestration rather than abstract experimentation,
+- CRM-ready and outreach-ready follow-up outputs.
 
 ### 4. n8n Document Intake Approval
 This example shows:

@@ -1,0 +1,40 @@
+{
+  "kpi": {
+    "summary": {
+      "ticket_count": 10,
+      "average_resolution_hours": 4.71,
+      "sla_compliance_rate": 80,
+      "reopened_rate": 30,
+      "operations_health_score": 78.4,
+      "alert_count": 5
+    },
+    "categories": [
+      {"category": "Billing", "ticket_count": 3, "average_resolution_hours": 4.17, "sla_compliance_rate": 100, "risk_level": "low"},
+      {"category": "Onboarding", "ticket_count": 3, "average_resolution_hours": 2.67, "sla_compliance_rate": 100, "risk_level": "low"},
+      {"category": "Technical", "ticket_count": 4, "average_resolution_hours": 6.64, "sla_compliance_rate": 50, "risk_level": "high"}
+    ],
+    "alerts": [
+      {"severity": "high", "owner": "support manager", "signal": "Overall SLA compliance is below target.", "recommended_action": "Review breached tickets and reinforce the most affected queue."},
+      {"severity": "high", "owner": "quality lead", "signal": "Reopened ticket rate is elevated.", "recommended_action": "Audit recurring root causes and improve fix quality on repeated issues."},
+      {"severity": "medium", "owner": "category lead", "signal": "Technical category shows high operational risk.", "recommended_action": "Review SLA and reopened drivers for this category first."}
+    ],
+    "actions": [
+      "Launch a focused review on Technical because it shows high operational risk.",
+      "Reinforce the High priority workflow where SLA performance is weakest.",
+      "Audit recurring root causes and improve fix quality on repeated issues."
+    ]
+  },
+  "leadAutomation": {
+    "summary": {
+      "markets": "France, Switzerland, USA East",
+      "opportunity_pool_k": 1030,
+      "high_priority_count": 2,
+      "workflow_nodes": 11
+    },
+    "top_leads": [
+      {"company": "Hudson Capital Ops", "market": "USA East (New York)", "score": 93.8, "owner": "Decision-support consultant", "offer_angle": "AI SQL analytics copilot and executive reporting"},
+      {"company": "Helvetic Claims Network", "market": "Switzerland (Geneva)", "score": 91.7, "owner": "Automation and operations consultant", "offer_angle": "Document intake automation with approvals"},
+      {"company": "Alpine Payments", "market": "Switzerland (Zurich)", "score": 87.5, "owner": "Automation consultant", "offer_angle": "AI support automation and ticket routing"}
+    ]
+  }
+}

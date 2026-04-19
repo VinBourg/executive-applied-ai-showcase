@@ -1,5 +1,7 @@
 # RAG Knowledge Assistant
 
+<img src="../docs/assets/flagship/01_rag_flow.svg" alt="RAG Knowledge Assistant visual flow" width="100%">
+
 A grounded business assistant that turns internal knowledge into a readable answer, an evidence trail and a reusable delivery pattern.
 
 ## Business problem

@@ -6,6 +6,18 @@
 
 Selected Applied AI, data, cloud data platform governance, n8n automation and agentic workflow examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
 
+## Static Demo Hub
+
+The repository now includes a static demo hub under:
+
+- `docs/index.html`
+- `docs/kpi-demo.html`
+
+It is designed to give recruiters or clients a faster visual read of the strongest examples without installing anything locally.
+Deployment is wired for GitHub Pages through:
+
+- `.github/workflows/deploy-pages.yml`
+
 ## Positioning
 
 This repository is designed as a compact executive showcase rather than a broad technical sandbox.
@@ -93,7 +105,7 @@ If you want to review by theme:
 | `06_Customer_Segmentation_Clustering` | Unsupervised segmentation, portfolio profiling, interpretable cluster logic | Customer segmentation, market studies, account prioritization |
 | `07_Time_Series_Forecasting` | Trend-aware demand forecasting, compact planning logic, operational time-series reasoning | Workload forecasting, support planning, staffing anticipation |
 | `08_Agentic_Knowledge_Routing` | Agentic decomposition, routing between retrieval and synthesis, explainable planning | Knowledge work automation, AI task routing, structured business assistance |
-| `09_n8n_Lead_Enrichment_Automation` | n8n-oriented AI automation, lead scoring and CRM workflow logic | Lead enrichment, sales enablement, AI workflow automation |
+| `09_n8n_Lead_Enrichment_Automation` | n8n-oriented AI automation, market-aware lead scoring, CRM sync and outreach sequencing | Lead enrichment, sales enablement and workflow automation with ownership |
 | `10_Dashboard_Brief_Generator` | KPI scoping, stakeholder translation, analytics briefing outputs | Power BI preparation, dashboard scoping, analytics delivery framing |
 | `11_n8n_AI_Support_Automation` | AI ticket classification, routing logic, operational automation design | Support automation, AI-assisted triage, response drafting |
 | `12_Agentic_Research_Briefing` | Multi-step research planning, executive synthesis logic, structured briefing outputs | Pre-meeting research, advisory preparation, decision-support briefing |
@@ -160,9 +172,11 @@ For a more polished demonstration format, the repository also includes optional 
 
 - `01_RAG_Knowledge_Assistant/fastapi_app.py`
 - `03_KPI_Reporting_Pipeline/streamlit_app.py`
+- `docs/index.html`
+- `docs/kpi-demo.html`
 - `requirements_optional.txt`
 
-These optional files expose the same underlying business logic through API and dashboard-oriented interfaces once dependencies are installed.
+These optional files expose the same underlying business logic through API, dashboard and static-demo interfaces.
 
 ## Review Note
 

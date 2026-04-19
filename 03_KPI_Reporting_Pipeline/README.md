@@ -48,3 +48,10 @@ This generates:
 ```bash
 streamlit run streamlit_app.py
 ```
+
+## Static demo hub
+
+For a lightweight browser-based preview without running Python services, see:
+
+- `docs/index.html`
+- `docs/kpi-demo.html`

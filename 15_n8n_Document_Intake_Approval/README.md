@@ -1,5 +1,7 @@
 # n8n Document Intake Approval
 
+<img src="../docs/assets/flagship/15_doc_flow.svg" alt="n8n Document Intake Approval visual flow" width="100%">
+
 A document-automation workflow that classifies inbound files, validates required fields and routes each case to automatic or human approval.
 
 ## Business problem

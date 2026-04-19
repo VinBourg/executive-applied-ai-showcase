@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Executive Applied AI Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <section class="hero">
+        <h1>Executive Applied AI Showcase</h1>
+        <p>
+          A static demo hub built to make the repository easier to review in a short window.
+          It highlights operational outputs, flagship flows and one recruiter-friendly KPI demo.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="kpi-demo.html">Open KPI Demo</a>
+          <a class="button button-secondary" href="https://github.com/VinBourg/executive-applied-ai-showcase">Open GitHub Repository</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Fast Review Signals</h3>
+        <p class="muted">
+          The repository already has breadth. This page focuses on the quickest proof points:
+          grounded AI assistance, analytics copilot delivery, workflow automation and governance-aware data delivery.
+        </p>
+        <div id="home-metrics" class="grid metrics"></div>
+      </section>
+
+      <section class="section">
+        <h3>Flagship Workflows</h3>
+        <div class="grid cards">
+          <article class="flagship-card">
+            <img src="assets/flagship/01_rag_flow.svg" alt="RAG Knowledge Assistant diagram" />
+            <h4>01 RAG Knowledge Assistant</h4>
+            <p>Grounded internal assistant with retrieval traceability and portfolio-style review outputs.</p>
+          </article>
+          <article class="flagship-card">
+            <img src="assets/flagship/09_lead_flow.svg" alt="Lead Enrichment Automation diagram" />
+            <h4>09 n8n Lead Enrichment Automation</h4>
+            <p>Market-aware qualification workflow with CRM sync and immediate outreach planning.</p>
+          </article>
+          <article class="flagship-card">
+            <img src="assets/flagship/13_sql_copilot_flow.svg" alt="AI SQL Analytics Copilot diagram" />
+            <h4>13 AI SQL Analytics Copilot</h4>
+            <p>Business question routing, SQL reasoning and leadership-ready memo plus action queue.</p>
+          </article>
+          <article class="flagship-card">
+            <img src="assets/flagship/15_doc_flow.svg" alt="Document Intake Approval diagram" />
+            <h4>15 n8n Document Intake Approval</h4>
+            <p>Document classification and approval routing with explicit human review checkpoints.</p>
+          </article>
+          <article class="flagship-card">
+            <img src="assets/flagship/16_governance_flow.svg" alt="Cloud Data Platform Governance diagram" />
+            <h4>16 Cloud Data Platform Governance</h4>
+            <p>Trusted data-product review with release gates before BI and AI consumption.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Lead Automation Snapshot</h3>
+        <p class="muted">
+          The upgraded lead-qualification workflow now reflects France, Switzerland and USA East with clear offer-angle and ownership outputs.
+        </p>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Market</th>
+                <th>Score</th>
+                <th>Offer Angle</th>
+                <th>Owner</th>
+              </tr>
+            </thead>
+            <tbody id="lead-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>What a Client Team Could Use</h3>
+        <div class="two-column">
+          <article class="mini-panel">
+            <h4>Operational outputs</h4>
+            <div class="pill-row">
+              <span class="pill">executive memo</span>
+              <span class="pill">route log</span>
+              <span class="pill">approval queue</span>
+              <span class="pill">governance report</span>
+              <span class="pill">CRM payload</span>
+            </div>
+          </article>
+          <article class="mini-panel">
+            <h4>Action themes from the KPI demo</h4>
+            <ul id="home-actions" class="clean-list"></ul>
+          </article>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

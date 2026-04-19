@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">n8n Lead Enrichment Automation Flow</title>
+  <desc id="desc">Visual flow showing how inbound leads are enriched, scored and routed into CRM and outreach actions.</desc>
+  <rect width="1200" height="720" fill="#f4efe5"/>
+  <rect x="48" y="42" width="1104" height="636" rx="28" fill="#14324a"/>
+  <rect x="48" y="42" width="1104" height="636" rx="28" fill="none" stroke="#c8a46e" stroke-width="2"/>
+  <text x="90" y="118" fill="#f6f0e6" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700">09 n8n Lead Enrichment Automation</text>
+  <text x="90" y="158" fill="#d6dfeb" font-family="Arial, Helvetica, sans-serif" font-size="22">Market-aware inbound qualification for France, Switzerland and USA East.</text>
+  <rect x="92" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="124" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Inbound</text>
+  <text x="124" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Webhook lead</text>
+  <text x="124" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Firmographic data</text>
+  <text x="124" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Buying signal</text>
+  <rect x="356" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="382" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Enrich</text>
+  <text x="382" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Market fit</text>
+  <text x="382" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Revenue potential</text>
+  <text x="382" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Urgency score</text>
+  <rect x="620" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="652" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Route</text>
+  <text x="652" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Offer angle</text>
+  <text x="652" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Owner mapping</text>
+  <text x="652" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Next step</text>
+  <rect x="884" y="220" width="220" height="150" rx="22" fill="#f7f2e9"/>
+  <text x="916" y="270" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Sync</text>
+  <text x="916" y="312" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">CRM payload</text>
+  <text x="916" y="340" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Sequence plan</text>
+  <text x="916" y="368" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20">Owner queue</text>
+  <path d="M312 294 H356" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M576 294 H620" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M840 294 H884" stroke="#c8a46e" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="348,282 368,294 348,306" fill="#c8a46e"/>
+  <polygon points="612,282 632,294 612,306" fill="#c8a46e"/>
+  <polygon points="876,282 896,294 876,306" fill="#c8a46e"/>
+  <text x="92" y="452" fill="#f2d29b" font-family="Georgia, 'Times New Roman', serif" font-size="24">Operational deliverables</text>
+  <rect x="92" y="486" width="262" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="124" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">lead_scorecard.csv</text>
+  <rect x="372" y="486" width="278" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="404" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">crm_sync_payload.json</text>
+  <rect x="668" y="486" width="250" height="46" rx="23" fill="#f7f2e9"/>
+  <text x="700" y="515" fill="#14324a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">sequence_plan.md</text>
+  <text x="92" y="606" fill="#f6f0e6" font-family="Arial, Helvetica, sans-serif" font-size="22">Value signal: a workflow a sales or automation team could actually review and use.</text>
+</svg>

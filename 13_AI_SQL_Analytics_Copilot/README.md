@@ -1,5 +1,7 @@
 # AI SQL Analytics Copilot
 
+<img src="../docs/assets/flagship/13_sql_copilot_flow.svg" alt="AI SQL Analytics Copilot visual flow" width="100%">
+
 A decision-support copilot that turns business questions into SQL, interprets the results and produces management-ready follow-up outputs.
 
 ## Business problem
