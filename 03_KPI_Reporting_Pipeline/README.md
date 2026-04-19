@@ -22,6 +22,10 @@ This example demonstrates:
   Optional interactive dashboard version for GitHub demonstration.
 - `tickets.csv`
   Small source dataset.
+- `executive_summary.md`
+  Short management note generated from KPI outputs.
+- `operations_action_plan.md`
+  Follow-up actions derived from the alert and priority signals.
 
 ## Run the local pipeline
 
@@ -33,7 +37,11 @@ This generates:
 - `kpi_summary.json`
 - `kpi_by_category.csv`
 - `kpi_by_day.csv`
+- `kpi_by_priority.csv`
+- `alert_digest.csv`
 - `dashboard.html`
+- `executive_summary.md`
+- `operations_action_plan.md`
 
 ## Optional Streamlit version
 

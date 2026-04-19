@@ -1,11 +1,22 @@
 [
   {
-    "query": "How should we reduce support backlog while keeping SLA performance visible?"
+    "query": "How should we reduce support backlog while keeping SLA performance visible?",
+    "stakeholder": "operations manager",
+    "desired_output": "management note"
   },
   {
-    "query": "How can we improve knowledge access during customer onboarding?"
+    "query": "How can we improve knowledge access during customer onboarding?",
+    "stakeholder": "customer operations lead",
+    "desired_output": "enablement memo"
   },
   {
-    "query": "Which fraud signals should drive enhanced review for international transfers?"
+    "query": "Which fraud signals should drive enhanced review for international transfers?",
+    "stakeholder": "fraud analyst",
+    "desired_output": "analyst summary"
+  },
+  {
+    "query": "How should we structure a brochure workflow so AI drafts remain business-led?",
+    "stakeholder": "marketing lead",
+    "desired_output": "workflow brief"
   }
 ]

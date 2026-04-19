@@ -31,6 +31,12 @@ This example demonstrates:
   Example questions aligned with support, fraud and enablement use cases.
 - `demo_response.md`
   Generated sample output showing the style of answer the assistant produces.
+- `retrieval_trace.json`
+  Generated trace showing source scores and retrieval breakdown.
+- `query_portfolio.md`
+  Batch review of multiple representative questions.
+- `query_scorecard.csv`
+  Compact scorecard for the sample query set.
 
 ## Run the local CLI demo
 
@@ -59,4 +65,6 @@ This folder shows a simple but credible assistant pattern:
 - grounded sources,
 - retrieval logic,
 - readable business answer,
-- explicit actions and follow-up questions.
+- explicit actions and follow-up questions,
+- source scoring and traceability,
+- a mini portfolio of representative query types.

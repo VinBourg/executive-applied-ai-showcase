@@ -18,6 +18,20 @@ It presents short, high-signal demos illustrating how I approach market-relevant
 
 The objective is not to simulate a large production platform. The objective is to make judgment, delivery style, technical clarity and business relevance visible within a very short review window.
 
+## Client Value Lens
+
+These examples are designed to answer a practical question:
+
+`What does this produce that a client or business team can actually use?`
+
+Across the repository, the recurring pattern is:
+- take a concrete operational problem,
+- turn it into structured logic,
+- produce a usable output such as a report, action plan, queue, dashboard, scorecard or routing payload.
+
+For a repository-wide view of business outcomes and deliverables, see:
+- `CLIENT_VALUE_MAP.md`
+
 ## Repository Scope
 
 The repository is intentionally balanced across four themes:
@@ -143,4 +157,5 @@ It is a selective showcase of significant know-how consistent with my CV:
 
 - `RECRUITER_REVIEW_GUIDE.md`
 - `SHOWCASE_CV_ALIGNMENT_FR.md`
+- `CLIENT_VALUE_MAP.md`
 - `PUBLISH_TO_GITHUB.md`

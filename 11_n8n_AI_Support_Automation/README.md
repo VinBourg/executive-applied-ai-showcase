@@ -16,3 +16,14 @@ This example demonstrates:
 - AI-assisted triage
 - routing and escalation
 - response drafting workflow
+
+## Generated outputs
+
+- `support_routing_report.md`
+- `routing_payload.json`
+
+## Operational value
+
+- shortens manual intake time,
+- formalizes SLA-driven routing,
+- produces a payload that could be handed to a ticketing or notification system.

@@ -1,4 +1,4 @@
-category,ticket_count,average_resolution_hours
-Billing,3,4.17
-Onboarding,3,2.67
-Technical,4,6.65
+category,ticket_count,average_resolution_hours,sla_compliance_rate,reopened_rate,risk_level
+Billing,3,4.17,1.0,0.0,low
+Onboarding,3,2.67,1.0,0.0,low
+Technical,4,6.64,0.5,0.75,high

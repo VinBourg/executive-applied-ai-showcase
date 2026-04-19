@@ -3,5 +3,7 @@
   "average_resolution_hours": 4.71,
   "sla_compliance_rate": 0.8,
   "reopened_rate": 0.3,
-  "top_category_by_volume": "Technical"
+  "top_category_by_volume": "Technical",
+  "operations_health_score": 78.4,
+  "alert_count": 5
 }

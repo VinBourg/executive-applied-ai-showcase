@@ -3,12 +3,34 @@
 ## Question
 How should we reduce support backlog while keeping SLA performance visible?
 
-## Assistant Positioning
+## Query Analysis
 - Intent: `support_operations`
-- Confidence: `high`
+- Confidence: `high` (`95`)
+- Stakeholder: `business owner`
+- Urgency: `normal`
+- Deliverable: `management note with action points`
 
 ## Suggested Answer
-The priority is to stabilize support operations while keeping response quality visible. High-priority tickets must receive a first response within one hour. Backlog reviews should separate volume growth, SLA pressure and reopened-ticket recurrence.
+The priority is to stabilize support operations while keeping response quality visible. High-priority tickets must receive a first response within one hour. Backlog reviews should separate volume growth, SLA pressure and reopened-ticket recurrence. The recommended deliverable is a management note with action points for a business owner audience.
+
+## Grounding Note
+The answer is grounded primarily in `Support escalation policy` and supported by 3 matched source documents.
+
+## Evidence Points
+### Support escalation policy
+- Evidence: High-priority tickets must receive a first response within one hour.
+- Matched terms: support, backlog, sla, support, sla
+- Score: `11`
+
+### Operations review checklist
+- Evidence: Backlog reviews should separate volume growth, SLA pressure and reopened-ticket recurrence.
+- Matched terms: backlog, sla, backlog
+- Score: `5`
+
+### Customer onboarding playbook
+- Evidence: New customers should receive a structured onboarding kit, a short training session and a clearly documented FAQ.
+- Matched terms: support
+- Score: `1`
 
 ## Recommended Actions
 - Track backlog, SLA breaches and reopened-ticket drivers in one weekly operations review.
@@ -19,10 +41,19 @@ The priority is to stabilize support operations while keeping response quality v
 - Which categories drive the largest share of backlog growth?
 - Where are SLA breaches concentrated by team or priority level?
 
-## Sources Used
-- `Support escalation policy`: High-priority tickets must receive a first response within one hour. Reopened tickets should be reviewed by a senior support analyst. Weekly dashboard reviews focus on backlog, SLA breaches and root causes.
-- `Operations review checklist`: Backlog reviews should separate volume growth, SLA pressure and reopened-ticket recurrence. Team leads need one shared reading of weekly drivers before action plans are assigned.
-- `Customer onboarding playbook`: New customers should receive a structured onboarding kit, a short training session and a clearly documented FAQ. Good knowledge access reduces repetitive support requests and improves adoption.
+## Retrieval Trace
+- `Support escalation policy` score `11`
+  title terms: support
+  tag terms: support, sla
+  content overlap: support, backlog, sla
+- `Operations review checklist` score `5`
+  title terms: none
+  tag terms: backlog
+  content overlap: backlog, sla
+- `Customer onboarding playbook` score `1`
+  title terms: none
+  tag terms: none
+  content overlap: support
 
 ## Why This Matters
-This output shows how a compact RAG assistant can move from retrieval to a decision-oriented answer that remains readable for business users.
+This output shows a more complete RAG workflow: query analysis, retrieval trace, grounded answer and a business-oriented deliverable.

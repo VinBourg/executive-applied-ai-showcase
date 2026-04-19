@@ -1,0 +1,6 @@
+severity,owner,signal,recommended_action
+high,support manager,Overall SLA compliance is below target.,Review breached tickets and reinforce the most affected queue.
+high,quality lead,Reopened ticket rate is elevated.,Audit recurring root causes and improve fix quality on repeated issues.
+medium,category lead,Technical category shows high operational risk.,Review SLA and reopened drivers for this category first.
+medium,operations lead,2026-04-03 had the highest number of SLA breaches.,"Check staffing, escalation load and ticket mix for that day."
+medium,priority queue owner,High priority tickets underperform on SLA.,Review staffing and escalation path for this priority band.

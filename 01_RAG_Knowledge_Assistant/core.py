@@ -9,7 +9,7 @@ SAMPLE_QUERIES_PATH = BASE_DIR / "sample_queries.json"
 STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "be", "by", "for", "from", "how",
     "in", "is", "of", "on", "or", "the", "to", "we", "with", "what", "can",
-    "should", "our", "while", "under", "into", "this", "that",
+    "should", "our", "while", "under", "into", "this", "that", "need", "needs",
 }
 
 INTENT_KEYWORDS = {
@@ -25,6 +25,14 @@ INTENT_INTROS = {
     "fraud_analytics": "The most relevant answer is to keep risk detection interpretable and tied to concrete transaction signals.",
     "ai_content_workflow": "The workflow should start from validated business inputs and use AI to accelerate drafting rather than replace review.",
     "general": "The recommended approach is to combine structured business guidance with a small number of clearly grounded actions.",
+}
+
+DELIVERABLE_LIBRARY = {
+    "support_operations": "management note with action points",
+    "knowledge_enablement": "knowledge improvement memo",
+    "fraud_analytics": "analyst-facing risk summary",
+    "ai_content_workflow": "workflow-ready content brief",
+    "general": "concise business response",
 }
 
 ACTION_LIBRARY = {
@@ -92,22 +100,57 @@ def load_sample_queries():
     return json.loads(SAMPLE_QUERIES_PATH.read_text())
 
 
+def infer_stakeholder(query):
+    lowered = query.lower()
+    if "manager" in lowered or "management" in lowered:
+        return "manager"
+    if "analyst" in lowered or "fraud" in lowered:
+        return "analyst"
+    if "client" in lowered or "customer" in lowered:
+        return "client-facing owner"
+    return "business owner"
+
+
+def infer_urgency(query):
+    lowered = query.lower()
+    if "end of day" in lowered or "urgent" in lowered or "today" in lowered:
+        return "high"
+    if "this week" in lowered or "tomorrow" in lowered:
+        return "medium"
+    return "normal"
+
+
+def first_sentence(text):
+    sentence = text.split(".")[0].strip()
+    return sentence if sentence.endswith(".") else f"{sentence}."
+
+
 def score_document(query_tokens, document):
     title_tokens = tokenize(document["title"])
     content_tokens = tokenize(document["content"])
     tag_tokens = [tag.lower() for tag in document["tags"]]
-    overlap = sum(token in content_tokens for token in query_tokens)
-    title_bonus = 2 * sum(token in title_tokens for token in query_tokens)
-    tag_bonus = 3 * sum(token in tag_tokens for token in query_tokens)
-    return overlap + title_bonus + tag_bonus
+
+    overlap_terms = [token for token in query_tokens if token in content_tokens]
+    title_terms = [token for token in query_tokens if token in title_tokens]
+    tag_terms = [token for token in query_tokens if token in tag_tokens]
+    score = len(overlap_terms) + 2 * len(title_terms) + 3 * len(tag_terms)
+
+    return {
+        "score": score,
+        "overlap_terms": overlap_terms,
+        "title_terms": title_terms,
+        "tag_terms": tag_terms,
+    }
 
 
 def retrieve(query, documents, top_k=3):
     query_tokens = tokenize(query)
     ranked = []
     for document in documents:
+        breakdown = score_document(query_tokens, document)
         scored = dict(document)
-        scored["score"] = score_document(query_tokens, document)
+        scored["score"] = breakdown["score"]
+        scored["score_breakdown"] = breakdown
         ranked.append(scored)
     ranked.sort(key=lambda doc: doc["score"], reverse=True)
     return ranked[:top_k]
@@ -125,40 +168,89 @@ def detect_intent(query_tokens, matches):
     return best_intent
 
 
-def first_sentence(text):
-    sentence = text.split(".")[0].strip()
-    return sentence if sentence.endswith(".") else f"{sentence}."
+def build_query_analysis(query, query_tokens, matches, intent):
+    return {
+        "stakeholder": infer_stakeholder(query),
+        "urgency": infer_urgency(query),
+        "requested_deliverable": DELIVERABLE_LIBRARY[intent],
+        "token_count": len(query_tokens),
+        "matched_sources": len([match for match in matches if match["score"] > 0]),
+    }
 
 
-def build_answer(matches, intent):
+def build_evidence_points(matches):
+    evidence = []
+    for match in matches:
+        evidence.append(
+            {
+                "source": match["title"],
+                "evidence": first_sentence(match["content"]),
+                "matched_terms": match["score_breakdown"]["overlap_terms"] + match["score_breakdown"]["tag_terms"],
+                "score": match["score"],
+            }
+        )
+    return evidence
+
+
+def build_answer(matches, intent, analysis):
     intro = INTENT_INTROS[intent]
     evidence = " ".join(first_sentence(match["content"]) for match in matches[:2])
-    return f"{intro} {evidence}".strip()
+    close = (
+        f"The recommended deliverable is a {analysis['requested_deliverable']} "
+        f"for a {analysis['stakeholder']} audience."
+    )
+    return f"{intro} {evidence} {close}".strip()
 
 
 def build_confidence(matches):
     if not matches:
-        return "low"
+        return "low", 0
     score_total = sum(match["score"] for match in matches)
     if score_total >= 10:
-        return "high"
+        return "high", min(95, 60 + score_total * 3)
     if score_total >= 5:
-        return "medium"
-    return "low"
+        return "medium", min(80, 45 + score_total * 4)
+    return "low", min(50, 25 + score_total * 5)
+
+
+def build_grounding_note(matches):
+    if not matches:
+        return "No grounded sources were found for this query."
+    top_match = matches[0]
+    return (
+        f"The answer is grounded primarily in `{top_match['title']}` and supported by "
+        f"{len([match for match in matches if match['score'] > 0])} matched source documents."
+    )
 
 
 def answer_query(query, top_k=3):
     documents = load_documents()
-    matches = retrieve(query, documents, top_k=top_k)
     query_tokens = tokenize(query)
+    matches = retrieve(query, documents, top_k=top_k)
     intent = detect_intent(query_tokens, matches)
+    analysis = build_query_analysis(query, query_tokens, matches, intent)
+    evidence_points = build_evidence_points(matches)
+    confidence, confidence_score = build_confidence(matches)
+
     return {
         "query": query,
         "intent": intent,
-        "confidence": build_confidence(matches),
-        "answer": build_answer(matches, intent),
+        "confidence": confidence,
+        "confidence_score": confidence_score,
+        "analysis": analysis,
+        "answer": build_answer(matches, intent, analysis),
+        "grounding_note": build_grounding_note(matches),
+        "evidence_points": evidence_points,
         "recommended_actions": ACTION_LIBRARY[intent],
         "follow_up_questions": FOLLOW_UP_LIBRARY[intent],
         "sources": [match["title"] for match in matches],
         "matches": matches,
+        "retrieval_trace": [
+            {
+                "title": match["title"],
+                "score": match["score"],
+                "score_breakdown": match["score_breakdown"],
+            }
+            for match in matches
+        ],
     }

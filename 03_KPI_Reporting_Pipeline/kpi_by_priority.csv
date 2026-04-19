@@ -1,0 +1,4 @@
+priority,ticket_count,average_resolution_hours,sla_compliance_rate,reopened_rate
+High,4,5.14,0.75,0.5
+Low,2,5.0,1.0,0.0
+Medium,4,4.12,0.75,0.25

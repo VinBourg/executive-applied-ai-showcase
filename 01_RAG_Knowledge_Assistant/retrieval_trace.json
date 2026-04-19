@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Support escalation policy",
+    "score": 11,
+    "score_breakdown": {
+      "score": 11,
+      "overlap_terms": [
+        "support",
+        "backlog",
+        "sla"
+      ],
+      "title_terms": [
+        "support"
+      ],
+      "tag_terms": [
+        "support",
+        "sla"
+      ]
+    }
+  },
+  {
+    "title": "Operations review checklist",
+    "score": 5,
+    "score_breakdown": {
+      "score": 5,
+      "overlap_terms": [
+        "backlog",
+        "sla"
+      ],
+      "title_terms": [],
+      "tag_terms": [
+        "backlog"
+      ]
+    }
+  },
+  {
+    "title": "Customer onboarding playbook",
+    "score": 1,
+    "score_breakdown": {
+      "score": 1,
+      "overlap_terms": [
+        "support"
+      ],
+      "title_terms": [],
+      "tag_terms": []
+    }
+  }
+]

@@ -1,0 +1,5 @@
+query,intent,confidence,confidence_score,stakeholder,deliverable,top_source
+How should we reduce support backlog while keeping SLA performance visible?,support_operations,high,95,business owner,management note with action points,Support escalation policy
+How can we improve knowledge access during customer onboarding?,knowledge_enablement,high,95,client-facing owner,knowledge improvement memo,Customer onboarding playbook
+Which fraud signals should drive enhanced review for international transfers?,fraud_analytics,high,90,analyst,analyst-facing risk summary,Fraud monitoring notes
+How should we structure a brochure workflow so AI drafts remain business-led?,ai_content_workflow,high,95,business owner,workflow-ready content brief,Marketing content workflow

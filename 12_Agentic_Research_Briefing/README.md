@@ -16,3 +16,14 @@ This example demonstrates:
 - account preparation
 - decision-support briefing
 - AI-assisted executive synthesis
+
+## Generated outputs
+
+- `research_brief.md`
+- `opportunity_map.csv`
+
+## Operational value
+
+- prepares an account review faster,
+- gives an advisory or sales team a ranked opportunity map,
+- supports better meeting preparation with clearer angles and next steps.
