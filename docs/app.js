@@ -1,5 +1,5 @@
-async function loadSnapshot() {
-  const response = await fetch("data/showcase_snapshot.json");
+async function loadJson(path) {
+  const response = await fetch(path);
   return response.json();
 }
 
@@ -13,10 +13,29 @@ function createMetricCard(label, value, note) {
   `;
 }
 
-function renderHome(data) {
+function createOutputCard(output) {
+  return `
+    <article class="mini-panel">
+      <h4><code>${output.file}</code></h4>
+      <p>${output.description}</p>
+    </article>
+  `;
+}
+
+function createMarketCard(entry) {
+  return `
+    <article class="mini-panel market-card">
+      <h4>${entry.market}</h4>
+      <p>${entry.detail}</p>
+    </article>
+  `;
+}
+
+function renderHome(data, catalog) {
   const metricHost = document.getElementById("home-metrics");
   const leadHost = document.getElementById("lead-table-body");
   const actionHost = document.getElementById("home-actions");
+  const catalogHost = document.getElementById("item-catalog");
   metricHost.innerHTML = [
     createMetricCard("Operations Health", data.kpi.summary.operations_health_score, "KPI pipeline snapshot"),
     createMetricCard("SLA Compliance", `${data.kpi.summary.sla_compliance_rate}%`, "Latest static demo data"),
@@ -39,6 +58,32 @@ function renderHome(data) {
     .join("");
 
   actionHost.innerHTML = data.kpi.actions.map((item) => `<li>${item}</li>`).join("");
+
+  if (catalogHost) {
+    catalogHost.innerHTML = catalog.items
+      .map(
+        (item) => `
+          <article class="mini-panel catalog-card">
+            <div class="catalog-label">${item.id}</div>
+            <h4>${item.title}</h4>
+            <div class="catalog-category">${item.category}</div>
+            <p>${item.summary}</p>
+            <div class="pill-row">
+              ${item.tags.map((tag) => `<span class="pill">${tag}</span>`).join("")}
+            </div>
+            <div class="button-row card-actions">
+              <a class="button button-ghost" href="${item.slug}.html">Open item page</a>
+              ${
+                item.rich_demo
+                  ? `<a class="button button-ghost" href="${item.rich_demo.href}">${item.rich_demo.label}</a>`
+                  : ""
+              }
+            </div>
+          </article>
+        `
+      )
+      .join("");
+  }
 }
 
 function renderKpiDemo(data) {
@@ -167,10 +212,57 @@ function renderSqlCopilotDemo(data) {
   agendaHost.innerHTML = data.sqlCopilot.agenda.map((item) => `<li>${item}</li>`).join("");
 }
 
-loadSnapshot().then((data) => {
+function renderItemPage(catalog) {
+  const itemId = document.body.dataset.item;
+  const item = catalog.items.find((candidate) => candidate.id === itemId);
+  if (!item) {
+    return;
+  }
+
+  document.title = `${item.title} - Executive Applied AI Showcase`;
+
+  const topbarBrand = document.getElementById("item-topbar-brand");
+  const categoryHost = document.getElementById("item-category");
+  const titleHost = document.getElementById("item-title");
+  const summaryHost = document.getElementById("item-summary");
+  const tagHost = document.getElementById("item-tags");
+  const problemHost = document.getElementById("item-problem");
+  const reviewHost = document.getElementById("item-review-path");
+  const provesHost = document.getElementById("item-proves");
+  const outputHost = document.getElementById("item-outputs");
+  const marketHost = document.getElementById("item-markets");
+  const valueHost = document.getElementById("item-value");
+  const sourceLink = document.getElementById("item-source-link");
+  const sourceLinkHero = document.getElementById("item-source-link-hero");
+  const richDemoLink = document.getElementById("item-rich-demo-link");
+
+  topbarBrand.textContent = `${item.id} ${item.title}`;
+  categoryHost.textContent = item.category;
+  titleHost.textContent = item.title;
+  summaryHost.textContent = item.summary;
+  tagHost.innerHTML = item.tags.map((tag) => `<span class="pill pill-dark">${tag}</span>`).join("");
+  problemHost.textContent = item.business_problem;
+  reviewHost.innerHTML = item.review_path.map((file) => `<li><code>${file}</code></li>`).join("");
+  provesHost.innerHTML = item.proves.map((entry) => `<li>${entry}</li>`).join("");
+  outputHost.innerHTML = item.outputs.map((output) => createOutputCard(output)).join("");
+  marketHost.innerHTML = item.market_fit.map((entry) => createMarketCard(entry)).join("");
+  valueHost.innerHTML = item.client_value.map((entry) => `<li>${entry}</li>`).join("");
+
+  const sourceHref = `https://github.com/VinBourg/executive-applied-ai-showcase/tree/main/${item.folder}`;
+  sourceLink.href = sourceHref;
+  sourceLinkHero.href = sourceHref;
+
+  if (item.rich_demo && richDemoLink) {
+    richDemoLink.href = item.rich_demo.href;
+    richDemoLink.textContent = item.rich_demo.label;
+    richDemoLink.hidden = false;
+  }
+}
+
+Promise.all([loadJson("data/showcase_snapshot.json"), loadJson("data/items_catalog.json")]).then(([data, catalog]) => {
   const page = document.body.dataset.page;
   if (page === "home") {
-    renderHome(data);
+    renderHome(data, catalog);
   }
   if (page === "kpi-demo") {
     renderKpiDemo(data);
@@ -180,5 +272,8 @@ loadSnapshot().then((data) => {
   }
   if (page === "sql-demo") {
     renderSqlCopilotDemo(data);
+  }
+  if (page === "item") {
+    renderItemPage(catalog);
   }
 });

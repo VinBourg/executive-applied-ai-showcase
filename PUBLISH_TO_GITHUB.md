@@ -51,6 +51,8 @@ Useful static entry points:
 - `https://vinbourg.github.io/executive-applied-ai-showcase/sql-copilot.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/lead-automation.html`
 
+The home page also links to one dedicated HTML page per item in the showcase.
+
 ## Recommended first impression
 
 When sharing the repository, point reviewers first to:

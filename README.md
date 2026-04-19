@@ -15,6 +15,8 @@ The repository now includes a static demo hub under:
 - `docs/sql-copilot.html`
 - `docs/lead-automation.html`
 
+The hub now also includes one dedicated item page per showcase folder under `docs/*.html`, all linked directly from `docs/index.html`.
+
 It is designed to give recruiters or clients a faster visual read of the strongest examples without installing anything locally.
 Deployment is wired for GitHub Pages through:
 
@@ -178,6 +180,7 @@ For a more polished demonstration format, the repository also includes optional 
 - `docs/kpi-demo.html`
 - `docs/sql-copilot.html`
 - `docs/lead-automation.html`
+- `docs/*-*.html` item pages linked from the hub
 - `requirements_optional.txt`
 
 These optional files expose the same underlying business logic through API, dashboard and static-demo interfaces.

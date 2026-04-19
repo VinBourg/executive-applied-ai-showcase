@@ -1,0 +1,954 @@
+{
+  "items": [
+    {
+      "id": "01",
+      "slug": "01-rag-knowledge-assistant",
+      "title": "RAG Knowledge Assistant",
+      "folder": "01_RAG_Knowledge_Assistant",
+      "category": "Applied AI / RAG",
+      "summary": "A grounded business assistant that turns internal knowledge into a readable answer, an evidence trail and a reusable delivery pattern.",
+      "business_problem": "Business teams lose time when operational knowledge is spread across policies, checklists and support notes. They do not need a generic chatbot. They need a usable answer with traceability.",
+      "proves": [
+        "Retrieval-first assistant logic rather than generic answer generation.",
+        "Traceable grounding with reusable review artifacts.",
+        "A clean path from internal knowledge to support-ready outputs."
+      ],
+      "outputs": [
+        {
+          "file": "demo_response.md",
+          "description": "A recruiter-friendly grounded answer generated from the knowledge base."
+        },
+        {
+          "file": "query_portfolio.md",
+          "description": "Batch review of representative business questions and assistant responses."
+        },
+        {
+          "file": "query_scorecard.csv",
+          "description": "Compact scorecard showing how the assistant performs across sample queries."
+        },
+        {
+          "file": "retrieval_trace.json",
+          "description": "Source scores and retrieval decisions for the active query."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Internal copilots, support enablement and RAG-style enterprise assistants."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Grounded AI in regulated or operational contexts where traceability matters."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise AI assistants that need evidence, reusable outputs and an API upgrade path."
+        }
+      ],
+      "client_value": [
+        "Turns scattered knowledge into a grounded answer that business teams can use immediately.",
+        "Provides retrieval traceability that supports review, auditability and trust.",
+        "Shows how to package RAG logic into outputs that are readable for non-technical stakeholders."
+      ],
+      "review_path": [
+        "query_portfolio.md",
+        "query_scorecard.csv",
+        "retrieval_trace.json"
+      ],
+      "tags": [
+        "RAG",
+        "Knowledge assistant",
+        "Traceability",
+        "Applied AI"
+      ]
+    },
+    {
+      "id": "02",
+      "slug": "02-fraud-risk-scoring",
+      "title": "Fraud Risk Scoring",
+      "folder": "02_Fraud_Risk_Scoring",
+      "category": "Predictive Analytics / Risk",
+      "summary": "A compact Python demo of supervised learning for interpretable fraud-risk scoring and analyst-readable decisions.",
+      "business_problem": "Risk teams need a readable decision layer, not only a model score. The operational need is to identify suspicious cases, explain the drivers and suggest the next review action.",
+      "proves": [
+        "Interpretable supervised scoring rather than opaque prediction alone.",
+        "A direct bridge from model output to analyst or operations review.",
+        "Risk analytics packaged as business-readable decisions."
+      ],
+      "outputs": [
+        {
+          "file": "fraud_scoring_report.md",
+          "description": "Readable report explaining score patterns, risk thresholds and decision logic."
+        },
+        {
+          "file": "fraud_decisions.csv",
+          "description": "Case-level decision table with risk scores and recommended action."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Banking, payments and insurance analytics environments with fraud or anomaly review workflows."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Finance and payment-risk contexts that need interpretable analytics and disciplined scoring."
+        },
+        {
+          "market": "USA East",
+          "detail": "Risk operations and fraud analytics teams that want usable decisions, not notebook-only results."
+        }
+      ],
+      "client_value": [
+        "Makes risk drivers explicit rather than black-box.",
+        "Turns raw scoring into a queue that analysts can review immediately.",
+        "Signals a practical mix of Python modeling and decision-support packaging."
+      ],
+      "review_path": [
+        "fraud_scoring_report.md",
+        "fraud_decisions.csv"
+      ],
+      "tags": [
+        "Fraud analytics",
+        "Python",
+        "Classification",
+        "Decision support"
+      ]
+    },
+    {
+      "id": "03",
+      "slug": "03-kpi-reporting-pipeline",
+      "title": "KPI Reporting Pipeline",
+      "folder": "03_KPI_Reporting_Pipeline",
+      "category": "Reporting / Decision Support",
+      "summary": "A reporting pipeline that transforms raw support operations data into decision-ready KPI outputs, alerts and a dashboard-ready surface.",
+      "business_problem": "Operations teams often have raw ticket data but not a compact way to see health, priorities and follow-up actions. The need is a repeatable KPI pipeline that ends in reporting and management outputs.",
+      "proves": [
+        "Pipeline logic that moves from raw events to decision-ready KPIs.",
+        "Packaging of metrics into dashboard, digest and action-plan outputs.",
+        "A clear bridge from analytics logic to stakeholder-facing reporting."
+      ],
+      "outputs": [
+        {
+          "file": "dashboard.html",
+          "description": "Generated executive-style HTML dashboard."
+        },
+        {
+          "file": "executive_summary.md",
+          "description": "Management note summarizing key operational signals."
+        },
+        {
+          "file": "operations_action_plan.md",
+          "description": "Follow-up actions derived from KPI and alert outputs."
+        },
+        {
+          "file": "alert_digest.csv",
+          "description": "Compact alert table for operational review."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Power BI-style scoping, KPI automation and stakeholder-ready reporting flows."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Operational performance tracking in service, claims and regulated support environments."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise operating rhythm, service analytics and browser-based reporting delivery."
+        }
+      ],
+      "client_value": [
+        "Turns raw operational data into a reusable reporting package.",
+        "Produces alerting and action planning rather than metrics alone.",
+        "Shows a credible path from Python pipeline to demo-ready dashboard surface."
+      ],
+      "review_path": [
+        "dashboard.html",
+        "executive_summary.md",
+        "operations_action_plan.md"
+      ],
+      "tags": [
+        "KPI",
+        "Reporting",
+        "Dashboard",
+        "Operations"
+      ],
+      "rich_demo": {
+        "href": "kpi-demo.html",
+        "label": "Open richer KPI demo"
+      }
+    },
+    {
+      "id": "04",
+      "slug": "04-sql-decision-support",
+      "title": "SQL Decision Support",
+      "folder": "04_SQL_Decision_Support",
+      "category": "SQL / Business Review",
+      "summary": "A small SQLite example showing how SQL can be used to produce business-oriented decision-support outputs and an account-priority queue.",
+      "business_problem": "Teams often have SQL access but still lack a concrete way to turn raw rows into a review queue. The need is readable prioritization logic and a business-facing report.",
+      "proves": [
+        "Business-oriented SQL reasoning rather than raw querying.",
+        "Simple prioritization logic that ends in an action queue.",
+        "A useful translation from data mart thinking to stakeholder review."
+      ],
+      "outputs": [
+        {
+          "file": "decision_support_report.md",
+          "description": "Readable summary of segment performance and follow-up logic."
+        },
+        {
+          "file": "account_priority_queue.csv",
+          "description": "Structured queue for account-level review and prioritization."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Analytics engineering and SQL-driven business review workflows."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Portfolio, claims and finance contexts where prioritization must stay readable."
+        },
+        {
+          "market": "USA East",
+          "detail": "Decision-support and account-review use cases that sit between analytics and operations."
+        }
+      ],
+      "client_value": [
+        "Converts SQL logic into a decision-support artifact that can be reviewed quickly.",
+        "Produces a ready-to-use priority queue instead of raw extracts.",
+        "Signals comfort with business review logic, not just technical querying."
+      ],
+      "review_path": [
+        "decision_support_report.md",
+        "account_priority_queue.csv"
+      ],
+      "tags": [
+        "SQL",
+        "Prioritization",
+        "Decision support",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "05-brochure-content-workflow",
+      "title": "Brochure Content Workflow",
+      "folder": "05_Brochure_Content_Workflow",
+      "category": "LLM Workflow / Content",
+      "summary": "A content-generation workflow that turns structured product information into brochure-ready copy and an LLM-ready prompt package.",
+      "business_problem": "Marketing and product teams need a structured way to turn product facts into usable copy without losing consistency or reviewability. The need is a controlled content workflow, not ad hoc prompting.",
+      "proves": [
+        "Structured prompt building grounded in product information.",
+        "Content workflow logic that separates briefing, prompting and output packaging.",
+        "A credible AI-assisted writing flow with reviewable assets."
+      ],
+      "outputs": [
+        {
+          "file": "content_package.md",
+          "description": "Structured content package aligned with the product brief."
+        },
+        {
+          "file": "brochure_draft.md",
+          "description": "Generated brochure-ready copy."
+        },
+        {
+          "file": "llm_prompt.txt",
+          "description": "LLM-ready prompt built from structured source inputs."
+        },
+        {
+          "file": "product_brief.json",
+          "description": "Source data that anchors the workflow."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Marketing enablement and AI-assisted content operations in business teams."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Controlled communication workflows where consistency and factual grounding matter."
+        },
+        {
+          "market": "USA East",
+          "detail": "Content operations and enablement teams looking for prompt discipline rather than generic GenAI usage."
+        }
+      ],
+      "client_value": [
+        "Shows how to frame LLM content generation as a workflow with source structure and outputs.",
+        "Reduces the gap between product brief and publishable copy.",
+        "Signals prompt discipline and packaging rather than casual prompting."
+      ],
+      "review_path": [
+        "content_package.md",
+        "brochure_draft.md",
+        "llm_prompt.txt"
+      ],
+      "tags": [
+        "LLM workflow",
+        "Content generation",
+        "Prompt design",
+        "Marketing"
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "06-customer-segmentation-clustering",
+      "title": "Customer Segmentation Clustering",
+      "folder": "06_Customer_Segmentation_Clustering",
+      "category": "Segmentation / Analytics",
+      "summary": "A compact Python demo of unsupervised segmentation for business profiling, account interpretation and go-to-market action.",
+      "business_problem": "Commercial and analytics teams often know they should segment customers, but not how to translate clusters into usable engagement actions. The need is interpretable segmentation with business meaning.",
+      "proves": [
+        "Unsupervised clustering tied to business-readable segment interpretation.",
+        "Translation of model output into engagement planning and prioritization.",
+        "A compact analytics workflow that ends with action recommendations."
+      ],
+      "outputs": [
+        {
+          "file": "segmentation_report.md",
+          "description": "Readable report interpreting the discovered customer segments."
+        },
+        {
+          "file": "segment_actions.csv",
+          "description": "Segment-level action table for go-to-market or account planning."
+        },
+        {
+          "file": "customers.csv",
+          "description": "Structured sample portfolio used for the segmentation run."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Market studies, account segmentation and analytics-led customer planning."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Portfolio profiling in banking, insurance and B2B service environments."
+        },
+        {
+          "market": "USA East",
+          "detail": "Commercial analytics and account strategy use cases where segmentation must become action."
+        }
+      ],
+      "client_value": [
+        "Turns clustering into segment narratives that business teams can use.",
+        "Produces an action table rather than a model artifact only.",
+        "Shows practical analytics framing for market and portfolio decisions."
+      ],
+      "review_path": [
+        "segmentation_report.md",
+        "segment_actions.csv"
+      ],
+      "tags": [
+        "Clustering",
+        "Segmentation",
+        "Portfolio",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "07",
+      "slug": "07-time-series-forecasting",
+      "title": "Time Series Forecasting",
+      "folder": "07_Time_Series_Forecasting",
+      "category": "Forecasting / Planning",
+      "summary": "A compact forecasting demo using operational demand history and a simple trend-aware model to produce staffing and workload planning outputs.",
+      "business_problem": "Operations teams need a short-horizon view of future workload to plan staffing and capacity. The need is not theoretical forecasting but a usable planning output tied to recent demand.",
+      "proves": [
+        "Trend-aware forecasting logic grounded in operational history.",
+        "Translation from forecast output to staffing or capacity planning.",
+        "A business-facing time-series workflow that remains readable."
+      ],
+      "outputs": [
+        {
+          "file": "forecast_report.md",
+          "description": "Narrative summary of the expected workload trend and its implications."
+        },
+        {
+          "file": "staffing_plan.csv",
+          "description": "Suggested staffing plan derived from forecasted demand."
+        },
+        {
+          "file": "daily_ticket_volume.csv",
+          "description": "Source operational demand history."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Support, service and industrial operations with planning constraints."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Claims, service and operational environments where staffing and capacity must stay controlled."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise support and operations teams looking for short-horizon planning visibility."
+        }
+      ],
+      "client_value": [
+        "Moves from time-series output to concrete staffing guidance.",
+        "Shows forecast logic in a format accessible to operations managers.",
+        "Signals practical planning value rather than model-centric presentation."
+      ],
+      "review_path": [
+        "forecast_report.md",
+        "staffing_plan.csv"
+      ],
+      "tags": [
+        "Time series",
+        "Forecasting",
+        "Staffing",
+        "Operations"
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "08-agentic-knowledge-routing",
+      "title": "Agentic Knowledge Routing",
+      "folder": "08_Agentic_Knowledge_Routing",
+      "category": "Agentic Workflows",
+      "summary": "A compact agentic workflow demo that turns a business request into a structured execution plan with clear agents, tools, checks and delivery logic.",
+      "business_problem": "When teams talk about agentic AI, the gap is often between a vague orchestration idea and a readable delivery plan. The need is explicit routing, validation and output ownership.",
+      "proves": [
+        "Agentic task decomposition with validation and synthesis steps.",
+        "Readable workflow planning tied to business requests.",
+        "Controlled routing instead of vague multi-agent claims."
+      ],
+      "outputs": [
+        {
+          "file": "execution_plan_report.md",
+          "description": "Structured execution plan showing the route, checks and deliverables."
+        },
+        {
+          "file": "task_briefs.json",
+          "description": "Sample business requests aligned with operations, fraud and automation use cases."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "AI workflow design and business-request orchestration with strong stakeholder readability."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Controlled task routing in regulated or audit-sensitive environments."
+        },
+        {
+          "market": "USA East",
+          "detail": "Agentic planning and enterprise workflow design that still reads as operational delivery."
+        }
+      ],
+      "client_value": [
+        "Makes agentic orchestration explicit, inspectable and business-readable.",
+        "Shows how retrieval, validation and synthesis can be sequenced with ownership.",
+        "Provides a credible bridge from AI concept to operating plan."
+      ],
+      "review_path": [
+        "execution_plan_report.md",
+        "task_briefs.json"
+      ],
+      "tags": [
+        "Agentic AI",
+        "Routing",
+        "Planning",
+        "Knowledge work"
+      ]
+    },
+    {
+      "id": "09",
+      "slug": "09-n8n-lead-enrichment-automation",
+      "title": "n8n Lead Enrichment Automation",
+      "folder": "09_n8n_Lead_Enrichment_Automation",
+      "category": "n8n / Commercial Automation",
+      "summary": "A lead-qualification workflow that enriches inbound opportunities, scores them across three markets and writes CRM-ready plus outreach-ready outputs.",
+      "business_problem": "Inbound leads often arrive without enough context for an efficient commercial response. The operational need is to route them quickly toward the right offer angle, the right owner and the right next step.",
+      "proves": [
+        "Market-aware scoring rather than generic lead qualification.",
+        "n8n-style orchestration that ends in payloads and follow-up assets.",
+        "A commercial automation flow tied to concrete ownership."
+      ],
+      "outputs": [
+        {
+          "file": "qualification_report.md",
+          "description": "Ranked review of the qualified lead set."
+        },
+        {
+          "file": "lead_scorecard.csv",
+          "description": "Full scoring table with owner and follow-up fields."
+        },
+        {
+          "file": "crm_sync_payload.json",
+          "description": "Top-priority payload ready for CRM or orchestration sync."
+        },
+        {
+          "file": "sequence_plan.md",
+          "description": "Outreach guidance for high, medium and low-priority cohorts."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Dashboard automation, lead qualification and workflow acceleration use cases."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Claims, finance and document-heavy internal automation opportunities."
+        },
+        {
+          "market": "USA East",
+          "detail": "Operations transformation and analytics-aware automation programs."
+        }
+      ],
+      "client_value": [
+        "Enriches inbound demand with a clear commercial angle and owner.",
+        "Produces CRM-ready and outreach-ready artifacts instead of a simple score.",
+        "Shows operational automation value that maps directly to n8n workflows."
+      ],
+      "review_path": [
+        "qualification_report.md",
+        "lead_scorecard.csv",
+        "crm_sync_payload.json"
+      ],
+      "tags": [
+        "n8n",
+        "Lead scoring",
+        "CRM sync",
+        "Automation"
+      ],
+      "rich_demo": {
+        "href": "lead-automation.html",
+        "label": "Open richer lead automation demo"
+      }
+    },
+    {
+      "id": "10",
+      "slug": "10-dashboard-brief-generator",
+      "title": "Dashboard Brief Generator",
+      "folder": "10_Dashboard_Brief_Generator",
+      "category": "Analytics Delivery / Scoping",
+      "summary": "A compact workflow that turns a client need into a dashboard specification ready for analytics delivery.",
+      "business_problem": "Analytics projects often fail before development starts because the business need is not translated into a clear dashboard brief. The need is structured framing between stakeholders and delivery teams.",
+      "proves": [
+        "Business-needs framing before dashboard development.",
+        "KPI definition logic packaged for analytics delivery.",
+        "Translation from stakeholder language to implementable artifacts."
+      ],
+      "outputs": [
+        {
+          "file": "dashboard_spec.md",
+          "description": "Structured dashboard specification for delivery teams."
+        },
+        {
+          "file": "metric_catalog.csv",
+          "description": "Metric-level catalog aligned with the dashboard scope."
+        },
+        {
+          "file": "wireframe_notes.md",
+          "description": "Notes supporting visual structure and stakeholder review."
+        },
+        {
+          "file": "client_brief.json",
+          "description": "Source client need used to generate the package."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Power BI scoping, KPI framing and stakeholder alignment."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Analytics delivery in operational or regulated environments that require clarity upfront."
+        },
+        {
+          "market": "USA East",
+          "detail": "Analytics enablement and business translation work around dashboards and reporting."
+        }
+      ],
+      "client_value": [
+        "Shortens the gap between business ask and analytics build.",
+        "Produces a delivery-oriented package rather than informal notes.",
+        "Signals strong stakeholder translation and scoping discipline."
+      ],
+      "review_path": [
+        "dashboard_spec.md",
+        "metric_catalog.csv",
+        "wireframe_notes.md"
+      ],
+      "tags": [
+        "Dashboard",
+        "KPI scoping",
+        "Power BI",
+        "Stakeholders"
+      ]
+    },
+    {
+      "id": "11",
+      "slug": "11-n8n-ai-support-automation",
+      "title": "n8n AI Support Automation",
+      "folder": "11_n8n_AI_Support_Automation",
+      "category": "n8n / Support Automation",
+      "summary": "A compact n8n-oriented support workflow combining AI classification, routing and response drafting.",
+      "business_problem": "Support teams lose time when ticket intake, triage and first response stay manual. The need is a controlled automation path that respects priority, routing and SLA logic.",
+      "proves": [
+        "AI-assisted support triage in a workflow-friendly format.",
+        "Routing and escalation logic tied to operational priorities.",
+        "A payload structure that can feed downstream systems."
+      ],
+      "outputs": [
+        {
+          "file": "support_routing_report.md",
+          "description": "Readable report of classification, routing and response logic."
+        },
+        {
+          "file": "routing_payload.json",
+          "description": "Payload ready for ticketing or notification handoff."
+        },
+        {
+          "file": "workflow.json",
+          "description": "n8n-style orchestration representation of the workflow."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Support automation, ticket routing and response acceleration."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Service operations where SLA discipline and explicit escalation routes matter."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise support automation with AI classification plus structured routing."
+        }
+      ],
+      "client_value": [
+        "Shortens manual intake time while preserving routing discipline.",
+        "Produces a handoff payload that could plug into ticketing or notification systems.",
+        "Shows a practical AI automation pattern anchored in operations."
+      ],
+      "review_path": [
+        "support_routing_report.md",
+        "routing_payload.json",
+        "workflow.json"
+      ],
+      "tags": [
+        "n8n",
+        "Support",
+        "Triage",
+        "Automation"
+      ]
+    },
+    {
+      "id": "12",
+      "slug": "12-agentic-research-briefing",
+      "title": "Agentic Research Briefing",
+      "folder": "12_Agentic_Research_Briefing",
+      "category": "Agentic AI / Briefing",
+      "summary": "A compact agentic demo that turns a target account and an objective into a structured briefing package.",
+      "business_problem": "Preparation for advisory, sales or account meetings is often scattered across notes and partial research. The need is a structured briefing package that surfaces opportunities and meeting angles quickly.",
+      "proves": [
+        "Multi-step research planning with a clear briefing output.",
+        "Opportunity mapping tied to an executive objective.",
+        "Agentic synthesis packaged as a useful pre-meeting asset."
+      ],
+      "outputs": [
+        {
+          "file": "research_brief.md",
+          "description": "Structured briefing package for the target account."
+        },
+        {
+          "file": "opportunity_map.csv",
+          "description": "Ranked opportunity map supporting meeting preparation."
+        },
+        {
+          "file": "company_profile.json",
+          "description": "Source profile used to generate the research package."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Advisory, pre-sales and account-preparation workflows using structured AI assistance."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "High-touch account preparation where business relevance and concision matter."
+        },
+        {
+          "market": "USA East",
+          "detail": "Executive briefing and account-planning support with agentic synthesis logic."
+        }
+      ],
+      "client_value": [
+        "Accelerates account preparation with a compact opportunity map.",
+        "Provides meeting-ready briefing material instead of fragmented notes.",
+        "Signals practical agentic value for advisory and commercial contexts."
+      ],
+      "review_path": [
+        "research_brief.md",
+        "opportunity_map.csv"
+      ],
+      "tags": [
+        "Agentic AI",
+        "Research",
+        "Briefing",
+        "Executive prep"
+      ]
+    },
+    {
+      "id": "13",
+      "slug": "13-ai-sql-analytics-copilot",
+      "title": "AI SQL Analytics Copilot",
+      "folder": "13_AI_SQL_Analytics_Copilot",
+      "category": "Applied AI / SQL Copilot",
+      "summary": "A decision-support copilot that turns business questions into SQL, interprets the results and produces management-ready follow-up outputs.",
+      "business_problem": "Business stakeholders often know the question they need answered but do not want raw SQL, notebook work or fragmented KPI extracts. They need a compact path from management question to decision-ready output.",
+      "proves": [
+        "Business question routing into analytical intent and SQL logic.",
+        "Leadership-ready synthesis on top of structured query results.",
+        "Actionable follow-up outputs for retention, segment protection and growth."
+      ],
+      "outputs": [
+        {
+          "file": "executive_memo.md",
+          "description": "Short leadership briefing with headline signals and agenda."
+        },
+        {
+          "file": "copilot_route_log.csv",
+          "description": "Question routing, priority, owner and next-step trace."
+        },
+        {
+          "file": "portfolio_action_queue.csv",
+          "description": "Actionable queue for retention, segment protection and expansion."
+        },
+        {
+          "file": "copilot_report.md",
+          "description": "Full question-to-SQL-to-answer walkthrough."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Analytics engineering, Power BI framing and AI-assisted analytics translation."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Finance, insurance and operational portfolios that need SQL reasoning plus management clarity."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise analytics copilots and structured portfolio review with explicit ownership."
+        }
+      ],
+      "client_value": [
+        "Converts management questions into SQL-backed signals and an operating memo.",
+        "Creates a follow-up queue that account and operations teams can use immediately.",
+        "Signals a strong intersection of AI assistance, SQL and decision-support packaging."
+      ],
+      "review_path": [
+        "executive_memo.md",
+        "copilot_route_log.csv",
+        "portfolio_action_queue.csv"
+      ],
+      "tags": [
+        "SQL copilot",
+        "Decision support",
+        "Analytics",
+        "Applied AI"
+      ],
+      "rich_demo": {
+        "href": "sql-copilot.html",
+        "label": "Open richer SQL copilot demo"
+      }
+    },
+    {
+      "id": "14",
+      "slug": "14-llm-evaluation-guardrails",
+      "title": "LLM Evaluation Guardrails",
+      "folder": "14_LLM_Evaluation_Guardrails",
+      "category": "GenAI Quality / Guardrails",
+      "summary": "A compact evaluation and guardrail workflow that scores business-oriented LLM outputs, flags risky answers and routes weak generations to fallback or human review.",
+      "business_problem": "AI demos are not enough when outputs must be controlled. The need is a workflow that scores quality, checks groundedness and makes an explicit approve, review or block decision.",
+      "proves": [
+        "Prompt and output evaluation logic grounded in business scenarios.",
+        "Guardrail decisions that go beyond one-off prompt demos.",
+        "A production-minded view of quality control for GenAI."
+      ],
+      "outputs": [
+        {
+          "file": "evaluation_report.md",
+          "description": "Readable report showing findings, decisions and fallback actions."
+        },
+        {
+          "file": "evaluation_scorecard.csv",
+          "description": "Case-by-case scoring table for the evaluation workflow."
+        },
+        {
+          "file": "rubric.json",
+          "description": "Thresholds and weights used to make evaluation decisions."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Enterprise GenAI projects where quality control and fallback design are expected."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Controlled AI delivery in regulated or compliance-sensitive environments."
+        },
+        {
+          "market": "USA East",
+          "detail": "Production-minded GenAI programs that need guardrails, evaluation and human review logic."
+        }
+      ],
+      "client_value": [
+        "Shows that LLM work is treated as a controlled system, not a prompt experiment.",
+        "Produces explicit review and block decisions that clients can reason about.",
+        "Signals seriousness around quality assurance and fallback design."
+      ],
+      "review_path": [
+        "evaluation_report.md",
+        "evaluation_scorecard.csv",
+        "rubric.json"
+      ],
+      "tags": [
+        "LLM evaluation",
+        "Guardrails",
+        "GenAI",
+        "Quality control"
+      ]
+    },
+    {
+      "id": "15",
+      "slug": "15-n8n-document-intake-approval",
+      "title": "n8n Document Intake Approval",
+      "folder": "15_n8n_Document_Intake_Approval",
+      "category": "n8n / Document Automation",
+      "summary": "A document-automation workflow that classifies inbound files, validates required fields and routes each case to automatic or human approval.",
+      "business_problem": "Document-heavy operations lose time when inbound files are handled manually, inconsistently or without a clear approval path. The need is a controlled workflow with readable decisions and human review where required.",
+      "proves": [
+        "Document triage with explicit validation and approval routing.",
+        "Human-in-the-loop control rather than generic AI automation.",
+        "A realistic workflow that operations, finance or legal teams could review."
+      ],
+      "outputs": [
+        {
+          "file": "intake_approval_report.md",
+          "description": "Classified decisions, validation findings and approval rationale."
+        },
+        {
+          "file": "approval_queue.csv",
+          "description": "Queue ready for finance, operations or legal teams."
+        },
+        {
+          "file": "workflow.json",
+          "description": "Compact n8n-style orchestration view of the flow."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Operations, finance and document-heavy internal workflows where automation must stay controlled."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Compliance-sensitive environments, approvals and audit-friendly document handling."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise workflow automation with explicit handoff to human reviewers when risk rises."
+        }
+      ],
+      "client_value": [
+        "Reduces manual document handling while preserving explicit approval control.",
+        "Creates an approval queue that teams can use immediately.",
+        "Signals a credible human-in-the-loop automation approach for enterprise workflows."
+      ],
+      "review_path": [
+        "intake_approval_report.md",
+        "approval_queue.csv",
+        "workflow.json"
+      ],
+      "tags": [
+        "n8n",
+        "Document automation",
+        "Approvals",
+        "Human-in-the-loop"
+      ]
+    },
+    {
+      "id": "16",
+      "slug": "16-cloud-data-platform-governance",
+      "title": "Cloud Data Platform Governance",
+      "folder": "16_Cloud_Data_Platform_Governance",
+      "category": "Data Platform / Governance",
+      "summary": "A cloud data platform example focused on data quality, governance ownership, release readiness and trusted downstream use for BI, analytics and AI.",
+      "business_problem": "AI and analytics programs fail when downstream teams consume data that is late, weakly governed or not release-ready. The real need is trusted data products, not just another model or dashboard.",
+      "proves": [
+        "Governance and release-readiness thinking beyond pure analytics work.",
+        "Data quality scoring tied to ownership and downstream consumption.",
+        "Platform review logic that speaks to BI and AI readiness together."
+      ],
+      "outputs": [
+        {
+          "file": "governance_report.md",
+          "description": "Executive report with dataset findings, risks and actions."
+        },
+        {
+          "file": "dataset_health.csv",
+          "description": "Scorecard across the evaluated data products."
+        },
+        {
+          "file": "pipeline_release_checklist.md",
+          "description": "Release decision and platform-control review."
+        },
+        {
+          "file": "contracts_registry.csv",
+          "description": "Ownership, consumers and contract-coverage view."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Azure, Databricks, dbt, Power BI and analytics-engineering environments that expect platform discipline."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Finance, insurance and regulated AI programs that need ownership, controls and release gates."
+        },
+        {
+          "market": "USA East",
+          "detail": "AWS, Snowflake, Databricks and enterprise data environments where governance and permissible use matter."
+        }
+      ],
+      "client_value": [
+        "Frames data quality and ownership as client-visible platform value.",
+        "Produces release and governance outputs that downstream teams can act on immediately.",
+        "Signals an ability to connect AI ambitions with trusted data delivery."
+      ],
+      "review_path": [
+        "governance_report.md",
+        "pipeline_release_checklist.md",
+        "dataset_health.csv"
+      ],
+      "tags": [
+        "Data governance",
+        "Cloud platform",
+        "Data quality",
+        "Release readiness"
+      ]
+    }
+  ]
+}
