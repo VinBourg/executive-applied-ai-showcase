@@ -4,40 +4,40 @@
 
 # Executive Applied AI Showcase
 
-Selected Applied AI, LLM, analytics and SQL examples designed to demonstrate practical business execution.
+Selected Applied AI, LLM, analytics and SQL examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
 
-## Executive Summary
+## Positioning
 
-This repository presents a compact selection of short, high-signal demos showing how I approach business-oriented AI work:
+This repository is designed as a compact executive showcase rather than a broad technical sandbox.
 
-- frame a concrete use case,
-- structure the solution clearly,
-- keep the logic readable,
-- deliver outputs that are directly usable by business, operations or decision-makers.
+It presents short, high-signal demos illustrating how I approach business-oriented AI work:
+- define a concrete use case,
+- structure the logic cleanly,
+- keep the implementation readable,
+- deliver outputs that are directly useful to business, operations or decision-makers.
 
-These examples are intentionally concise. They are not meant to imitate full production systems. They are meant to make judgment, delivery style, technical clarity and business orientation visible within a very short review time.
+The objective is not to simulate a large production platform. The objective is to make judgment, delivery style, technical clarity and business relevance visible within a very short review window.
 
-## Who This Repository Is For
+## Intended Audience
 
 This repository is especially relevant for:
-
 - recruiters reviewing Applied AI, LLM or analytics profiles,
-- hiring managers looking for practical business execution rather than generic experimentation,
+- hiring managers looking for practical execution rather than generic experimentation,
 - companies interested in AI assistants, decision support, reporting automation and structured workflow design.
 
-## Recommended Opening Sequence
+## Recommended Review Sequence
 
-If you only review three folders, start here:
+If you only open three folders, start here:
 
 1. `01_RAG_Knowledge_Assistant`
 2. `02_Fraud_Risk_Scoring`
 3. `03_KPI_Reporting_Pipeline`
 
-This sequence provides the clearest view of my positioning across Applied AI, predictive analytics and business-facing delivery.
+This sequence gives the clearest reading of my positioning across Applied AI, predictive analytics and business-facing delivery.
 
-## What Each Demo Proves
+## Selected Work
 
-| Folder | What it proves | Business relevance |
+| Folder | What it demonstrates | Business relevance |
 |---|---|---|
 | `01_RAG_Knowledge_Assistant` | Retrieval-first assistant design, business knowledge structuring, reusable core logic, API-ready progression | Internal knowledge assistant, support enablement, document-grounded Q&A |
 | `02_Fraud_Risk_Scoring` | Supervised learning, interpretable risk scoring, compact Python modeling | Fraud analytics, transaction monitoring, predictive decision support |
@@ -47,17 +47,16 @@ This sequence provides the clearest view of my positioning across Applied AI, pr
 
 ## What This Repository Signals
 
-This showcase is designed to reflect a profile able to combine:
-
+This showcase is meant to reflect a profile able to combine:
 - Applied AI and LLM workflow design,
 - business-oriented analytics,
 - SQL-based reasoning,
 - decision-support thinking,
-- compact, disciplined implementation.
+- compact and disciplined implementation.
 
 In practical terms, it signals an ability to move from business need to usable prototype without losing clarity, structure or value orientation.
 
-## Local Execution
+## Local Run
 
 The core demos run with standard Python 3 and the standard library only.
 
@@ -81,9 +80,8 @@ These optional files expose the same underlying business logic through API and d
 
 ## Review Note
 
-This is not positioned as a production platform.
+This repository is not positioned as a production system.
 It is a selective showcase of significant know-how consistent with my CV:
-
 - business-oriented Applied AI,
 - LLM workflows and AI enablement,
 - predictive analytics and fraud-related reasoning,
