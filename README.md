@@ -39,13 +39,23 @@ This repository is especially relevant for:
 If you want the fastest cross-section of the repository, start here:
 
 1. `01_RAG_Knowledge_Assistant`
-2. `09_n8n_Lead_Enrichment_Automation`
-3. `08_Agentic_Knowledge_Routing`
-4. `03_KPI_Reporting_Pipeline`
+2. `13_AI_SQL_Analytics_Copilot`
+3. `09_n8n_Lead_Enrichment_Automation`
+4. `08_Agentic_Knowledge_Routing`
+5. `03_KPI_Reporting_Pipeline`
+
+## Flagship Projects
+
+If the objective is to assess the most market-relevant and recruiter-friendly examples first, the flagship folders are:
+
+- `01_RAG_Knowledge_Assistant`
+- `13_AI_SQL_Analytics_Copilot`
+- `09_n8n_Lead_Enrichment_Automation`
+- `08_Agentic_Knowledge_Routing`
 
 If you want to review by theme:
 
-- Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`
+- Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`, `13_AI_SQL_Analytics_Copilot`
 - Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`
 - n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`
 - Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`
@@ -66,6 +76,7 @@ If you want to review by theme:
 | `10_Dashboard_Brief_Generator` | KPI scoping, stakeholder translation, analytics briefing outputs | Power BI preparation, dashboard scoping, analytics delivery framing |
 | `11_n8n_AI_Support_Automation` | AI ticket classification, routing logic, operational automation design | Support automation, AI-assisted triage, response drafting |
 | `12_Agentic_Research_Briefing` | Multi-step research planning, executive synthesis logic, structured briefing outputs | Pre-meeting research, advisory preparation, decision-support briefing |
+| `13_AI_SQL_Analytics_Copilot` | Business-question routing, SQL generation logic, analytics synthesis and copilot-style answering | AI-assisted analytics, SQL copilot, decision-ready portfolio review |
 
 ## What This Repository Signals
 
@@ -96,6 +107,7 @@ python3 09_n8n_Lead_Enrichment_Automation/app.py
 python3 10_Dashboard_Brief_Generator/app.py
 python3 11_n8n_AI_Support_Automation/app.py
 python3 12_Agentic_Research_Briefing/app.py
+python3 13_AI_SQL_Analytics_Copilot/app.py
 ```
 
 ## Optional Premium Entry Points

@@ -1,10 +1,23 @@
 [
   {
     "request": "Prepare a short answer for a client asking why support backlog increased this week and what actions should be taken.",
-    "context": "Operations manager needs a response by end of day."
+    "context": "Operations manager needs a response by end of day.",
+    "deliverable": "Client-facing management note",
+    "deadline": "End of day",
+    "priority": "high"
   },
   {
     "request": "Build a short internal note summarizing fraud-risk drivers for high-value international transfers.",
-    "context": "Fraud operations lead wants an interpretable summary for analysts."
+    "context": "Fraud operations lead wants an interpretable summary for analysts.",
+    "deliverable": "Analyst-facing summary note",
+    "deadline": "Tomorrow morning",
+    "priority": "high"
+  },
+  {
+    "request": "Outline an n8n-style automation note for inbound leads asking about AI workflow automation and support efficiency.",
+    "context": "A business lead wants a concise scoping note before a discovery call.",
+    "deliverable": "Pre-sales workflow briefing",
+    "deadline": "Within 24 hours",
+    "priority": "medium"
   }
 ]

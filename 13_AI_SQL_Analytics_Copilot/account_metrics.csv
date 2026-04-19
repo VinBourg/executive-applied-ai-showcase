@@ -1,0 +1,11 @@
+company_name,industry,country,monthly_revenue_k,revenue_growth_pct,product_adoption_pct,open_tickets,nps,pipeline_value_k
+Northbank,Banking,Switzerland,420,-8,58,4,41,60
+AtlasPay,Banking,Switzerland,470,12,82,1,67,140
+Alpine Payments,Banking,Switzerland,360,6,76,2,62,95
+AgriNova,AgriFood,France,210,-14,54,3,38,25
+PureFoods,AgriFood,France,180,4,71,1,58,48
+FlowRetail,Retail,Germany,250,3,69,4,52,85
+TerraRetail,Retail,Belgium,195,-6,61,2,49,50
+Machina Systems,Industry,Germany,330,15,84,1,71,160
+NordLedger Insurance,Insurance,Germany,310,7,74,2,63,120
+Swiss Advisory Tech,Insurance,Switzerland,290,9,79,1,65,130

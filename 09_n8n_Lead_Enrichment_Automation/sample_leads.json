@@ -1,0 +1,30 @@
+[
+  {
+    "company": "Alpine Payments",
+    "industry": "Banking",
+    "country": "Switzerland",
+    "employees": 850,
+    "signal": "Looking for AI workflow automation and support efficiency improvements before a Q3 pilot."
+  },
+  {
+    "company": "NordLedger Insurance",
+    "industry": "Insurance",
+    "country": "Germany",
+    "employees": 1400,
+    "signal": "Exploring LLM copilots for claims knowledge access and reporting automation."
+  },
+  {
+    "company": "TerraRetail",
+    "industry": "Retail",
+    "country": "France",
+    "employees": 420,
+    "signal": "Needs dashboard automation and better lead qualification from inbound campaigns."
+  },
+  {
+    "company": "Machina Systems",
+    "industry": "Industry",
+    "country": "Belgium",
+    "employees": 260,
+    "signal": "Interested in AI support routing but without an immediate automation budget."
+  }
+]

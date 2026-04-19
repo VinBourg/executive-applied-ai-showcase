@@ -18,5 +18,15 @@
     "title": "Marketing content workflow",
     "tags": ["marketing", "content", "llm"],
     "content": "Brochure generation should start from validated product facts, target audience pain points and proof points. Drafts can be generated faster with LLM workflows, but final review remains business-led."
+  },
+  {
+    "title": "Operations review checklist",
+    "tags": ["operations", "backlog", "dashboard"],
+    "content": "Backlog reviews should separate volume growth, SLA pressure and reopened-ticket recurrence. Team leads need one shared reading of weekly drivers before action plans are assigned."
+  },
+  {
+    "title": "AI assistant governance note",
+    "tags": ["ai", "assistant", "governance"],
+    "content": "Internal assistants should rely on approved source material, avoid sensitive free-form memory and make their sources visible to users whenever possible."
   }
 ]

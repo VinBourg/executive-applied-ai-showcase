@@ -5,8 +5,10 @@
     {"name": "Normalize Lead", "type": "n8n-nodes-base.set"},
     {"name": "AI Enrichment Prompt", "type": "n8n-nodes-base.openAi"},
     {"name": "Lead Scoring", "type": "n8n-nodes-base.code"},
+    {"name": "Offer Angle Mapping", "type": "n8n-nodes-base.code"},
     {"name": "CRM Update", "type": "n8n-nodes-base.httpRequest"},
-    {"name": "Slack Notification", "type": "n8n-nodes-base.slack"}
+    {"name": "Slack Notification", "type": "n8n-nodes-base.slack"},
+    {"name": "Sequence Trigger", "type": "n8n-nodes-base.httpRequest"}
   ],
-  "business_goal": "Turn inbound leads into structured qualification signals and routing actions."
+  "business_goal": "Turn inbound leads into structured qualification, offer-angle and routing actions that sales teams can act on immediately."
 }

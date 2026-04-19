@@ -89,6 +89,16 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 - Power BI, dashboarding, synthese metier, aide a la decision.
 - Capacite a faire le lien entre stakeholders et equipe data.
 
+### AI SQL Analytics Copilot
+**Ce que cela demontre**
+- Traduction d'une question metier en logique analytique et requete SQL.
+- Lecture business des resultats et priorisation d'actions.
+- Capacite a produire une reponse copilot claire pour le pilotage.
+
+**Pourquoi c'est coherent avec le CV**
+- SQL, analytics, support a la decision, traduction metier -> data.
+- Positionnement tres vendeur sur l'interface entre IA appliquee et analyse decisionnelle.
+
 ## 3. IA automation avec n8n
 
 ### n8n Lead Enrichment Automation
@@ -139,10 +149,10 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 Si l'objectif est de rester tres vendeur et tres coherent avec le CV actuel, les cinq meilleurs exemples a faire remonter en premier sont :
 
 1. `01_RAG_Knowledge_Assistant`
-2. `09_n8n_Lead_Enrichment_Automation`
-3. `08_Agentic_Knowledge_Routing`
-4. `03_KPI_Reporting_Pipeline`
-5. `02_Fraud_Risk_Scoring`
+2. `13_AI_SQL_Analytics_Copilot`
+3. `09_n8n_Lead_Enrichment_Automation`
+4. `08_Agentic_Knowledge_Routing`
+5. `03_KPI_Reporting_Pipeline`
 
 ## Positionnement global qui ressort
 
