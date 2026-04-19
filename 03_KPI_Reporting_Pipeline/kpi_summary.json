@@ -1,0 +1,7 @@
+{
+  "ticket_count": 10,
+  "average_resolution_hours": 4.71,
+  "sla_compliance_rate": 0.8,
+  "reopened_rate": 0.3,
+  "top_category_by_volume": "Technical"
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Executive Applied AI Showcase</title>
+  <desc id="desc">Premium GitHub banner for an Applied AI, LLM and analytics showcase.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f0e6"/>
+      <stop offset="100%" stop-color="#e7dcc8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12324A"/>
+      <stop offset="100%" stop-color="#1f4968"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <circle cx="1110" cy="92" r="120" fill="#d8c7a8" opacity="0.45"/>
+  <circle cx="1145" cy="320" r="150" fill="#d7b78d" opacity="0.25"/>
+  <rect x="62" y="58" width="1156" height="304" rx="24" fill="url(#panel)"/>
+  <rect x="62" y="58" width="1156" height="304" rx="24" fill="none" stroke="#caa36a" stroke-width="2"/>
+  <text x="108" y="146" fill="#f7f2e8" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700">Executive Applied AI Showcase</text>
+  <text x="108" y="194" fill="#d6e0e8" font-family="Georgia, 'Times New Roman', serif" font-size="24">Applied AI · LLM Workflows · Analytics · SQL · Decision Support</text>
+  <text x="108" y="242" fill="#f0c98b" font-family="Georgia, 'Times New Roman', serif" font-size="22">Short, recruiter-friendly examples designed to demonstrate practical business execution.</text>
+  <rect x="108" y="284" width="240" height="42" rx="21" fill="#f2e6d3"/>
+  <text x="138" y="311" fill="#12324A" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">RAG Knowledge Assistant</text>
+  <rect x="368" y="284" width="220" height="42" rx="21" fill="#f2e6d3"/>
+  <text x="401" y="311" fill="#12324A" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Fraud Risk Scoring</text>
+  <rect x="608" y="284" width="262" height="42" rx="21" fill="#f2e6d3"/>
+  <text x="638" y="311" fill="#12324A" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">KPI Reporting Pipeline</text>
+  <text x="1080" y="341" fill="#f4e7d1" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="end">GitHub-ready premium showcase</text>
+</svg>

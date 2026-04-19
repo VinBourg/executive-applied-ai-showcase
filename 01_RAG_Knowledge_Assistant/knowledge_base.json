@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Support escalation policy",
+    "tags": ["support", "sla", "escalation"],
+    "content": "High-priority tickets must receive a first response within one hour. Reopened tickets should be reviewed by a senior support analyst. Weekly dashboard reviews focus on backlog, SLA breaches and root causes."
+  },
+  {
+    "title": "Customer onboarding playbook",
+    "tags": ["onboarding", "knowledge", "customer"],
+    "content": "New customers should receive a structured onboarding kit, a short training session and a clearly documented FAQ. Good knowledge access reduces repetitive support requests and improves adoption."
+  },
+  {
+    "title": "Fraud monitoring notes",
+    "tags": ["fraud", "risk", "analytics"],
+    "content": "Transactions combining high amount, new beneficiary, foreign transfer and unusual time windows require enhanced review. Risk scoring should remain interpretable for operational teams."
+  },
+  {
+    "title": "Marketing content workflow",
+    "tags": ["marketing", "content", "llm"],
+    "content": "Brochure generation should start from validated product facts, target audience pain points and proof points. Drafts can be generated faster with LLM workflows, but final review remains business-led."
+  }
+]

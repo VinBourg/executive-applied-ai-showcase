@@ -1,0 +1,38 @@
+name: smoke-tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Compile Python files
+        run: |
+          python -m py_compile \
+            01_RAG_Knowledge_Assistant/app.py \
+            01_RAG_Knowledge_Assistant/core.py \
+            01_RAG_Knowledge_Assistant/fastapi_app.py \
+            02_Fraud_Risk_Scoring/app.py \
+            03_KPI_Reporting_Pipeline/app.py \
+            03_KPI_Reporting_Pipeline/metrics.py \
+            03_KPI_Reporting_Pipeline/streamlit_app.py \
+            04_SQL_Decision_Support/app.py \
+            05_Brochure_Content_Workflow/app.py
+
+      - name: Run core demos
+        run: |
+          python 01_RAG_Knowledge_Assistant/app.py
+          python 02_Fraud_Risk_Scoring/app.py
+          python 03_KPI_Reporting_Pipeline/app.py
+          python 04_SQL_Decision_Support/app.py
+          python 05_Brochure_Content_Workflow/app.py

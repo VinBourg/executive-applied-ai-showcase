@@ -1,0 +1,7 @@
+You are writing an executive brochure.
+Product: InsightPilot AI
+Audience: operations leaders in banking and industry
+Problem: teams lose time searching for information and preparing repetitive reporting outputs
+Solution: an AI assistant that combines knowledge retrieval, summarization and workflow automation
+Proof points: faster access to validated knowledge, more consistent reporting outputs, reduced manual effort on repetitive tasks
+Task: write a concise, premium brochure draft in a professional tone.
