@@ -291,6 +291,19 @@ code {
   background: #fff;
 }
 
+.flagship-media-link {
+  display: block;
+  border-radius: 18px;
+}
+
+.flagship-title-link {
+  text-decoration: none;
+}
+
+.flagship-title-link:hover {
+  color: var(--warning);
+}
+
 .flagship-card h4,
 .mini-panel h4 {
   margin: 16px 0 10px;

@@ -35,7 +35,7 @@ function renderHome(data, catalog) {
   const metricHost = document.getElementById("home-metrics");
   const leadHost = document.getElementById("lead-table-body");
   const actionHost = document.getElementById("home-actions");
-  const catalogHost = document.getElementById("item-catalog");
+  const flagshipHost = document.getElementById("flagship-catalog");
   metricHost.innerHTML = [
     createMetricCard("Operations Health", data.kpi.summary.operations_health_score, "KPI pipeline snapshot"),
     createMetricCard("SLA Compliance", `${data.kpi.summary.sla_compliance_rate}%`, "Latest static demo data"),
@@ -59,13 +59,13 @@ function renderHome(data, catalog) {
 
   actionHost.innerHTML = data.kpi.actions.map((item) => `<li>${item}</li>`).join("");
 
-  if (catalogHost) {
-    catalogHost.innerHTML = catalog.items
+  if (flagshipHost) {
+    flagshipHost.innerHTML = catalog.items
       .map(
         (item) => `
-          <article class="mini-panel catalog-card">
+          <article class="flagship-card catalog-card">
             <div class="catalog-label">${item.id}</div>
-            <h4>${item.title}</h4>
+            <h4><a class="flagship-title-link" href="${item.slug}.html">${item.title}</a></h4>
             <div class="catalog-category">${item.category}</div>
             <p>${item.summary}</p>
             <div class="pill-row">
