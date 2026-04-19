@@ -1,0 +1,10 @@
+[
+  {
+    "request": "Prepare a short answer for a client asking why support backlog increased this week and what actions should be taken.",
+    "context": "Operations manager needs a response by end of day."
+  },
+  {
+    "request": "Build a short internal note summarizing fraud-risk drivers for high-value international transfers.",
+    "context": "Fraud operations lead wants an interpretable summary for analysts."
+  }
+]

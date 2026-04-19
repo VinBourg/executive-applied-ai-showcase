@@ -1,0 +1,16 @@
+{
+  "client": "Northbank Operations",
+  "objective": "Reduce support backlog while preserving SLA compliance and customer satisfaction.",
+  "users": ["Head of Operations", "Support Manager", "Team Leads"],
+  "pain_points": [
+    "Backlog is growing without a clear driver analysis",
+    "SLA breaches are reviewed too late",
+    "Reopened tickets consume team capacity"
+  ],
+  "preferred_filters": ["date", "priority", "category", "team"],
+  "key_questions": [
+    "Which ticket categories drive the backlog?",
+    "Where are SLA breaches concentrated?",
+    "Which teams need stabilization support?"
+  ]
+}

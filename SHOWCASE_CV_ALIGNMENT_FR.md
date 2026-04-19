@@ -1,8 +1,10 @@
 # Exemples significatifs de savoir-faire coherents avec le CV
 
-Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comme une vitrine compacte de savoir-faire directement alignes avec le positionnement du CV : `Applied AI`, `LLM workflows`, `analytics`, `SQL`, `decision support` et `business execution`.
+Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comme une vitrine compacte de savoir-faire directement alignes avec le positionnement du CV : `Applied AI`, `LLM workflows`, `analytics`, `SQL`, `decision support`, `n8n automation` et `agentic orchestration`.
 
-## 1. RAG Knowledge Assistant
+## 1. Applied AI et LLM workflows
+
+### RAG Knowledge Assistant
 **Ce que cela demontre**
 - Capacite a structurer une base de connaissances metier.
 - Logique de retrieval avant generation.
@@ -13,13 +15,22 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 - Workflows LLM et RAG.
 - Acceleration de l'acces a la connaissance.
 
-**Ce qu'un recruteur doit comprendre**
-Ce projet montre une capacite a concevoir un assistant metier simple, lisible et directement exploitable dans un cadre entreprise.
+### Brochure Content Workflow
+**Ce que cela demontre**
+- Conception d'un workflow de generation de contenus.
+- Structuration d'inputs metier en sorties exploitables.
+- Logique de prompt design et de production assistee.
 
-## 2. Fraud Risk Scoring
+**Pourquoi c'est coherent avec le CV**
+- Generation de contenus, workflows LLM, automatisation intelligente.
+- AI enablement et usages business concrets.
+
+## 2. Data, analytics et decision support
+
+### Fraud Risk Scoring
 **Ce que cela demontre**
 - Maitrise d'un cas d'usage classique de data science appliquee.
-- Utilisation de Python pour un scoring supervisé.
+- Utilisation de Python pour un scoring supervise.
 - Lecture interpretable d'un risque transactionnel.
 
 **Pourquoi c'est coherent avec le CV**
@@ -27,10 +38,7 @@ Ce projet montre une capacite a concevoir un assistant metier simple, lisible et
 - Analytique appliquee a des contextes banque et risque.
 - Rigueur quantitative et modelisation.
 
-**Ce qu'un recruteur doit comprendre**
-Ce projet illustre une competence credible en predictive analytics et en usage business de la data.
-
-## 3. KPI Reporting Pipeline
+### KPI Reporting Pipeline
 **Ce que cela demontre**
 - Transformation de donnees brutes en indicateurs lisibles.
 - Production d'outputs exploitables dans Power BI ou un reporting metier.
@@ -41,12 +49,9 @@ Ce projet illustre une competence credible en predictive analytics et en usage b
 - Traduction de besoins metier en livrables actionnables.
 - Structuration de donnees et automatisation.
 
-**Ce qu'un recruteur doit comprendre**
-Ce projet montre que l'enjeu n'est pas seulement de coder, mais de produire une information utile pour le pilotage.
-
-## 4. SQL Decision Support
+### SQL Decision Support
 **Ce que cela demontre**
-- Capacite a modeller un besoin simple de decision-support en SQL.
+- Capacite a modeliser un besoin simple de decision support en SQL.
 - Construction de requetes metier lisibles.
 - Priorisation d'actions a partir de donnees structurees.
 
@@ -54,32 +59,96 @@ Ce projet montre que l'enjeu n'est pas seulement de coder, mais de produire une 
 - SQL, requetes metier, structuration de bases, aide a la decision.
 - Profil data oriente execution et lisibilite business.
 
-**Ce qu'un recruteur doit comprendre**
-Ce projet montre une capacite a utiliser SQL comme outil de pilotage, pas seulement comme outil technique.
-
-## 5. Brochure Content Workflow
+### Customer Segmentation Clustering
 **Ce que cela demontre**
-- Conception d'un workflow de generation de contenus.
-- Structuration d'inputs metier en sorties exploitables.
-- Logique de prompt design et de production assistee.
+- Segmentation non supervisee d'un portefeuille.
+- Lecture business de segments clients ou comptes.
+- Traduction analytique vers des actions go-to-market.
 
 **Pourquoi c'est coherent avec le CV**
-- Generation de contenus, workflows LLM, automatisation intelligente.
-- AI enablement et usages business concrets.
+- Clustering, etudes de marche, segmentation, analyse exploratoire.
+- Capacite a produire une lecture utile pour le pilotage commercial.
 
-**Ce qu'un recruteur doit comprendre**
-Ce projet montre que l'IA generative est abordee comme un outil de production utile, cadre et orienté resultat.
+### Time Series Forecasting
+**Ce que cela demontre**
+- Raisonnement sur series temporelles.
+- Projection de charge a court terme.
+- Restitution d'un signal operationnel exploitable.
 
-## Les 3 exemples les plus forts a mettre en avant
-Si l'objectif est de rester tres vendeur et tres coherent avec le CV, les trois meilleurs exemples a faire remonter en premier sont :
+**Pourquoi c'est coherent avec le CV**
+- Analyses temporelles, anticipation de charge, lecture quantitative.
+- Profil capable d'articuler data et planification.
+
+### Dashboard Brief Generator
+**Ce que cela demontre**
+- Cadrage d'un besoin analytics.
+- Traduction d'un besoin client en specification de dashboard.
+- Structuration de KPI et de questions metier.
+
+**Pourquoi c'est coherent avec le CV**
+- Power BI, dashboarding, synthese metier, aide a la decision.
+- Capacite a faire le lien entre stakeholders et equipe data.
+
+## 3. IA automation avec n8n
+
+### n8n Lead Enrichment Automation
+**Ce que cela demontre**
+- Conception d'un workflow IA dans une logique n8n.
+- Enrichissement, scoring et routage de leads.
+- Automatisation pragmatique orientee CRM et sales enablement.
+
+**Pourquoi c'est coherent avec le CV**
+- AI workflow automation.
+- Traduction d'un besoin business en workflow concret et lisible.
+- Positionnement Applied AI oriente usage et execution.
+
+### n8n AI Support Automation
+**Ce que cela demontre**
+- Classification, routage et reponse assistee sur des tickets support.
+- Enchainement clair entre donnees d'entree, logique IA et sortie operationnelle.
+- Automatisation simple, testable et proche des usages actuels du marche.
+
+**Pourquoi c'est coherent avec le CV**
+- Automatisation intelligente.
+- Support operationnel, fluidification des workflows et adoption metier.
+
+## 4. IA agentic et orchestration
+
+### Agentic Knowledge Routing
+**Ce que cela demontre**
+- Decomposition d'une demande metier en etapes planifiees.
+- Routage entre retrieval, analyse et synthese.
+- Logique agentic explicable et orientee execution.
+
+**Pourquoi c'est coherent avec le CV**
+- Assistants IA, workflows LLM, aide a la decision.
+- Capacite a structurer des cas d'usage agentic sans sur-vendre la complexite.
+
+### Agentic Research Briefing
+**Ce que cela demontre**
+- Preparation de briefs a partir de signaux et d'un objectif business.
+- Structuration planner -> researcher -> analyzer -> synthesizer.
+- Production d'un livrable court de type advisory note.
+
+**Pourquoi c'est coherent avec le CV**
+- Recherche appliquee, synthese executive, aide a la preparation commerciale.
+- Positionnement premium sur les usages agentic directement utiles.
+
+## Les 5 exemples les plus forts a mettre en avant
+
+Si l'objectif est de rester tres vendeur et tres coherent avec le CV actuel, les cinq meilleurs exemples a faire remonter en premier sont :
 
 1. `01_RAG_Knowledge_Assistant`
-2. `02_Fraud_Risk_Scoring`
-3. `03_KPI_Reporting_Pipeline`
+2. `09_n8n_Lead_Enrichment_Automation`
+3. `08_Agentic_Knowledge_Routing`
+4. `03_KPI_Reporting_Pipeline`
+5. `02_Fraud_Risk_Scoring`
 
 ## Positionnement global qui ressort
+
 Le dossier met en valeur un profil capable de :
 - concevoir des usages IA concrets,
 - articuler LLM, data et metier,
 - produire des livrables lisibles pour la decision,
+- structurer des workflows n8n et agentic,
 - garder une execution simple, propre et orientee valeur.

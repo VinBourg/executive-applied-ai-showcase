@@ -1,0 +1,10 @@
+{
+  "context": "Weekly support operations review",
+  "signals": {
+    "sla_compliance_rate": 0.82,
+    "reopened_rate": 0.31,
+    "backlog_growth_pct": 18,
+    "high_priority_ticket_growth_pct": 22,
+    "most_affected_team": "Payments Support"
+  }
+}

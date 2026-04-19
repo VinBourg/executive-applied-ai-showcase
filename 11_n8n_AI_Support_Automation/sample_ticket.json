@@ -1,0 +1,7 @@
+{
+  "channel": "email",
+  "customer": "Northbank",
+  "subject": "Urgent issue with repeated transfer failures",
+  "message": "Our team is seeing repeated transfer failures on international payments and needs urgent support before cutoff.",
+  "priority_hint": "urgent"
+}

@@ -4,13 +4,13 @@
 
 # Executive Applied AI Showcase
 
-Selected Applied AI, LLM, analytics and SQL examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
+Selected Applied AI, data, n8n automation and agentic workflow examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
 
 ## Positioning
 
 This repository is designed as a compact executive showcase rather than a broad technical sandbox.
 
-It presents short, high-signal demos illustrating how I approach business-oriented AI work:
+It presents short, high-signal demos illustrating how I approach market-relevant AI and data work:
 - define a concrete use case,
 - structure the logic cleanly,
 - keep the implementation readable,
@@ -18,22 +18,37 @@ It presents short, high-signal demos illustrating how I approach business-orient
 
 The objective is not to simulate a large production platform. The objective is to make judgment, delivery style, technical clarity and business relevance visible within a very short review window.
 
+## Repository Scope
+
+The repository is intentionally balanced across four themes:
+
+- Applied AI and LLM workflows
+- Predictive analytics and decision support
+- AI automation with n8n-style workflow design
+- Agentic task routing and executive briefing logic
+
 ## Intended Audience
 
 This repository is especially relevant for:
-- recruiters reviewing Applied AI, LLM or analytics profiles,
+- recruiters reviewing Applied AI, GenAI, analytics or AI automation profiles,
 - hiring managers looking for practical execution rather than generic experimentation,
-- companies interested in AI assistants, decision support, reporting automation and structured workflow design.
+- companies interested in AI assistants, n8n workflows, decision support, reporting automation and structured agentic design.
 
-## Recommended Review Sequence
+## Recommended Review Paths
 
-If you only open three folders, start here:
+If you want the fastest cross-section of the repository, start here:
 
 1. `01_RAG_Knowledge_Assistant`
-2. `02_Fraud_Risk_Scoring`
-3. `03_KPI_Reporting_Pipeline`
+2. `09_n8n_Lead_Enrichment_Automation`
+3. `08_Agentic_Knowledge_Routing`
+4. `03_KPI_Reporting_Pipeline`
 
-This sequence gives the clearest reading of my positioning across Applied AI, predictive analytics and business-facing delivery.
+If you want to review by theme:
+
+- Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`
+- Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`
+- n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`
+- Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`
 
 ## Selected Work
 
@@ -44,6 +59,13 @@ This sequence gives the clearest reading of my positioning across Applied AI, pr
 | `03_KPI_Reporting_Pipeline` | KPI automation, reporting outputs, executive-style dashboard generation | Operational performance, reporting visibility, decision support |
 | `04_SQL_Decision_Support` | Business-oriented SQL reasoning, prioritization logic, compact data mart thinking | Account review, action prioritization, structured monitoring |
 | `05_Brochure_Content_Workflow` | Structured prompt design, content workflow logic, output templating | AI-assisted content production, marketing enablement, workflow automation |
+| `06_Customer_Segmentation_Clustering` | Unsupervised segmentation, portfolio profiling, interpretable cluster logic | Customer segmentation, market studies, account prioritization |
+| `07_Time_Series_Forecasting` | Trend-aware demand forecasting, compact planning logic, operational time-series reasoning | Workload forecasting, support planning, staffing anticipation |
+| `08_Agentic_Knowledge_Routing` | Agentic decomposition, routing between retrieval and synthesis, explainable planning | Knowledge work automation, AI task routing, structured business assistance |
+| `09_n8n_Lead_Enrichment_Automation` | n8n-oriented AI automation, lead scoring and CRM workflow logic | Lead enrichment, sales enablement, AI workflow automation |
+| `10_Dashboard_Brief_Generator` | KPI scoping, stakeholder translation, analytics briefing outputs | Power BI preparation, dashboard scoping, analytics delivery framing |
+| `11_n8n_AI_Support_Automation` | AI ticket classification, routing logic, operational automation design | Support automation, AI-assisted triage, response drafting |
+| `12_Agentic_Research_Briefing` | Multi-step research planning, executive synthesis logic, structured briefing outputs | Pre-meeting research, advisory preparation, decision-support briefing |
 
 ## What This Repository Signals
 
@@ -51,14 +73,15 @@ This showcase is meant to reflect a profile able to combine:
 - Applied AI and LLM workflow design,
 - business-oriented analytics,
 - SQL-based reasoning,
-- decision-support thinking,
+- n8n-style automation thinking,
+- agentic planning and synthesis,
 - compact and disciplined implementation.
 
 In practical terms, it signals an ability to move from business need to usable prototype without losing clarity, structure or value orientation.
 
 ## Local Run
 
-The core demos run with standard Python 3 and the standard library only.
+The demos run with standard Python 3 and the standard library only.
 
 ```bash
 python3 01_RAG_Knowledge_Assistant/app.py
@@ -66,6 +89,13 @@ python3 02_Fraud_Risk_Scoring/app.py
 python3 03_KPI_Reporting_Pipeline/app.py
 python3 04_SQL_Decision_Support/app.py
 python3 05_Brochure_Content_Workflow/app.py
+python3 06_Customer_Segmentation_Clustering/app.py
+python3 07_Time_Series_Forecasting/app.py
+python3 08_Agentic_Knowledge_Routing/app.py
+python3 09_n8n_Lead_Enrichment_Automation/app.py
+python3 10_Dashboard_Brief_Generator/app.py
+python3 11_n8n_AI_Support_Automation/app.py
+python3 12_Agentic_Research_Briefing/app.py
 ```
 
 ## Optional Premium Entry Points
@@ -85,8 +115,9 @@ It is a selective showcase of significant know-how consistent with my CV:
 - business-oriented Applied AI,
 - LLM workflows and AI enablement,
 - predictive analytics and fraud-related reasoning,
-- KPI reporting,
-- SQL-based decision support.
+- KPI reporting and dashboard framing,
+- n8n-style AI automation,
+- agentic decision-support workflows.
 
 ## Additional Reading
 

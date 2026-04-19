@@ -1,0 +1,13 @@
+{
+  "name": "AI Support Intake and Routing",
+  "nodes": [
+    {"name": "Email Trigger", "type": "n8n-nodes-base.emailReadImap"},
+    {"name": "Normalize Payload", "type": "n8n-nodes-base.set"},
+    {"name": "AI Classification", "type": "n8n-nodes-base.openAi"},
+    {"name": "Routing Logic", "type": "n8n-nodes-base.switch"},
+    {"name": "Ticket Creation", "type": "n8n-nodes-base.httpRequest"},
+    {"name": "Draft Reply", "type": "n8n-nodes-base.openAi"},
+    {"name": "Ops Notification", "type": "n8n-nodes-base.slack"}
+  ],
+  "business_goal": "Reduce manual intake time while improving ticket routing and response consistency."
+}

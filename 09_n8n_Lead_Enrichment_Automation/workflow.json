@@ -1,0 +1,12 @@
+{
+  "name": "AI Lead Enrichment and Qualification",
+  "nodes": [
+    {"name": "Webhook", "type": "n8n-nodes-base.webhook"},
+    {"name": "Normalize Lead", "type": "n8n-nodes-base.set"},
+    {"name": "AI Enrichment Prompt", "type": "n8n-nodes-base.openAi"},
+    {"name": "Lead Scoring", "type": "n8n-nodes-base.code"},
+    {"name": "CRM Update", "type": "n8n-nodes-base.httpRequest"},
+    {"name": "Slack Notification", "type": "n8n-nodes-base.slack"}
+  ],
+  "business_goal": "Turn inbound leads into structured qualification signals and routing actions."
+}
