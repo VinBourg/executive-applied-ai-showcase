@@ -7,6 +7,8 @@ Which accounts need immediate review because revenue is contracting while suppor
 
 **Intent:** `risk_review`
 **View:** Accounts requiring immediate review
+**Decision owner:** Customer success and operations lead
+**Priority:** `high`
 
 ### Generated SQL
 ```sql
@@ -46,11 +48,17 @@ Immediate attention should start with AgriNova, where revenue contraction and ti
 - Launch retention reviews first on accounts with both negative growth and high ticket volume.
 - Separate support stabilization from adoption recovery so the action plan stays clear.
 
+### Operating Note
+- Next step: Run a joint retention and service review on the flagged accounts.
+- Top signal: AgriNova combines -14.0% growth with 3 open tickets.
+
 ## Question 2
 Which industries generate the most revenue but also show operational support pressure?
 
 **Intent:** `segment_pressure`
 **View:** Revenue concentration versus support pressure by industry
+**Decision owner:** Segment operations director
+**Priority:** `high`
 
 ### Generated SQL
 ```sql
@@ -84,11 +92,17 @@ Banking is the largest revenue segment in this sample while still showing 2.3 av
 - Protect high-revenue industries first when support pressure rises.
 - Use stressed-account counts to prioritize targeted service reviews by segment.
 
+### Operating Note
+- Next step: Protect the most exposed segment with targeted service and account coverage actions.
+- Top signal: Banking concentrates 1250.0k revenue with 2.3 average open tickets.
+
 ## Question 3
 Where should we focus expansion efforts based on adoption and pipeline strength?
 
 **Intent:** `growth_focus`
 **View:** Expansion priorities from adoption and pipeline strength
+**Decision owner:** Growth and account expansion lead
+**Priority:** `medium`
 
 ### Generated SQL
 ```sql
@@ -130,4 +144,8 @@ Expansion effort should concentrate first on Machina Systems, AtlasPay, Swiss Ad
 ### Recommended Actions
 - Focus growth effort on accounts combining strong pipeline, adoption and sentiment.
 - Keep weaker-adoption accounts in enablement mode before pushing expansion motions.
+
+### Operating Note
+- Next step: Prioritize the best expansion candidates and keep weaker adoption accounts in enablement mode.
+- Top signal: Machina Systems leads with 160.0k pipeline and 84.0% adoption.
 

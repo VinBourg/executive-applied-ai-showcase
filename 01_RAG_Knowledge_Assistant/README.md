@@ -1,70 +1,55 @@
 # RAG Knowledge Assistant
 
-A compact retrieval-augmented assistant over a small business knowledge base, designed to show how a grounded AI assistant can produce a usable business answer rather than a generic response.
+A grounded business assistant that turns internal knowledge into a readable answer, an evidence trail and a reusable delivery pattern.
 
-## Why it matters
+## Business problem
 
-This example demonstrates:
-- business knowledge structuring,
-- retrieval before generation,
-- decision-oriented answer construction,
-- a clean path from local prototype to API exposure.
+Business teams lose time when operational knowledge is spread across policies, checklists and support notes.
+They do not need a generic chatbot. They need a usable answer with traceability.
 
-## Business relevance
+## What the program does
 
-- internal knowledge assistant,
-- support enablement,
-- onboarding and FAQ acceleration,
-- document-grounded business assistance.
+- structures a small business knowledge base,
+- detects the query intent,
+- retrieves the strongest source matches before answering,
+- produces a business-oriented answer with actions and grounding,
+- writes trace files that make the retrieval logic reviewable.
 
-## Files
+## Operational outputs
 
-- `app.py`
-  CLI prototype that runs with standard Python and writes a recruiter-friendly output file.
-- `core.py`
-  Shared retrieval, intent detection and answer-building logic.
-- `fastapi_app.py`
-  Optional API version for a more premium GitHub showcase.
-- `knowledge_base.json`
-  Small business-oriented source set.
-- `sample_queries.json`
-  Example questions aligned with support, fraud and enablement use cases.
 - `demo_response.md`
-  Generated sample output showing the style of answer the assistant produces.
+  One grounded answer in a recruiter-friendly format.
 - `retrieval_trace.json`
-  Generated trace showing source scores and retrieval breakdown.
+  Source scores and retrieval logic for the current query.
 - `query_portfolio.md`
-  Batch review of multiple representative questions.
+  Batch review of representative business questions.
 - `query_scorecard.csv`
-  Compact scorecard for the sample query set.
+  Compact scorecard across the sample query set.
 
-## Run the local CLI demo
+## Market fit
+
+- France: internal copilots, support enablement, knowledge assistants and RAG-style enterprise use cases.
+- Switzerland: regulated or operational environments where grounded answers and traceability matter.
+- USA East: enterprise AI assistants that need evidence, usable outputs and an upgrade path toward API exposure.
+
+## Run
 
 ```bash
 python3 app.py
 python3 app.py "How should we reduce backlog while keeping SLA performance visible?"
 ```
 
-## Optional FastAPI version
+Optional API entry point:
 
 ```bash
 uvicorn fastapi_app:app --reload
 ```
 
-Example request:
+## Review in 60 seconds
 
-```bash
-curl -X POST http://127.0.0.1:8000/query \
-  -H "Content-Type: application/json" \
-  -d '{"query": "How can we improve support efficiency while keeping knowledge accessible?"}'
-```
-
-## What a recruiter should see quickly
-
-This folder shows a simple but credible assistant pattern:
-- grounded sources,
-- retrieval logic,
-- readable business answer,
-- explicit actions and follow-up questions,
-- source scoring and traceability,
-- a mini portfolio of representative query types.
+Open `query_portfolio.md`, then `query_scorecard.csv`, then `retrieval_trace.json`.
+That sequence shows the real value quickly:
+- grounded answers,
+- retrieval visibility,
+- reusable assistant logic,
+- business outputs instead of vague chat responses.

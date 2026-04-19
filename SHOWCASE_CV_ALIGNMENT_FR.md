@@ -115,6 +115,7 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 - Traduction d'une question metier en logique analytique et requete SQL.
 - Lecture business des resultats et priorisation d'actions.
 - Capacite a produire une reponse copilot claire pour le pilotage.
+- Production d'un memo executif et d'une action queue directement exploitables.
 
 **Pourquoi c'est coherent avec le CV**
 - SQL, analytics, support a la decision, traduction metier -> data.

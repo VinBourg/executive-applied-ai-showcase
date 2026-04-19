@@ -18,7 +18,7 @@ This repository is meant to be read through a client-value lens, not only throug
 | `10_Dashboard_Brief_Generator` | Analytics teams need cleaner scoping from business requests | dashboard spec, metric catalog, wireframe notes | less ambiguity before dashboard build |
 | `11_n8n_AI_Support_Automation` | Support teams need better intake and routing | routing report and payload | shorter intake time and stronger SLA discipline |
 | `12_Agentic_Research_Briefing` | Advisory or sales teams need meeting preparation | research brief and opportunity map | better account preparation |
-| `13_AI_SQL_Analytics_Copilot` | Business users need analytics without raw SQL friction | copilot report | faster analytical decision support |
+| `13_AI_SQL_Analytics_Copilot` | Business users need analytics without raw SQL friction | copilot report, executive memo, route log, action queue | faster analytical decision support and clearer follow-up ownership |
 | `14_LLM_Evaluation_Guardrails` | GenAI use cases need quality control | evaluation report and scorecard | safer LLM deployment and clearer fallback rules |
 | `15_n8n_Document_Intake_Approval` | Operations need controlled document automation | intake approval report and approval queue | faster document handling with human-in-the-loop control |
 | `16_Cloud_Data_Platform_Governance` | Teams need trusted data products before BI, ML or AI consumption | governance report, dataset health scorecard, release checklist, contracts registry | lower delivery risk and stronger data platform reliability |

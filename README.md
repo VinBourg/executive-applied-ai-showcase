@@ -97,7 +97,7 @@ If you want to review by theme:
 | `10_Dashboard_Brief_Generator` | KPI scoping, stakeholder translation, analytics briefing outputs | Power BI preparation, dashboard scoping, analytics delivery framing |
 | `11_n8n_AI_Support_Automation` | AI ticket classification, routing logic, operational automation design | Support automation, AI-assisted triage, response drafting |
 | `12_Agentic_Research_Briefing` | Multi-step research planning, executive synthesis logic, structured briefing outputs | Pre-meeting research, advisory preparation, decision-support briefing |
-| `13_AI_SQL_Analytics_Copilot` | Business-question routing, SQL generation logic, analytics synthesis and copilot-style answering | AI-assisted analytics, SQL copilot, decision-ready portfolio review |
+| `13_AI_SQL_Analytics_Copilot` | Business-question routing, SQL generation logic, executive memo creation and action-queue outputs | AI-assisted analytics, SQL copilot and decision-ready portfolio follow-up |
 | `14_LLM_Evaluation_Guardrails` | Output scoring, groundedness checks, policy control and fallback routing | LLM quality control, guardrails, production-minded GenAI delivery |
 | `15_n8n_Document_Intake_Approval` | Document classification, field extraction, validation rules and human-in-the-loop approval routing | Document automation, internal approvals, compliance-friendly workflow orchestration |
 | `16_Cloud_Data_Platform_Governance` | Data quality rules, governance checks, release readiness and cloud-style platform discipline | Data engineering, governance, trusted BI delivery and cloud platform operations |

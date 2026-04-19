@@ -34,7 +34,8 @@ This example shows:
 This example shows:
 - translation from business question to analytical intent,
 - SQL reasoning tied to management questions,
-- compact analytics synthesis rather than raw query output.
+- compact analytics synthesis rather than raw query output,
+- leadership-ready memo and follow-up action artifacts.
 
 ### 3. n8n Lead Enrichment Automation
 This example shows:

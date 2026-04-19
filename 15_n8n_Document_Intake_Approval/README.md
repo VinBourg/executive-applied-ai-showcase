@@ -1,34 +1,34 @@
 # n8n Document Intake Approval
 
-A compact n8n-oriented workflow that turns inbound documents into classified, validated and approval-ready records with a clear human-in-the-loop decision path.
+A document-automation workflow that classifies inbound files, validates required fields and routes each case to automatic or human approval.
 
-## Why it matters
+## Business problem
 
-This example demonstrates:
-- document intake automation,
-- AI-style classification and field extraction logic,
-- validation and approval routing,
-- human review where automation should stop.
+Document-heavy operations lose time when inbound files are handled manually, inconsistently or without a clear approval path.
+The practical need is not "more AI". The need is a controlled workflow with readable decisions.
 
-## Business relevance
+## What the program does
 
-- finance and operations document intake,
-- human-in-the-loop approval workflows,
-- compliance-friendly automation,
-- pragmatic AI automation for internal teams.
+- classifies invoices, onboarding requests and contract changes,
+- extracts key fields from the inbound payload,
+- validates whether the document is complete enough to proceed,
+- routes each case toward automatic approval, operational review or legal approval,
+- writes outputs that operations teams could review immediately.
 
-## Files
+## Operational outputs
 
-- `app.py`
-  Runs the document intake workflow and generates recruiter-friendly outputs.
-- `incoming_documents.json`
-  Sample inbound documents aligned with invoice, onboarding and contract workflows.
-- `workflow.json`
-  Compact n8n-style workflow definition.
 - `intake_approval_report.md`
-  Generated report with classification, validation and approval decisions.
+  Classified decisions, validation findings and approval rationale.
 - `approval_queue.csv`
-  Generated queue file that could be handed to operations or approvers.
+  Queue ready for finance, operations or legal teams.
+- `workflow.json`
+  Compact n8n-style orchestration view of the flow.
+
+## Market fit
+
+- France: operations, finance and document-heavy internal workflows where AI automation must stay controlled.
+- Switzerland: compliance-sensitive environments, approvals and audit-friendly document handling.
+- USA East: enterprise workflow automation with explicit handoff to human reviewers when risk rises.
 
 ## Run
 
@@ -36,11 +36,11 @@ This example demonstrates:
 python3 app.py
 ```
 
-## What a recruiter should see quickly
+## Review in 60 seconds
 
-This folder shows how a business document workflow can become:
-- structured intake,
-- clean classification,
-- clear validation rules,
-- automatic versus human approval logic,
-- readable operational outputs.
+Open `intake_approval_report.md`, then `approval_queue.csv`, then `workflow.json`.
+That makes the value obvious:
+- clear document triage,
+- explicit validation rules,
+- human-in-the-loop control,
+- realistic workflow automation rather than a vague AI demo.

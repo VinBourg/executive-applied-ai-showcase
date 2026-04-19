@@ -1,43 +1,49 @@
 # AI SQL Analytics Copilot
 
-A compact analytics copilot that turns business questions into SQL, executes them on structured data and produces decision-oriented answers for business stakeholders.
+A decision-support copilot that turns business questions into SQL, interprets the results and produces management-ready follow-up outputs.
 
-## Why it matters
+## Business problem
 
-This example demonstrates:
-- natural-language question routing into analytical intent,
-- SQL generation logic tied to business questions,
-- structured analytics reasoning on top of SQLite,
-- executive-style interpretation and next-step recommendations.
+Business stakeholders often know the question they need answered but do not want raw SQL, notebook work or fragmented KPI extracts.
+They need a compact path from management question to decision-ready output.
 
-## Business relevance
+## What the program does
 
-- AI-assisted analytics,
-- SQL copilot logic,
-- KPI and account-health review,
-- decision support for account, operations and growth teams.
+- routes each business question to an analytical intent,
+- generates the SQL view required for that intent,
+- executes the logic on a structured account portfolio,
+- translates the result into a summary, operating note and next step,
+- writes reusable follow-up artifacts for leadership and delivery teams.
 
-## Files
+## Operational outputs
 
-- `app.py`
-  Runs the copilot flow from business question to SQL and written briefing output.
-- `account_metrics.csv`
-  Compact account-health dataset used as the analytical base.
-- `business_questions.json`
-  Sample business questions aligned with retention, support pressure and expansion planning.
 - `copilot_report.md`
-  Generated output showing SQL, results and business interpretation.
+  Full question-to-SQL-to-answer walkthrough.
+- `executive_memo.md`
+  Short leadership briefing with headline signals and agenda.
+- `copilot_route_log.csv`
+  Question routing, priority, owner and next-step trace.
+- `portfolio_action_queue.csv`
+  Actionable queue for retention, segment protection and expansion.
+
+## Market fit
+
+- France: analytics engineering, Power BI framing, business-to-data translation and AI-assisted analytics.
+- Switzerland: finance, insurance and operational portfolios that need SQL reasoning plus management clarity.
+- USA East: enterprise analytics copilots, decision support and structured portfolio review with clear ownership.
 
 ## Run
 
 ```bash
 python3 app.py
+python3 test_copilot.py
 ```
 
-## What a recruiter should see quickly
+## Review in 60 seconds
 
-This folder shows a practical bridge between:
-- business language,
-- SQL execution,
-- analytics interpretation,
-- and clear decision-oriented outputs.
+Open `executive_memo.md`, then `copilot_route_log.csv`, then `portfolio_action_queue.csv`.
+That path shows the strongest signal quickly:
+- business question routing,
+- SQL-backed reasoning,
+- readable leadership synthesis,
+- follow-up outputs that a client team could actually use.

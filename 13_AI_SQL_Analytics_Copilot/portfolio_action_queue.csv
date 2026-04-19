@@ -1,0 +1,13 @@
+intent,entity_type,entity_name,market,workstream,priority,decision_owner,business_case
+risk_review,account,AgriNova,France,urgent retention review,high,Customer success and operations lead,"210.0k revenue, 3 open tickets, -14.0% growth"
+risk_review,account,Northbank,Switzerland,stabilize account,high,Customer success and operations lead,"420.0k revenue, 4 open tickets, -8.0% growth"
+risk_review,account,TerraRetail,Belgium,stabilize account,high,Customer success and operations lead,"195.0k revenue, 2 open tickets, -6.0% growth"
+risk_review,account,FlowRetail,Germany,monitor,medium,Customer success and operations lead,"250.0k revenue, 4 open tickets, 3.0% growth"
+segment_pressure,segment,Banking,Cross-market,segment protection plan,high,Segment operations director,1250.0k revenue with 1 stressed accounts
+segment_pressure,segment,Insurance,Cross-market,maintain service quality,medium,Segment operations director,600.0k revenue with 0 stressed accounts
+segment_pressure,segment,Retail,Cross-market,segment protection plan,high,Segment operations director,445.0k revenue with 1 stressed accounts
+growth_focus,account,Machina Systems,Germany,prioritize expansion,medium,Growth and account expansion lead,"160.0k pipeline, 84.0% adoption, NPS 71.0"
+growth_focus,account,AtlasPay,Switzerland,prioritize expansion,medium,Growth and account expansion lead,"140.0k pipeline, 82.0% adoption, NPS 67.0"
+growth_focus,account,Swiss Advisory Tech,Switzerland,prioritize expansion,medium,Growth and account expansion lead,"130.0k pipeline, 79.0% adoption, NPS 65.0"
+growth_focus,account,NordLedger Insurance,Germany,qualified growth opportunity,medium,Growth and account expansion lead,"120.0k pipeline, 74.0% adoption, NPS 63.0"
+growth_focus,account,Alpine Payments,Switzerland,qualified growth opportunity,medium,Growth and account expansion lead,"95.0k pipeline, 76.0% adoption, NPS 62.0"
