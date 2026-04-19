@@ -35,6 +35,180 @@
       {"company": "Hudson Capital Ops", "market": "USA East (New York)", "score": 93.8, "owner": "Decision-support consultant", "offer_angle": "AI SQL analytics copilot and executive reporting"},
       {"company": "Helvetic Claims Network", "market": "Switzerland (Geneva)", "score": 91.7, "owner": "Automation and operations consultant", "offer_angle": "Document intake automation with approvals"},
       {"company": "Alpine Payments", "market": "Switzerland (Zurich)", "score": 87.5, "owner": "Automation consultant", "offer_angle": "AI support automation and ticket routing"}
+    ],
+    "ranked_leads": [
+      {
+        "company": "Hudson Capital Ops",
+        "market": "USA East (New York)",
+        "score": 93.8,
+        "priority": "high",
+        "offer_angle": "AI SQL analytics copilot and executive reporting",
+        "owner": "Decision-support consultant",
+        "next_step": "Partner-led discovery within 48 hours",
+        "sequence_theme": "Decision support, KPI review and executive operating rhythm"
+      },
+      {
+        "company": "Helvetic Claims Network",
+        "market": "Switzerland (Geneva)",
+        "score": 91.7,
+        "priority": "high",
+        "offer_angle": "Document intake automation with approvals",
+        "owner": "Automation and operations consultant",
+        "next_step": "Partner-led discovery within 48 hours",
+        "sequence_theme": "Document workflow, auditability and human-in-the-loop controls"
+      },
+      {
+        "company": "Alpine Payments",
+        "market": "Switzerland (Zurich)",
+        "score": 87.5,
+        "priority": "medium",
+        "offer_angle": "AI support automation and ticket routing",
+        "owner": "Automation consultant",
+        "next_step": "Qualified discovery call with tailored walkthrough",
+        "sequence_theme": "Support routing, backlog control and service efficiency"
+      },
+      {
+        "company": "Boston Service Grid",
+        "market": "USA East (Boston)",
+        "score": 81.2,
+        "priority": "medium",
+        "offer_angle": "AI support automation and ticket routing",
+        "owner": "Automation consultant",
+        "next_step": "Qualified discovery call with tailored walkthrough",
+        "sequence_theme": "Support routing, backlog control and service efficiency"
+      },
+      {
+        "company": "Lyon Industrial Services",
+        "market": "France (Lyon)",
+        "score": 74.2,
+        "priority": "medium",
+        "offer_angle": "Document intake automation with approvals",
+        "owner": "Automation and operations consultant",
+        "next_step": "Qualified discovery call with tailored walkthrough",
+        "sequence_theme": "Document workflow, auditability and human-in-the-loop controls"
+      },
+      {
+        "company": "Paris Retail Systems",
+        "market": "France (Paris)",
+        "score": 58.1,
+        "priority": "low",
+        "offer_angle": "AI-assisted reporting and decision-support automation",
+        "owner": "Analytics and AI consultant",
+        "next_step": "Nurture with focused use-case brief",
+        "sequence_theme": "Reporting automation and business workflow acceleration"
+      }
+    ],
+    "sequence": {
+      "high": [
+        "Hudson Capital Ops: lead with AI SQL analytics copilot and executive operating rhythm.",
+        "Helvetic Claims Network: lead with document workflow, auditability and approval controls."
+      ],
+      "medium": [
+        "Alpine Payments: tailored support-routing and knowledge-assistant brief.",
+        "Boston Service Grid: field-service support automation and backlog-control angle.",
+        "Lyon Industrial Services: document approvals plus service KPI reporting angle."
+      ],
+      "low": [
+        "Paris Retail Systems: nurture with reporting automation and business workflow acceleration."
+      ]
+    }
+  },
+  "sqlCopilot": {
+    "summary": {
+      "revenue_under_watch_k": 1075,
+      "segment_to_protect": "Banking",
+      "segment_revenue_k": 1250,
+      "segment_avg_open_tickets": 2.3,
+      "expansion_pipeline_k": 430
+    },
+    "agenda": [
+      "Run an immediate retention and service review on the flagged accounts before the next portfolio meeting.",
+      "Protect the top revenue segment with a focused service-capacity and customer-success plan.",
+      "Keep expansion resources concentrated on accounts with strong adoption and sentiment, not pipeline alone."
+    ],
+    "routes": [
+      {
+        "question": "Which accounts need immediate review because revenue is contracting while support pressure stays high?",
+        "intent": "risk_review",
+        "view": "Accounts requiring immediate review",
+        "decision_owner": "Customer success and operations lead",
+        "priority": "high",
+        "row_count": 4,
+        "top_signal": "AgriNova combines -14.0% growth with 3 open tickets.",
+        "next_step": "Run a joint retention and service review on the flagged accounts."
+      },
+      {
+        "question": "Which industries generate the most revenue but also show operational support pressure?",
+        "intent": "segment_pressure",
+        "view": "Revenue concentration versus support pressure by industry",
+        "decision_owner": "Segment operations director",
+        "priority": "high",
+        "row_count": 5,
+        "top_signal": "Banking concentrates 1250.0k revenue with 2.3 average open tickets.",
+        "next_step": "Protect the most exposed segment with targeted service and account coverage actions."
+      },
+      {
+        "question": "Where should we focus expansion efforts based on adoption and pipeline strength?",
+        "intent": "growth_focus",
+        "view": "Expansion priorities from adoption and pipeline strength",
+        "decision_owner": "Growth and account expansion lead",
+        "priority": "medium",
+        "row_count": 10,
+        "top_signal": "Machina Systems leads with 160.0k pipeline and 84.0% adoption.",
+        "next_step": "Prioritize the best expansion candidates and keep weaker adoption accounts in enablement mode."
+      }
+    ],
+    "action_queue": [
+      {
+        "intent": "risk_review",
+        "entity_type": "account",
+        "entity_name": "AgriNova",
+        "market": "France",
+        "workstream": "urgent retention review",
+        "priority": "high",
+        "decision_owner": "Customer success and operations lead",
+        "business_case": "210.0k revenue, 3 open tickets, -14.0% growth"
+      },
+      {
+        "intent": "risk_review",
+        "entity_type": "account",
+        "entity_name": "Northbank",
+        "market": "Switzerland",
+        "workstream": "stabilize account",
+        "priority": "high",
+        "decision_owner": "Customer success and operations lead",
+        "business_case": "420.0k revenue, 4 open tickets, -8.0% growth"
+      },
+      {
+        "intent": "segment_pressure",
+        "entity_type": "segment",
+        "entity_name": "Banking",
+        "market": "Cross-market",
+        "workstream": "segment protection plan",
+        "priority": "high",
+        "decision_owner": "Segment operations director",
+        "business_case": "1250.0k revenue with 1 stressed accounts"
+      },
+      {
+        "intent": "growth_focus",
+        "entity_type": "account",
+        "entity_name": "Machina Systems",
+        "market": "Germany",
+        "workstream": "prioritize expansion",
+        "priority": "medium",
+        "decision_owner": "Growth and account expansion lead",
+        "business_case": "160.0k pipeline, 84.0% adoption, NPS 71.0"
+      },
+      {
+        "intent": "growth_focus",
+        "entity_type": "account",
+        "entity_name": "AtlasPay",
+        "market": "Switzerland",
+        "workstream": "prioritize expansion",
+        "priority": "medium",
+        "decision_owner": "Growth and account expansion lead",
+        "business_case": "140.0k pipeline, 82.0% adoption, NPS 67.0"
+      }
     ]
   }
 }

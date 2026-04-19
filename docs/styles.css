@@ -295,6 +295,10 @@ a {
   line-height: 1.6;
 }
 
+.card-actions {
+  margin-top: 16px;
+}
+
 .table-shell {
   overflow-x: auto;
   border-radius: 18px;

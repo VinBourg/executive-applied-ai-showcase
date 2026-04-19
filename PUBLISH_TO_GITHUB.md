@@ -44,6 +44,13 @@ Once enabled, the expected Pages URL should follow the standard pattern:
 
 `https://vinbourg.github.io/executive-applied-ai-showcase/`
 
+Useful static entry points:
+
+- `https://vinbourg.github.io/executive-applied-ai-showcase/`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/kpi-demo.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/sql-copilot.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/lead-automation.html`
+
 ## Recommended first impression
 
 When sharing the repository, point reviewers first to:

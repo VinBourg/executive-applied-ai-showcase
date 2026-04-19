@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Copilot Demo - Executive Applied AI Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="sql-demo">
+    <div class="page-shell">
+      <section class="topbar">
+        <div class="topbar-brand">13 AI SQL Analytics Copilot</div>
+        <div class="button-row">
+          <a class="button button-ghost" href="index.html">Demo Hub</a>
+          <a class="button button-ghost" href="https://github.com/VinBourg/executive-applied-ai-showcase/tree/main/13_AI_SQL_Analytics_Copilot">Source</a>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Static Case View</div>
+            <h2>SQL Copilot Demo</h2>
+            <p>
+              A static view of the <code>13_AI_SQL_Analytics_Copilot</code> workflow, showing how management questions
+              become SQL-backed signals, leadership-ready synthesis and concrete follow-up ownership.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="index.html">Back to Demo Hub</a>
+              <a class="button button-secondary" href="https://github.com/VinBourg/executive-applied-ai-showcase/tree/main/13_AI_SQL_Analytics_Copilot">Open Source Folder</a>
+            </div>
+          </div>
+          <aside class="hero-sidecard">
+            <div class="sidecard-label">Case Angle</div>
+            <h3>What this page proves</h3>
+            <ul class="clean-list">
+              <li>Business questions are routed cleanly into analytic intents.</li>
+              <li>The workflow ends in a memo and action queue, not just SQL output.</li>
+              <li>The delivery reads like decision support, not notebook experimentation.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Snapshot</div>
+            <h3>Executive Signals</h3>
+          </div>
+        </div>
+        <div id="sql-metrics" class="grid metrics"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Outputs</div>
+            <h3>Leadership-Ready Deliverables</h3>
+          </div>
+        </div>
+        <div class="grid cards review-grid">
+          <article class="mini-panel">
+            <h4>Executive Memo</h4>
+            <p>
+              Decision-oriented synthesis translating SQL findings into portfolio risk, retention and growth actions.
+            </p>
+            <p><code>executive_memo.md</code></p>
+          </article>
+          <article class="mini-panel">
+            <h4>Route Log</h4>
+            <p>
+              Trace of how business questions map to analytic intent, route priority and decision ownership.
+            </p>
+            <p><code>copilot_route_log.csv</code></p>
+          </article>
+          <article class="mini-panel">
+            <h4>Action Queue</h4>
+            <p>
+              Follow-up portfolio queue structured for account teams, operations and expansion leadership.
+            </p>
+            <p><code>portfolio_action_queue.csv</code></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Routing</div>
+            <h3>Question Routing And Next Steps</h3>
+          </div>
+        </div>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Intent</th>
+                <th>Decision Owner</th>
+                <th>Priority</th>
+                <th>Rows</th>
+                <th>Top Signal</th>
+                <th>Next Step</th>
+              </tr>
+            </thead>
+            <tbody id="sql-route-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Follow-Up</div>
+            <h3>Portfolio Action Queue</h3>
+          </div>
+        </div>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Entity</th>
+                <th>Market</th>
+                <th>Workstream</th>
+                <th>Priority</th>
+                <th>Owner</th>
+                <th>Business Case</th>
+              </tr>
+            </thead>
+            <tbody id="sql-queue-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Agenda</div>
+            <h3>Leadership Briefing Agenda</h3>
+          </div>
+        </div>
+        <ul id="sql-agenda" class="clean-list"></ul>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

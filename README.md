@@ -12,6 +12,8 @@ The repository now includes a static demo hub under:
 
 - `docs/index.html`
 - `docs/kpi-demo.html`
+- `docs/sql-copilot.html`
+- `docs/lead-automation.html`
 
 It is designed to give recruiters or clients a faster visual read of the strongest examples without installing anything locally.
 Deployment is wired for GitHub Pages through:
@@ -174,6 +176,8 @@ For a more polished demonstration format, the repository also includes optional 
 - `03_KPI_Reporting_Pipeline/streamlit_app.py`
 - `docs/index.html`
 - `docs/kpi-demo.html`
+- `docs/sql-copilot.html`
+- `docs/lead-automation.html`
 - `requirements_optional.txt`
 
 These optional files expose the same underlying business logic through API, dashboard and static-demo interfaces.

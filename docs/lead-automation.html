@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lead Automation Demo - Executive Applied AI Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="lead-demo">
+    <div class="page-shell">
+      <section class="topbar">
+        <div class="topbar-brand">09 n8n Lead Enrichment Automation</div>
+        <div class="button-row">
+          <a class="button button-ghost" href="index.html">Demo Hub</a>
+          <a class="button button-ghost" href="https://github.com/VinBourg/executive-applied-ai-showcase/tree/main/09_n8n_Lead_Enrichment_Automation">Source</a>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Static Case View</div>
+            <h2>Lead Automation Demo</h2>
+            <p>
+              A static view of the upgraded <code>09_n8n_Lead_Enrichment_Automation</code> workflow, showing
+              how inbound opportunities are scored, routed and turned into CRM-ready actions across France,
+              Switzerland and USA East.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="index.html">Back to Demo Hub</a>
+              <a class="button button-secondary" href="https://github.com/VinBourg/executive-applied-ai-showcase/tree/main/09_n8n_Lead_Enrichment_Automation">Open Source Folder</a>
+            </div>
+          </div>
+          <aside class="hero-sidecard">
+            <div class="sidecard-label">Case Angle</div>
+            <h3>What this page proves</h3>
+            <ul class="clean-list">
+              <li>Lead qualification is market-aware, not generic.</li>
+              <li>The workflow ends in ownership and next-step outputs.</li>
+              <li>The orchestration reads like a real n8n automation brief.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Snapshot</div>
+            <h3>Qualification Overview</h3>
+          </div>
+        </div>
+        <div id="lead-metrics" class="grid metrics"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Outputs</div>
+            <h3>Operational Deliverables</h3>
+          </div>
+        </div>
+        <div class="grid cards review-grid">
+          <article class="mini-panel">
+            <h4>Qualification Report</h4>
+            <p>
+              Sales-ready summary describing market coverage, opportunity pool and immediate outreach priorities.
+            </p>
+            <p><code>qualification_report.md</code></p>
+          </article>
+          <article class="mini-panel">
+            <h4>CRM Sync Payload</h4>
+            <p>
+              Structured export designed to feed the next automation step without manual requalification.
+            </p>
+            <p><code>crm_sync_payload.json</code></p>
+          </article>
+          <article class="mini-panel">
+            <h4>Sequence Plan</h4>
+            <p>
+              Priority-specific follow-up logic so the workflow ends with ownership, timing and message angle.
+            </p>
+            <p><code>sequence_plan.md</code></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Ranking</div>
+            <h3>Qualified Lead Set</h3>
+          </div>
+        </div>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Market</th>
+                <th>Score</th>
+                <th>Priority</th>
+                <th>Offer Angle</th>
+                <th>Owner</th>
+                <th>Next Step</th>
+              </tr>
+            </thead>
+            <tbody id="lead-ranking-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow eyebrow-light">Sequence</div>
+            <h3>Outreach Plan</h3>
+          </div>
+        </div>
+        <div class="grid cards review-grid">
+          <article class="mini-panel">
+            <h4>High Priority</h4>
+            <ul id="lead-sequence-high" class="clean-list"></ul>
+          </article>
+          <article class="mini-panel">
+            <h4>Medium Priority</h4>
+            <ul id="lead-sequence-medium" class="clean-list"></ul>
+          </article>
+          <article class="mini-panel">
+            <h4>Low Priority</h4>
+            <ul id="lead-sequence-low" class="clean-list"></ul>
+          </article>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
