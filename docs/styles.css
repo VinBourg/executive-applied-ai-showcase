@@ -53,7 +53,7 @@ code {
 .topbar-brand {
   color: var(--ink-soft);
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.82rem;
 }
@@ -180,6 +180,28 @@ code {
 .button-secondary {
   border: 1px solid rgba(247, 241, 232, 0.24);
   color: #f7f1e8;
+}
+
+body[data-page="item"] .topbar {
+  margin-bottom: 14px;
+}
+
+body[data-page="item"] .topbar-brand {
+  color: #5d7384;
+}
+
+body[data-page="item"] .hero {
+  padding: 38px;
+  background: linear-gradient(140deg, #14324a 0%, #1d3e59 62%, #2a536f 100%);
+}
+
+body[data-page="item"] .hero-sidecard {
+  background: rgba(255, 250, 242, 0.12);
+  border-color: rgba(247, 241, 232, 0.18);
+}
+
+body[data-page="item"] .section {
+  background: linear-gradient(180deg, #fffefc 0%, #fbf8f2 100%);
 }
 
 .section {
@@ -340,6 +362,23 @@ code {
 
 .card-actions {
   margin-top: 16px;
+}
+
+.output-link-line {
+  margin-top: 10px;
+}
+
+.output-file-link,
+.review-file-link {
+  color: #1d425c;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200, 164, 110, 0.34);
+}
+
+.output-file-link:hover,
+.review-file-link:hover {
+  color: #14324a;
+  border-bottom-color: rgba(29, 66, 92, 0.35);
 }
 
 .catalog-grid {

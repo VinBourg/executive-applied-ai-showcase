@@ -13,11 +13,18 @@ function createMetricCard(label, value, note) {
   `;
 }
 
-function createOutputCard(output) {
+function sourceFileHref(folder, file) {
+  return `https://github.com/VinBourg/executive-applied-ai-showcase/blob/main/${folder}/${file}`;
+}
+
+function createOutputCard(output, folder) {
   return `
     <article class="mini-panel">
       <h4><code>${output.file}</code></h4>
       <p>${output.description}</p>
+      <p class="output-link-line">
+        <a class="output-file-link" href="${sourceFileHref(folder, output.file)}">Review file</a>
+      </p>
     </article>
   `;
 }
@@ -242,9 +249,11 @@ function renderItemPage(catalog) {
   summaryHost.textContent = item.summary;
   tagHost.innerHTML = item.tags.map((tag) => `<span class="pill pill-dark">${tag}</span>`).join("");
   problemHost.textContent = item.business_problem;
-  reviewHost.innerHTML = item.review_path.map((file) => `<li><code>${file}</code></li>`).join("");
+  reviewHost.innerHTML = item.review_path
+    .map((file) => `<li><a class="review-file-link" href="${sourceFileHref(item.folder, file)}"><code>${file}</code></a></li>`)
+    .join("");
   provesHost.innerHTML = item.proves.map((entry) => `<li>${entry}</li>`).join("");
-  outputHost.innerHTML = item.outputs.map((output) => createOutputCard(output)).join("");
+  outputHost.innerHTML = item.outputs.map((output) => createOutputCard(output, item.folder)).join("");
   marketHost.innerHTML = item.market_fit.map((entry) => createMarketCard(entry)).join("");
   valueHost.innerHTML = item.client_value.map((entry) => `<li>${entry}</li>`).join("");
 
