@@ -351,12 +351,12 @@ code {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   border-color: rgba(16, 42, 64, 0.1);
   background:
-    radial-gradient(circle at top right, rgba(200, 164, 110, 0.08), transparent 30%),
-    linear-gradient(180deg, #fffefc 0%, #faf6ef 100%);
-  box-shadow: 0 18px 30px rgba(14, 34, 53, 0.08);
+    radial-gradient(circle at top right, rgba(200, 164, 110, 0.05), transparent 28%),
+    linear-gradient(180deg, #fffefc 0%, #fcfaf5 100%);
+  box-shadow: 0 14px 28px rgba(14, 34, 53, 0.055);
 }
 
 .catalog-card::before {
@@ -365,8 +365,8 @@ code {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #16324a 0%, #35546d 62%, #c8a46e 100%);
+  height: 3px;
+  background: linear-gradient(90deg, #173954 0%, #35546d 72%, #c8a46e 100%);
 }
 
 .catalog-label {
@@ -374,52 +374,75 @@ code {
   align-items: center;
   align-self: flex-start;
   margin-top: 10px;
-  padding: 6px 12px;
+  padding: 5px 11px;
   border-radius: 999px;
-  border: 1px solid rgba(20, 50, 74, 0.1);
-  background: linear-gradient(180deg, #173954 0%, #14324a 100%);
-  color: #f8f1e6;
-  box-shadow: 0 8px 18px rgba(20, 50, 74, 0.12);
+  border: 1px solid rgba(20, 50, 74, 0.08);
+  background: linear-gradient(180deg, #f9f4ea 0%, #efe3cf 100%);
+  color: #173954;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.catalog-card h4 {
+  margin: 2px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.22rem;
+  letter-spacing: 0.01em;
+}
+
+.catalog-category {
+  color: #5f7484;
   font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.catalog-category {
-  color: var(--ink-soft-2);
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
+.catalog-card p {
+  margin: 0;
+  color: #5c6f7d;
+  font-size: 0.96rem;
+  line-height: 1.65;
 }
 
 .catalog-card .pill-link {
   border-width: 1px;
-  background: linear-gradient(180deg, #ffffff 0%, #f3efe8 100%);
-  border-color: rgba(22, 50, 74, 0.1);
-  color: var(--panel);
+  padding: 7px 12px;
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(22, 50, 74, 0.08);
+  color: #4f6475;
+  font-size: 0.84rem;
+  font-weight: 600;
+  box-shadow: none;
 }
 
 .catalog-card .pill-link:hover {
-  background: linear-gradient(180deg, #fffefc 0%, #ece1cf 100%);
-  border-color: rgba(200, 164, 110, 0.36);
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(200, 164, 110, 0.3);
   color: #14324a;
+  box-shadow: 0 10px 18px rgba(14, 34, 53, 0.05);
+  transform: translateY(-1px);
 }
 
 .catalog-card .button-ghost {
-  background: rgba(255, 255, 255, 0.78);
-  border-color: rgba(22, 50, 74, 0.1);
+  background: rgba(255, 255, 255, 0.84);
+  border-color: rgba(22, 50, 74, 0.09);
+  color: #1b3a50;
+  min-height: 42px;
 }
 
 .catalog-card .button-ghost:hover {
   background: #ffffff;
-  border-color: rgba(22, 50, 74, 0.16);
+  border-color: rgba(22, 50, 74, 0.14);
 }
 
 .catalog-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(53, 84, 109, 0.24);
-  box-shadow: 0 24px 38px rgba(14, 34, 53, 0.1);
+  transform: translateY(-3px);
+  border-color: rgba(53, 84, 109, 0.18);
+  box-shadow: 0 20px 36px rgba(14, 34, 53, 0.075);
 }
 
 .table-shell {
