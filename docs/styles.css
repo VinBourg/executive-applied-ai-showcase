@@ -347,30 +347,137 @@ code {
 }
 
 .catalog-card {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  border-color: rgba(22, 50, 74, 0.1);
+}
+
+.catalog-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #14324a 0%, #c8a46e 100%);
+}
+
+.catalog-card:nth-child(4n + 1) {
+  background:
+    radial-gradient(circle at top right, rgba(200, 164, 110, 0.14), transparent 34%),
+    linear-gradient(180deg, #fffdfa 0%, #fbf4ea 100%);
+}
+
+.catalog-card:nth-child(4n + 2) {
+  background:
+    radial-gradient(circle at top right, rgba(113, 164, 196, 0.16), transparent 34%),
+    linear-gradient(180deg, #fcfeff 0%, #eef5f9 100%);
+}
+
+.catalog-card:nth-child(4n + 2)::before {
+  background: linear-gradient(90deg, #204863 0%, #79aeca 100%);
+}
+
+.catalog-card:nth-child(4n + 3) {
+  background:
+    radial-gradient(circle at top right, rgba(93, 130, 109, 0.14), transparent 34%),
+    linear-gradient(180deg, #fdfffd 0%, #eff6f0 100%);
+}
+
+.catalog-card:nth-child(4n + 3)::before {
+  background: linear-gradient(90deg, #294b3a 0%, #8fb597 100%);
+}
+
+.catalog-card:nth-child(4n + 4) {
+  background:
+    radial-gradient(circle at top right, rgba(186, 129, 82, 0.15), transparent 34%),
+    linear-gradient(180deg, #fffdfb 0%, #f8efe7 100%);
+}
+
+.catalog-card:nth-child(4n + 4)::before {
+  background: linear-gradient(90deg, #6f4426 0%, #d1a176 100%);
 }
 
 .catalog-label {
   display: inline-flex;
   align-items: center;
   align-self: flex-start;
+  margin-top: 8px;
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid var(--accent-line);
-  background: linear-gradient(180deg, #fff7ec 0%, #f0e2ca 100%);
-  color: var(--panel);
+  border: 1px solid rgba(20, 50, 74, 0.12);
+  background: linear-gradient(180deg, #173954 0%, #14324a 100%);
+  color: #f8f1e6;
+  box-shadow: 0 8px 18px rgba(20, 50, 74, 0.14);
   font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
+.catalog-card:nth-child(4n + 2) .catalog-label {
+  background: linear-gradient(180deg, #335f7c 0%, #244a64 100%);
+}
+
+.catalog-card:nth-child(4n + 3) .catalog-label {
+  background: linear-gradient(180deg, #355540 0%, #294637 100%);
+}
+
+.catalog-card:nth-child(4n + 4) .catalog-label {
+  background: linear-gradient(180deg, #8a5a33 0%, #6f4426 100%);
+}
+
 .catalog-category {
   color: var(--ink-soft-2);
   font-weight: 700;
   font-size: 0.95rem;
+}
+
+.catalog-card .pill-link {
+  border-width: 1px;
+}
+
+.catalog-card:nth-child(4n + 1) .pill-link {
+  background: linear-gradient(180deg, #fffdfa 0%, #f5ead8 100%);
+  border-color: rgba(200, 164, 110, 0.28);
+  color: #16324a;
+}
+
+.catalog-card:nth-child(4n + 1) .pill-link:hover {
+  background: linear-gradient(180deg, #fff7ee 0%, #efd9b7 100%);
+}
+
+.catalog-card:nth-child(4n + 2) .pill-link {
+  background: linear-gradient(180deg, #ffffff 0%, #e3eff6 100%);
+  border-color: rgba(88, 135, 165, 0.26);
+  color: #234a64;
+}
+
+.catalog-card:nth-child(4n + 2) .pill-link:hover {
+  background: linear-gradient(180deg, #f7fcff 0%, #d5e7f2 100%);
+}
+
+.catalog-card:nth-child(4n + 3) .pill-link {
+  background: linear-gradient(180deg, #ffffff 0%, #e5f0e7 100%);
+  border-color: rgba(85, 127, 102, 0.24);
+  color: #2f5440;
+}
+
+.catalog-card:nth-child(4n + 3) .pill-link:hover {
+  background: linear-gradient(180deg, #f9fdf9 0%, #d7e8dc 100%);
+}
+
+.catalog-card:nth-child(4n + 4) .pill-link {
+  background: linear-gradient(180deg, #fffdfa 0%, #efdfd2 100%);
+  border-color: rgba(161, 113, 78, 0.22);
+  color: #6d4427;
+}
+
+.catalog-card:nth-child(4n + 4) .pill-link:hover {
+  background: linear-gradient(180deg, #fff9f4 0%, #e8d0bd 100%);
 }
 
 .table-shell {
