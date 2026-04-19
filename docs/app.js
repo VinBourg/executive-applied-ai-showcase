@@ -69,7 +69,7 @@ function renderHome(data, catalog) {
             <div class="catalog-category">${item.category}</div>
             <p>${item.summary}</p>
             <div class="pill-row">
-              ${item.tags.map((tag) => `<span class="pill">${tag}</span>`).join("")}
+              ${item.tags.map((tag) => `<a class="pill pill-link" href="${item.slug}.html">${tag}</a>`).join("")}
             </div>
             <div class="button-row card-actions">
               <a class="button button-ghost" href="${item.slug}.html">Open item page</a>
