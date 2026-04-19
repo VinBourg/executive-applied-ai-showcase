@@ -1,0 +1,80 @@
+{
+  "platform_name": "Global Customer Intelligence Platform",
+  "version": "2026.04.2",
+  "orchestrator": "dbt jobs and scheduled cloud pipelines",
+  "cloud_footprint": ["Azure", "AWS", "Databricks", "Snowflake", "Power BI"],
+  "release_controls": [
+    {
+      "control": "CI pipeline",
+      "status": "pass",
+      "detail": "Unit, contract and integration checks are green on the release branch."
+    },
+    {
+      "control": "Rollback plan",
+      "status": "pass",
+      "detail": "Rollback steps and data backfill procedure are documented."
+    },
+    {
+      "control": "Monitoring activation",
+      "status": "pass",
+      "detail": "Freshness, failures and SLA alerts are wired to operations channels."
+    },
+    {
+      "control": "Data contract verification",
+      "status": "warning",
+      "detail": "Two medium or high criticality datasets remain below the target contract coverage."
+    },
+    {
+      "control": "Lineage completeness",
+      "status": "warning",
+      "detail": "Lineage is partial for regulated claims and document-intake flows."
+    },
+    {
+      "control": "Security review",
+      "status": "warning",
+      "detail": "One regulated dataset is not masked in non-production environments."
+    }
+  ],
+  "jobs": [
+    {
+      "job_name": "crm_customer_360_ingestion",
+      "dataset": "customer_360",
+      "mode": "batch",
+      "environment": "production",
+      "monitoring_status": "active",
+      "last_release_status": "pass"
+    },
+    {
+      "job_name": "claims_events_quality_gate",
+      "dataset": "claims_events",
+      "mode": "batch",
+      "environment": "production",
+      "monitoring_status": "active",
+      "last_release_status": "warning"
+    },
+    {
+      "job_name": "treasury_positions_intraday_load",
+      "dataset": "treasury_positions",
+      "mode": "micro_batch",
+      "environment": "production",
+      "monitoring_status": "active",
+      "last_release_status": "warning"
+    },
+    {
+      "job_name": "support_interactions_reporting_feed",
+      "dataset": "support_interactions",
+      "mode": "batch",
+      "environment": "production",
+      "monitoring_status": "active",
+      "last_release_status": "pass"
+    },
+    {
+      "job_name": "document_intake_validation_flow",
+      "dataset": "document_intake_events",
+      "mode": "batch",
+      "environment": "production",
+      "monitoring_status": "active",
+      "last_release_status": "warning"
+    }
+  ]
+}

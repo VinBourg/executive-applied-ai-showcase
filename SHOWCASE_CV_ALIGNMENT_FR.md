@@ -35,6 +35,17 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 - Positionnement Applied AI serieux et credible.
 - Montre que les workflows LLM sont traites comme des systemes a controler, pas seulement a demo.
 
+### Cloud Data Platform Governance
+**Ce que cela demontre**
+- Evaluation d'un data platform avec une logique de qualite, ownership et release readiness.
+- Gouvernance de datasets, contrats de donnees, lineage et controles de securite.
+- Production d'outputs lisibles pour des equipes BI, data platform, analytics ou AI.
+
+**Pourquoi c'est coherent avec le CV**
+- SQL, structuration de bases, rigueur d'execution, support a la decision.
+- Positionnement plus fort sur des environnements cloud data, analytics engineering et data governance.
+- Tres aligne avec les attentes actuelles en France, en Suisse et sur la cote Est des Etats-Unis.
+
 ## 2. Data, analytics et decision support
 
 ### Fraud Risk Scoring
@@ -164,7 +175,26 @@ Ce dossier ne doit pas etre lu comme une collection de petits scripts, mais comm
 - Recherche appliquee, synthese executive, aide a la preparation commerciale.
 - Positionnement premium sur les usages agentic directement utiles.
 
-## Les 5 exemples les plus forts a mettre en avant
+## 5. Alignement marche France / Suisse / cote Est USA
+
+Le dossier est maintenant plus proche de la demande actuelle sur les trois marches cibles :
+
+- `France`
+  GenAI / RAG, Python, cloud, evaluation des modeles, Databricks, dbt, Power BI, reporting et automatisation.
+- `Suisse`
+  AI appliquee, MLOps, Python, SQL, data platforms, finance / risk, CI/CD, gouvernance et environnements regules.
+- `USA East Coast`
+  AWS, Python, SQL, Spark / Databricks, GenAI, agentic workflows, gouvernance, quality controls et enterprise platform delivery.
+
+L'ajout cle pour fermer le gap est :
+
+### Cloud Data Platform Governance
+**Pourquoi cet item est strategique**
+- Il rend le repo plus credible pour des roles consultant data / AI, data platform, analytics engineering et gouvernance.
+- Il relie clairement les usages IA a une base de donnees fiable et gouvernee.
+- Il montre une capacite a penser `delivery`, `ownership`, `release gates` et `trusted downstream consumption`.
+
+## Les 6 exemples les plus forts a mettre en avant
 
 Si l'objectif est de rester tres vendeur et tres coherent avec le CV actuel, les cinq meilleurs exemples a faire remonter en premier sont :
 
@@ -172,7 +202,8 @@ Si l'objectif est de rester tres vendeur et tres coherent avec le CV actuel, les
 2. `13_AI_SQL_Analytics_Copilot`
 3. `09_n8n_Lead_Enrichment_Automation`
 4. `15_n8n_Document_Intake_Approval`
-5. `14_LLM_Evaluation_Guardrails`
+5. `16_Cloud_Data_Platform_Governance`
+6. `14_LLM_Evaluation_Guardrails`
 
 ## Positionnement global qui ressort
 
@@ -180,6 +211,7 @@ Le dossier met en valeur un profil capable de :
 - concevoir des usages IA concrets,
 - articuler LLM, data et metier,
 - controler la qualite de sorties LLM avec des garde-fous explicites,
+- structurer des data products fiables et gouvernes,
 - produire des livrables lisibles pour la decision,
 - structurer des workflows n8n et agentic,
 - garder une execution simple, propre et orientee valeur.

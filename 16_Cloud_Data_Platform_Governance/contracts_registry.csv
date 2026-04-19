@@ -1,0 +1,6 @@
+dataset,market_focus,owner,pii_classification,contract_coverage_pct,sla_hours,consumers,documentation_status,lineage_status
+customer_360,France,Customer Data Product Lead,customer_pii,96.0,4,sales_ops | power_bi_commercial | lead_scoring_ai,current,documented
+claims_events,Switzerland,Insurance Risk Data Steward,health_and_claims_pii,84.0,4,fraud_monitoring | claims_ops_dashboard | reserve_forecast_ml,stale,partial
+treasury_positions,USA East,Enterprise Data Platform Manager,restricted_financial,91.0,1,finance_reporting | executive_kpi_pack | liquidity_risk_models,current,documented
+support_interactions,France,Service Analytics Manager,internal_support_data,88.0,8,support_dashboard | routing_automation | knowledge_assistant,current,documented
+document_intake_events,Switzerland,Automation Product Owner,confidential_documents,79.0,8,approval_queue | audit_trail | document_classification_models,stale,partial

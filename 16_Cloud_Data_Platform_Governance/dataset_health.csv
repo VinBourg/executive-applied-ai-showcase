@@ -1,0 +1,6 @@
+dataset,market_focus,domain,criticality,score,readiness,freshness_hours,test_pass_rate,contract_coverage_pct,null_rate_pct,duplicate_rate_pct,schema_drift_events,owner,pii_classification,primary_action
+customer_360,France,commercial analytics,high,100.0,ready,2.4,98.0,96.0,0.4,0.1,0,Customer Data Product Lead,customer_pii,No immediate remediation required beyond routine monitoring.
+support_interactions,France,service operations,medium,93.0,ready,4.5,96.0,88.0,0.8,0.2,0,Service Analytics Manager,internal_support_data,Complete schema contracts and publish field-level ownership for remaining unmanaged attributes.
+treasury_positions,USA East,finance platform,high,88,ready,1.8,97.0,91.0,0.2,0.0,1,Enterprise Data Platform Manager,restricted_financial,Resolve outstanding incidents and document residual risk for consumers.
+document_intake_events,Switzerland,document automation,medium,49.3,hold,5.0,94.0,79.0,0.6,0.4,1,Automation Product Owner,confidential_documents,Fix failing tests and block release until the dataset clears the minimum coverage threshold.
+claims_events,Switzerland,risk and operations,high,0.0,hold,7.8,92.0,84.0,1.6,0.5,2,Insurance Risk Data Steward,health_and_claims_pii,Stabilize ingestion scheduling and alert on SLA breach before consumers are impacted.

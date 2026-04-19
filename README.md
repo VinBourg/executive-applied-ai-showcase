@@ -4,7 +4,7 @@
 
 # Executive Applied AI Showcase
 
-Selected Applied AI, data, n8n automation and agentic workflow examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
+Selected Applied AI, data, cloud data platform governance, n8n automation and agentic workflow examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
 
 ## Positioning
 
@@ -34,10 +34,11 @@ For a repository-wide view of business outcomes and deliverables, see:
 
 ## Repository Scope
 
-The repository is intentionally balanced across four themes:
+The repository is intentionally balanced across five themes:
 
 - Applied AI and LLM workflows
 - Predictive analytics and decision support
+- Data engineering and governance
 - AI automation with n8n-style workflow design
 - Agentic task routing and executive briefing logic
 
@@ -45,8 +46,9 @@ The repository is intentionally balanced across four themes:
 
 This repository is especially relevant for:
 - recruiters reviewing Applied AI, GenAI, analytics or AI automation profiles,
+- recruiters reviewing data platform, analytics engineering or governance-oriented profiles,
 - hiring managers looking for practical execution rather than generic experimentation,
-- companies interested in AI assistants, n8n workflows, decision support, reporting automation and structured agentic design.
+- companies interested in AI assistants, trusted data products, n8n workflows, decision support, reporting automation and structured agentic design.
 
 ## Recommended Review Paths
 
@@ -56,7 +58,8 @@ If you want the fastest cross-section of the repository, start here:
 2. `13_AI_SQL_Analytics_Copilot`
 3. `09_n8n_Lead_Enrichment_Automation`
 4. `15_n8n_Document_Intake_Approval`
-5. `14_LLM_Evaluation_Guardrails`
+5. `16_Cloud_Data_Platform_Governance`
+6. `14_LLM_Evaluation_Guardrails`
 
 ## Flagship Projects
 
@@ -66,12 +69,14 @@ If the objective is to assess the most market-relevant and recruiter-friendly ex
 - `13_AI_SQL_Analytics_Copilot`
 - `09_n8n_Lead_Enrichment_Automation`
 - `15_n8n_Document_Intake_Approval`
+- `16_Cloud_Data_Platform_Governance`
 - `14_LLM_Evaluation_Guardrails`
 - `08_Agentic_Knowledge_Routing`
 
 If you want to review by theme:
 
 - Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`, `13_AI_SQL_Analytics_Copilot`
+- Data engineering and governance: `16_Cloud_Data_Platform_Governance`, `04_SQL_Decision_Support`
 - Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`, `14_LLM_Evaluation_Guardrails`
 - n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`, `15_n8n_Document_Intake_Approval`
 - Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`
@@ -95,6 +100,22 @@ If you want to review by theme:
 | `13_AI_SQL_Analytics_Copilot` | Business-question routing, SQL generation logic, analytics synthesis and copilot-style answering | AI-assisted analytics, SQL copilot, decision-ready portfolio review |
 | `14_LLM_Evaluation_Guardrails` | Output scoring, groundedness checks, policy control and fallback routing | LLM quality control, guardrails, production-minded GenAI delivery |
 | `15_n8n_Document_Intake_Approval` | Document classification, field extraction, validation rules and human-in-the-loop approval routing | Document automation, internal approvals, compliance-friendly workflow orchestration |
+| `16_Cloud_Data_Platform_Governance` | Data quality rules, governance checks, release readiness and cloud-style platform discipline | Data engineering, governance, trusted BI delivery and cloud platform operations |
+
+## Market Alignment
+
+This repository has been reviewed against current demand signals visible on `April 19, 2026` for:
+- France
+- Switzerland
+- USA East Coast
+
+The strongest cross-market pattern is clear:
+- AI assistants, RAG and agentic workflows are in demand,
+- but so are platform discipline, data quality, governance and cloud-ready delivery,
+- especially in regulated, enterprise or multi-stakeholder environments.
+
+For the detailed rationale and source links, see:
+- `MARKET_ALIGNMENT_2026.md`
 
 ## What This Repository Signals
 
@@ -103,6 +124,7 @@ This showcase is meant to reflect a profile able to combine:
 - business-oriented analytics,
 - SQL-based reasoning,
 - LLM evaluation and guardrail discipline,
+- data platform, governance and release-readiness thinking,
 - n8n-style automation thinking,
 - agentic planning and synthesis,
 - compact and disciplined implementation.
@@ -129,6 +151,7 @@ python3 12_Agentic_Research_Briefing/app.py
 python3 13_AI_SQL_Analytics_Copilot/app.py
 python3 14_LLM_Evaluation_Guardrails/app.py
 python3 15_n8n_Document_Intake_Approval/app.py
+python3 16_Cloud_Data_Platform_Governance/app.py
 ```
 
 ## Optional Premium Entry Points
@@ -158,4 +181,5 @@ It is a selective showcase of significant know-how consistent with my CV:
 - `RECRUITER_REVIEW_GUIDE.md`
 - `SHOWCASE_CV_ALIGNMENT_FR.md`
 - `CLIENT_VALUE_MAP.md`
+- `MARKET_ALIGNMENT_2026.md`
 - `PUBLISH_TO_GITHUB.md`

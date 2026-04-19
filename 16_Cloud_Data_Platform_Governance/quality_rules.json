@@ -1,0 +1,39 @@
+{
+  "criticality_thresholds": {
+    "high": {
+      "max_freshness_hours": 4,
+      "max_null_rate_pct": 1.0,
+      "max_duplicate_rate_pct": 0.2
+    },
+    "medium": {
+      "max_freshness_hours": 8,
+      "max_null_rate_pct": 2.0,
+      "max_duplicate_rate_pct": 0.5
+    },
+    "low": {
+      "max_freshness_hours": 24,
+      "max_null_rate_pct": 4.0,
+      "max_duplicate_rate_pct": 1.0
+    }
+  },
+  "minimum_test_pass_rate": 95,
+  "minimum_contract_coverage_pct": 90,
+  "maximum_schema_drift_events": 1,
+  "required_documentation_status": "current",
+  "required_lineage_status": "documented",
+  "platform_controls": [
+    "owner_assigned",
+    "data_contract_coverage",
+    "ci_pipeline_green",
+    "rollback_plan_documented",
+    "monitoring_active",
+    "lineage_documented",
+    "security_controls_verified"
+  ],
+  "blocking_findings": [
+    "freshness_breach",
+    "test_pass_rate_below_minimum",
+    "non_prod_masking_missing",
+    "missing_owner"
+  ]
+}
