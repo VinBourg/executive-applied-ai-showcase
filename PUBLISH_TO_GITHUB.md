@@ -47,11 +47,15 @@ Once enabled, the expected Pages URL should follow the standard pattern:
 Useful static entry points:
 
 - `https://vinbourg.github.io/executive-applied-ai-showcase/`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/index-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/services.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/services-en.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/showcase.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/kpi-demo.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/sql-copilot.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/lead-automation.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/market-signals.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/market-signals-en.html`
 
 The technical hub also links to one dedicated HTML page per item in the showcase.
 

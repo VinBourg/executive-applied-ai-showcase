@@ -16,6 +16,9 @@ The GitHub Pages surface now has two layers:
 Published URLs:
 
 - `https://vinbourg.github.io/executive-applied-ai-showcase/`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/index-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/services.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/services-en.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/showcase.html`
 
 The landing page presents the `Data Crunch Limited` positioning and links into the technical proof surface.
@@ -25,10 +28,14 @@ The landing page presents the `Data Crunch Limited` positioning and links into t
 The repository now includes a static demo hub under:
 
 - `docs/showcase.html`
+- `docs/services.html`
+- `docs/index-en.html`
+- `docs/services-en.html`
 - `docs/kpi-demo.html`
 - `docs/sql-copilot.html`
 - `docs/lead-automation.html`
 - `docs/market-signals.html`
+- `docs/market-signals-en.html`
 
 The hub now also includes one dedicated item page per showcase folder under `docs/*.html`, all linked directly from `docs/showcase.html`.
 

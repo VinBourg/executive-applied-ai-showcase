@@ -133,6 +133,12 @@ a {
   font-size: 0.94rem;
 }
 
+.site-nav .lang-link,
+.footer-links .lang-link {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .text-link:hover,
@@ -381,13 +387,18 @@ h3 {
 .market-grid,
 .proof-grid,
 .engagement-grid,
-.narrative-grid {
+.narrative-grid,
+.package-grid {
   display: grid;
   gap: 18px;
 }
 
 .offer-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.package-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .market-grid,
@@ -404,7 +415,8 @@ h3 {
 .market-card,
 .proof-card,
 .engagement-card,
-.narrative-card {
+.narrative-card,
+.package-card {
   padding: 24px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-soft);
@@ -507,6 +519,7 @@ h3 {
   .proof-grid,
   .engagement-grid,
   .narrative-grid,
+  .package-grid,
   .signal-band {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -564,6 +577,7 @@ h3 {
   .proof-grid,
   .engagement-grid,
   .narrative-grid,
+  .package-grid,
   .signal-band {
     grid-template-columns: 1fr;
   }
