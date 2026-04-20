@@ -50,6 +50,9 @@ Useful static entry points:
 - `https://vinbourg.github.io/executive-applied-ai-showcase/index-en.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/services.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/services-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/contact.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/contact-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/cgv.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/showcase.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/kpi-demo.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/sql-copilot.html`

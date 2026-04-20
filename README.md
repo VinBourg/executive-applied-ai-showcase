@@ -19,6 +19,9 @@ Published URLs:
 - `https://vinbourg.github.io/executive-applied-ai-showcase/index-en.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/services.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/services-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/contact.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/contact-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/cgv.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/showcase.html`
 
 The landing page presents the `Data Crunch Limited` positioning and links into the technical proof surface.
@@ -31,6 +34,9 @@ The repository now includes a static demo hub under:
 - `docs/services.html`
 - `docs/index-en.html`
 - `docs/services-en.html`
+- `docs/contact.html`
+- `docs/contact-en.html`
+- `docs/cgv.html`
 - `docs/kpi-demo.html`
 - `docs/sql-copilot.html`
 - `docs/lead-automation.html`
@@ -79,6 +85,7 @@ The repository is intentionally balanced across five themes:
 - Data engineering and governance
 - AI automation with n8n-style workflow design
 - Agentic task routing and executive briefing logic
+- No-code / low-code orchestration and AI tool control layers
 
 ## Intended Audience
 
@@ -98,6 +105,8 @@ If you want the fastest cross-section of the repository, start here:
 4. `15_n8n_Document_Intake_Approval`
 5. `16_Cloud_Data_Platform_Governance`
 6. `14_LLM_Evaluation_Guardrails`
+7. `17_NoCode_Agentic_Workflow_Studio`
+8. `18_AI_Tool_Orchestration_Control_Layer`
 
 ## Flagship Projects
 
@@ -110,14 +119,17 @@ If the objective is to assess the most market-relevant and recruiter-friendly ex
 - `16_Cloud_Data_Platform_Governance`
 - `14_LLM_Evaluation_Guardrails`
 - `08_Agentic_Knowledge_Routing`
+- `17_NoCode_Agentic_Workflow_Studio`
+- `18_AI_Tool_Orchestration_Control_Layer`
 
 If you want to review by theme:
 
 - Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`, `13_AI_SQL_Analytics_Copilot`
 - Data engineering and governance: `16_Cloud_Data_Platform_Governance`, `04_SQL_Decision_Support`
 - Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`, `14_LLM_Evaluation_Guardrails`
-- n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`, `15_n8n_Document_Intake_Approval`
-- Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`
+- n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`, `15_n8n_Document_Intake_Approval`, `17_NoCode_Agentic_Workflow_Studio`
+- Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`, `17_NoCode_Agentic_Workflow_Studio`, `18_AI_Tool_Orchestration_Control_Layer`
+- No-code and orchestration: `17_NoCode_Agentic_Workflow_Studio`, `18_AI_Tool_Orchestration_Control_Layer`
 
 ## Selected Work
 
@@ -139,6 +151,8 @@ If you want to review by theme:
 | `14_LLM_Evaluation_Guardrails` | Output scoring, groundedness checks, policy control and fallback routing | LLM quality control, guardrails, production-minded GenAI delivery |
 | `15_n8n_Document_Intake_Approval` | Document classification, field extraction, validation rules and human-in-the-loop approval routing | Document automation, internal approvals, compliance-friendly workflow orchestration |
 | `16_Cloud_Data_Platform_Governance` | Data quality rules, governance checks, release readiness and cloud-style platform discipline | Data engineering, governance, trusted BI delivery and cloud platform operations |
+| `17_NoCode_Agentic_Workflow_Studio` | No-code / low-code workflow design, agentic steps, ownership mapping and human control points | n8n-style automation, transformation delivery and AI-enabled operational workflows |
+| `18_AI_Tool_Orchestration_Control_Layer` | Multi-tool routing, fallback logic, orchestration policy and human review design | Enterprise AI operations, tool orchestration and controlled multi-model delivery |
 
 ## Market Alignment
 
@@ -164,6 +178,8 @@ This showcase is meant to reflect a profile able to combine:
 - LLM evaluation and guardrail discipline,
 - data platform, governance and release-readiness thinking,
 - n8n-style automation thinking,
+- no-code / low-code orchestration thinking,
+- multi-tool AI routing and orchestration control,
 - agentic planning and synthesis,
 - compact and disciplined implementation.
 
@@ -190,6 +206,8 @@ python3 13_AI_SQL_Analytics_Copilot/app.py
 python3 14_LLM_Evaluation_Guardrails/app.py
 python3 15_n8n_Document_Intake_Approval/app.py
 python3 16_Cloud_Data_Platform_Governance/app.py
+python3 17_NoCode_Agentic_Workflow_Studio/app.py
+python3 18_AI_Tool_Orchestration_Control_Layer/app.py
 ```
 
 ## Optional Premium Entry Points

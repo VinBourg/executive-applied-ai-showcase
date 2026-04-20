@@ -1,0 +1,6 @@
+name,data_zone,reasoning_depth,multimodal,tool_use,document_grounding,web_connected,cost_band,latency_profile,best_for
+OpenAI GPT-5.4,managed,high,True,True,True,False,medium,fast,"internal_memo, document_review, external_action"
+Claude Enterprise,managed,high,True,True,True,False,medium,medium,"internal_memo, research_brief"
+Gemini,managed,medium,True,True,True,True,medium,fast,"research_brief, document_review"
+Local LLaMA stack,restricted,medium,False,True,True,False,low,fast,"internal_memo, document_review"
+n8n + MCP toolchain,restricted,medium,False,True,False,False,low,fast,"external_action, internal_memo, research_brief, document_review"

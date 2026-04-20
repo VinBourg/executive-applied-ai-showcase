@@ -949,6 +949,130 @@
         "Data quality",
         "Release readiness"
       ]
+    },
+    {
+      "id": "17",
+      "slug": "17-nocode-agentic-workflow-studio",
+      "title": "NoCode Agentic Workflow Studio",
+      "folder": "17_NoCode_Agentic_Workflow_Studio",
+      "category": "NoCode / Agentic Automation",
+      "summary": "A low-code / no-code workflow design example that combines agentic steps, n8n-style orchestration, tool calls and explicit human approvals.",
+      "business_problem": "Business teams want the leverage of AI automation without waiting for a large custom platform. The practical need is a workflow that remains readable, governable and implementation-friendly for no-code or low-code delivery.",
+      "proves": [
+        "No-code and low-code workflow design that stays business-readable.",
+        "Agentic logic tied to tool calls, approvals and auditability.",
+        "A concrete bridge from transformation brief to build-ready orchestration."
+      ],
+      "outputs": [
+        {
+          "file": "workflow_studio_report.md",
+          "description": "Executive summary of the workflow designs and control logic."
+        },
+        {
+          "file": "studio_workflow.json",
+          "description": "Workflow structure designed for no-code / low-code implementation."
+        },
+        {
+          "file": "handoff_matrix.csv",
+          "description": "Ownership, systems and control points across workflow nodes."
+        },
+        {
+          "file": "builder_backlog.md",
+          "description": "Implementation queue for n8n or a similar orchestration tool."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Workflow automation, AI enablement and n8n-led internal transformation."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Controlled process automation where approvals and auditability remain central."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise automation programs combining orchestration, AI blocks and operational ownership."
+        }
+      ],
+      "client_value": [
+        "Makes no-code automation legible for business and transformation stakeholders.",
+        "Shows where agentic logic helps and where human gates must stay explicit.",
+        "Produces a build-ready surface instead of leaving the workflow at a whiteboard stage."
+      ],
+      "review_path": [
+        "workflow_studio_report.md",
+        "handoff_matrix.csv",
+        "studio_workflow.json"
+      ],
+      "tags": [
+        "NoCode",
+        "n8n",
+        "Agentic automation",
+        "Workflow orchestration"
+      ]
+    },
+    {
+      "id": "18",
+      "slug": "18-ai-tool-orchestration-control-layer",
+      "title": "AI Tool Orchestration Control Layer",
+      "folder": "18_AI_Tool_Orchestration_Control_Layer",
+      "category": "AI Tooling / Orchestration",
+      "summary": "A control-layer example that routes business use cases across multiple AI tools with explicit policy, fallback and human-review logic.",
+      "business_problem": "Enterprise teams rarely need a single AI model. They need a disciplined way to choose between tools depending on confidentiality, cost, reasoning depth, grounding, web access and operational risk.",
+      "proves": [
+        "Tool selection driven by policy rather than vendor preference.",
+        "Explicit fallback and human-control logic for multi-tool AI systems.",
+        "A practical orchestration view spanning models, MCP layers and n8n-style control planes."
+      ],
+      "outputs": [
+        {
+          "file": "orchestration_control_report.md",
+          "description": "Executive summary of routing logic and policy rationale."
+        },
+        {
+          "file": "routing_decisions.csv",
+          "description": "Use-case level routing table with primary and fallback tools."
+        },
+        {
+          "file": "tool_policy_matrix.csv",
+          "description": "Compact policy view across available AI tools."
+        },
+        {
+          "file": "fallback_playbook.md",
+          "description": "Fallback logic when the preferred tool is not the right tool at run time."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Multi-tool GenAI delivery, orchestration and AI workflow design."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Confidentiality-aware routing, controlled AI adoption and policy-minded deployment."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise AI operations, tool orchestration and explicit control-layer thinking."
+        }
+      ],
+      "client_value": [
+        "Shows that multi-tool AI delivery can be governed and explained clearly.",
+        "Creates a routing surface that ties confidentiality, cost and control to actual delivery choices.",
+        "Signals a mature approach to orchestration beyond single-model experimentation."
+      ],
+      "review_path": [
+        "orchestration_control_report.md",
+        "routing_decisions.csv",
+        "tool_policy_matrix.csv"
+      ],
+      "tags": [
+        "AI orchestration",
+        "MCP",
+        "n8n",
+        "Control layer"
+      ]
     }
   ]
 }

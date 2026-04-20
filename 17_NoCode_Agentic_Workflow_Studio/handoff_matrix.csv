@@ -1,0 +1,15 @@
+process_name,node_name,node_type,owner,system,control_point
+Claims triage and document follow-up,Inbound trigger,trigger,workflow orchestration,shared inbox,Trigger schema validated before run.
+Claims triage and document follow-up,Context fetch,tool,knowledge layer,policy knowledge base,Only approved context sources are queried.
+Claims triage and document follow-up,Classify claim intent,agentic_step,triage agent,LLM classification block,Confidence threshold below 0.82 routes to manual review.
+Claims triage and document follow-up,Draft document request,agentic_step,communications agent,template + LLM drafting block,Only approved templates can be used for outbound drafting.
+Claims triage and document follow-up,Escalation validation,human_gate,claims supervisor,approval queue,Supervisor approves all high-value or sensitive cases.
+Claims triage and document follow-up,Claims routing payload,output,operations team,claims tracker,Payload must include traceable reason codes.
+Claims triage and document follow-up,Audit trail,logging,operations control,approval register,Every routing and approval event is logged.
+Vendor intake and approval workflow,Inbound trigger,trigger,workflow orchestration,form portal,Trigger schema validated before run.
+Vendor intake and approval workflow,Context fetch,tool,knowledge layer,ERP reference tables,Only approved context sources are queried.
+Vendor intake and approval workflow,Check completeness and risk flags,agentic_step,validation agent,rules + LLM explanation block,Risk flags must be explainable for finance review.
+Vendor intake and approval workflow,Prepare approval summary,agentic_step,approval agent,summary generation block,Summary is restricted to internal stakeholders only.
+Vendor intake and approval workflow,Finance approval gate,human_gate,finance operations lead,approval queue,Any banking data mismatch requires manual sign-off.
+Vendor intake and approval workflow,Onboarding decision packet,output,procurement team,vendor register,Decision packet must include ownership and next-step SLA.
+Vendor intake and approval workflow,Audit trail,logging,operations control,audit log,Every routing and approval event is logged.

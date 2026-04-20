@@ -1,0 +1,74 @@
+{
+  "tools": [
+    {
+      "name": "OpenAI GPT-5.4",
+      "data_zone": "managed",
+      "reasoning_depth": "high",
+      "multimodal": true,
+      "tool_use": true,
+      "document_grounding": true,
+      "web_connected": false,
+      "cost_band": "medium",
+      "latency_profile": "fast",
+      "best_for": ["internal_memo", "document_review", "external_action"],
+      "reason": "Strong general-purpose enterprise tool for reasoning, tool use and document-backed outputs.",
+      "policy_notes": "Use when managed cloud routing is acceptable and business-facing output quality matters."
+    },
+    {
+      "name": "Claude Enterprise",
+      "data_zone": "managed",
+      "reasoning_depth": "high",
+      "multimodal": true,
+      "tool_use": true,
+      "document_grounding": true,
+      "web_connected": false,
+      "cost_band": "medium",
+      "latency_profile": "medium",
+      "best_for": ["internal_memo", "research_brief"],
+      "reason": "Strong long-context reasoning stack for synthesis, planning and enterprise review flows.",
+      "policy_notes": "Use when long-context synthesis and executive writing quality are primary concerns."
+    },
+    {
+      "name": "Gemini",
+      "data_zone": "managed",
+      "reasoning_depth": "medium",
+      "multimodal": true,
+      "tool_use": true,
+      "document_grounding": true,
+      "web_connected": true,
+      "cost_band": "medium",
+      "latency_profile": "fast",
+      "best_for": ["research_brief", "document_review"],
+      "reason": "Useful when multimodal ingestion and web-connected exploration improve the workflow.",
+      "policy_notes": "Use when web retrieval or multimodal handling is part of the intended operating path."
+    },
+    {
+      "name": "Local LLaMA stack",
+      "data_zone": "restricted",
+      "reasoning_depth": "medium",
+      "multimodal": false,
+      "tool_use": true,
+      "document_grounding": true,
+      "web_connected": false,
+      "cost_band": "low",
+      "latency_profile": "fast",
+      "best_for": ["internal_memo", "document_review"],
+      "reason": "Useful when confidentiality is high and the workflow can stay inside a restricted execution zone.",
+      "policy_notes": "Prefer for high-confidentiality internal workflows where local execution is required."
+    },
+    {
+      "name": "n8n + MCP toolchain",
+      "data_zone": "restricted",
+      "reasoning_depth": "medium",
+      "multimodal": false,
+      "tool_use": true,
+      "document_grounding": false,
+      "web_connected": false,
+      "cost_band": "low",
+      "latency_profile": "fast",
+      "best_for": ["external_action", "internal_memo", "research_brief", "document_review"],
+      "reason": "Best orchestration layer for connecting triggers, approvals, tools and business systems.",
+      "policy_notes": "Use as the control plane when workflow traceability and tool routing matter."
+    }
+  ]
+}

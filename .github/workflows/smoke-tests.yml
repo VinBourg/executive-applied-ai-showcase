@@ -40,7 +40,9 @@ jobs:
             13_AI_SQL_Analytics_Copilot/test_copilot.py \
             14_LLM_Evaluation_Guardrails/app.py \
             15_n8n_Document_Intake_Approval/app.py \
-            16_Cloud_Data_Platform_Governance/app.py
+            16_Cloud_Data_Platform_Governance/app.py \
+            17_NoCode_Agentic_Workflow_Studio/app.py \
+            18_AI_Tool_Orchestration_Control_Layer/app.py
 
       - name: Run core demos
         run: |
@@ -62,3 +64,5 @@ jobs:
           python 14_LLM_Evaluation_Guardrails/app.py
           python 15_n8n_Document_Intake_Approval/app.py
           python 16_Cloud_Data_Platform_Governance/app.py
+          python 17_NoCode_Agentic_Workflow_Studio/app.py
+          python 18_AI_Tool_Orchestration_Control_Layer/app.py

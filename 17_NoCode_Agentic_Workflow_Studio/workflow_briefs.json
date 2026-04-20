@@ -1,0 +1,78 @@
+[
+  {
+    "client": "European insurance operations team",
+    "market": "Switzerland",
+    "process_name": "Claims triage and document follow-up",
+    "trigger": "Inbound email with claim form or missing document notice",
+    "current_pain": "Manual triage delays high-value claims and creates inconsistent follow-up paths.",
+    "systems": ["shared inbox", "policy knowledge base", "n8n orchestration", "approval register"],
+    "ai_tasks": [
+      {
+        "name": "Classify claim intent",
+        "owner": "triage agent",
+        "system": "LLM classification block",
+        "control_point": "Confidence threshold below 0.82 routes to manual review."
+      },
+      {
+        "name": "Draft document request",
+        "owner": "communications agent",
+        "system": "template + LLM drafting block",
+        "control_point": "Only approved templates can be used for outbound drafting."
+      }
+    ],
+    "human_checks": [
+      {
+        "name": "Escalation validation",
+        "owner": "claims supervisor",
+        "system": "approval queue",
+        "control_point": "Supervisor approves all high-value or sensitive cases."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Claims routing payload",
+        "owner": "operations team",
+        "system": "claims tracker",
+        "control_point": "Payload must include traceable reason codes."
+      }
+    ]
+  },
+  {
+    "client": "Shared-services transformation team",
+    "market": "France",
+    "process_name": "Vendor intake and approval workflow",
+    "trigger": "Supplier form submitted through portal",
+    "current_pain": "Vendor onboarding is slowed down by duplicate checks, missing data and fragmented approvals.",
+    "systems": ["form portal", "ERP reference tables", "n8n orchestration", "audit log"],
+    "ai_tasks": [
+      {
+        "name": "Check completeness and risk flags",
+        "owner": "validation agent",
+        "system": "rules + LLM explanation block",
+        "control_point": "Risk flags must be explainable for finance review."
+      },
+      {
+        "name": "Prepare approval summary",
+        "owner": "approval agent",
+        "system": "summary generation block",
+        "control_point": "Summary is restricted to internal stakeholders only."
+      }
+    ],
+    "human_checks": [
+      {
+        "name": "Finance approval gate",
+        "owner": "finance operations lead",
+        "system": "approval queue",
+        "control_point": "Any banking data mismatch requires manual sign-off."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Onboarding decision packet",
+        "owner": "procurement team",
+        "system": "vendor register",
+        "control_point": "Decision packet must include ownership and next-step SLA."
+      }
+    ]
+  }
+]

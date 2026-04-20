@@ -1,0 +1,43 @@
+{
+  "requests": [
+    {
+      "use_case": "Executive operating memo from internal finance and support signals",
+      "market": "USA East",
+      "confidentiality": "high",
+      "reasoning_depth": "high",
+      "latency": "medium",
+      "cost_sensitivity": "medium",
+      "needs_web": false,
+      "needs_tools": true,
+      "needs_multimodal": false,
+      "needs_document_grounding": true,
+      "action_type": "internal_memo"
+    },
+    {
+      "use_case": "Claims document review and reply preparation",
+      "market": "Switzerland",
+      "confidentiality": "high",
+      "reasoning_depth": "medium",
+      "latency": "low",
+      "cost_sensitivity": "high",
+      "needs_web": false,
+      "needs_tools": true,
+      "needs_multimodal": true,
+      "needs_document_grounding": true,
+      "action_type": "document_review"
+    },
+    {
+      "use_case": "Public market research brief with source gathering",
+      "market": "France",
+      "confidentiality": "low",
+      "reasoning_depth": "high",
+      "latency": "medium",
+      "cost_sensitivity": "medium",
+      "needs_web": true,
+      "needs_tools": true,
+      "needs_multimodal": false,
+      "needs_document_grounding": false,
+      "action_type": "research_brief"
+    }
+  ]
+}
