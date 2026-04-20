@@ -1,214 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Executive Applied AI Showcase</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Data Crunch Limited | Applied AI, LLM & Agentic Automation</title>
+    <meta
+      name="description"
+      content="Data Crunch Limited conçoit des systemes d’IA appliquee, LLM, automatisation agentique et decision support alignes sur les demandes du marche 2026."
+    />
+    <link rel="stylesheet" href="site.css" />
   </head>
-  <body data-page="home">
-    <div class="page-shell">
-      <section class="topbar">
-        <div class="topbar-brand">Executive Applied AI Showcase</div>
-        <div class="button-row">
-          <a class="button button-ghost" href="kpi-demo.html">KPI Demo</a>
-          <a class="button button-ghost" href="https://github.com/VinBourg/executive-applied-ai-showcase">GitHub</a>
-        </div>
-      </section>
+  <body class="page-home">
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
 
-      <section class="hero">
-        <div class="hero-grid">
-          <div>
-            <div class="eyebrow">Static Demo Hub</div>
-            <h1>Executive Applied AI Showcase</h1>
+    <div class="site-shell">
+      <header class="site-topbar">
+        <a class="site-brand" href="#hero">
+          <span class="brand-dot"></span>
+          <span class="brand-copy">
+            <strong>Data Crunch Limited</strong>
+            <span>Applied AI Systems</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+
+        <nav id="site-nav" class="site-nav">
+          <a href="#offers">Offres</a>
+          <a href="#market">Marche 2026</a>
+          <a href="#proof">Preuves</a>
+          <a href="#engagement">Execution</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="hero" class="hero-panel reveal">
+          <div class="hero-copy">
+            <div class="eyebrow">Boutique advisory & delivery studio</div>
+            <h1>Des systemes IA utiles, fiables et vraiment deployables.</h1>
+            <p class="lead">
+              Data Crunch Limited conçoit des assistants IA, workflows LLM, automatisations agentiques,
+              copilotes analytiques et dispositifs d’aide a la decision pensés pour produire un resultat
+              metier visible, pas seulement une demo.
+            </p>
+            <div class="hero-pills">
+              <span>Applied AI</span>
+              <span>LLM systems</span>
+              <span>Agentic automation</span>
+              <span>Evaluation</span>
+              <span>Decision support</span>
+            </div>
+            <div class="button-row hero-actions">
+              <a class="button button-primary" href="#proof">Voir les preuves</a>
+              <a class="button button-secondary" href="showcase.html">Ouvrir le showcase</a>
+            </div>
+          </div>
+
+          <aside class="hero-manifesto">
+            <div class="eyebrow eyebrow-soft">Founder-led</div>
+            <h2>Vincent Bourgueil</h2>
             <p>
-              A curated review surface for applied AI, decision support, workflow automation and trusted data delivery,
-              designed to be read quickly by recruiters, clients and hiring managers.
+              Engineer orienté Applied AI / LLM, automation et decision support, avec une logique
+              d’execution qui relie architecture, valeur metier et discipline de delivery.
             </p>
-            <div class="pill-row">
-              <span class="pill pill-dark">Applied AI</span>
-              <span class="pill pill-dark">LLM workflows</span>
-              <span class="pill pill-dark">n8n automation</span>
-              <span class="pill pill-dark">Decision support</span>
-              <span class="pill pill-dark">Data governance</span>
-            </div>
-            <div class="hero-actions">
-              <a class="button button-primary" href="kpi-demo.html">Open KPI Demo</a>
-              <a class="button button-secondary" href="https://github.com/VinBourg/executive-applied-ai-showcase">Open GitHub Repository</a>
-            </div>
-          </div>
-          <aside class="hero-sidecard">
-            <div class="sidecard-label">Fast Read</div>
-            <h3>What this page proves</h3>
+            <div class="manifesto-line"></div>
             <ul class="clean-list">
-              <li>Each item starts from an operating problem and ends in a usable output.</li>
-              <li>The selection reflects current demand across France, Switzerland and USA East.</li>
-              <li>The static hub accelerates review without hiding the underlying source artifacts.</li>
+              <li>Assistants IA & copilotes metier</li>
+              <li>n8n workflows & agentic orchestration</li>
+              <li>RAG, MCP, APIs et outillage</li>
+              <li>Evaluation, guardrails & readiness production</li>
+              <li>Analytics, SQL, governance & decision support</li>
             </ul>
-            <div class="sidecard-divider"></div>
-            <div class="sidecard-label">Recommended path</div>
-            <ol class="rank-list">
-              <li>RAG Knowledge Assistant</li>
-              <li>AI SQL Analytics Copilot</li>
-              <li>n8n Lead Enrichment Automation</li>
-              <li>Cloud Data Platform Governance</li>
-            </ol>
           </aside>
-        </div>
-      </section>
+        </section>
 
-      <section class="section">
-        <div class="section-header">
-          <div>
-            <div class="eyebrow eyebrow-light">Snapshot</div>
-            <h3>Fast Review Signals</h3>
-          </div>
-        </div>
-        <p class="muted">
-          The repository already has enough breadth. This page compresses it into the fastest proof points:
-          grounded assistance, portfolio analytics, automation with ownership and data-platform discipline.
-        </p>
-        <div id="home-metrics" class="grid metrics"></div>
-      </section>
+        <section class="signal-band reveal">
+          <article class="signal-card">
+            <span class="signal-value">RAG + Agents</span>
+            <span class="signal-label">Demande visible en France, Suisse et New York</span>
+          </article>
+          <article class="signal-card">
+            <span class="signal-value">Evaluation</span>
+            <span class="signal-label">Le marche valorise les systemes mesurables et pilotables</span>
+          </article>
+          <article class="signal-card">
+            <span class="signal-value">MCP + Tooling</span>
+            <span class="signal-label">Les integrations outillees deviennent un vrai signal de seniorite</span>
+          </article>
+          <article class="signal-card">
+            <span class="signal-value">Platform Discipline</span>
+            <span class="signal-label">La gouvernance et le MLOps comptent autant que la GenAI</span>
+          </article>
+        </section>
 
-      <section class="section">
-        <div class="section-header">
-          <div>
-            <div class="eyebrow eyebrow-light">Markets</div>
-            <h3>Market-Ready Positioning</h3>
-          </div>
-        </div>
-        <div class="grid cards market-grid">
-          <article class="mini-panel market-card">
-            <h4>France</h4>
-            <p>Applied AI, analytics translation and reporting automation in delivery-oriented environments.</p>
-          </article>
-          <article class="mini-panel market-card">
-            <h4>Switzerland</h4>
-            <p>Controlled automation, document-heavy operations and trusted data delivery in regulated settings.</p>
-          </article>
-          <article class="mini-panel market-card">
-            <h4>USA East</h4>
-            <p>Enterprise copilots, agentic workflow design and platform-aware execution with clear ownership.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <div>
-            <div class="eyebrow eyebrow-light">Flagship</div>
-            <h3>Flagship Workflows</h3>
-          </div>
-        </div>
-        <p class="muted">
-          Each card opens the corresponding item page. The strongest examples also keep a richer browser demo when it adds real review value.
-        </p>
-        <div id="flagship-catalog" class="grid cards catalog-grid"></div>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <div>
-            <div class="eyebrow eyebrow-light">Review Paths</div>
-            <h3>How To Read The Repository</h3>
-          </div>
-        </div>
-        <div class="grid cards review-grid">
-          <article class="mini-panel">
-            <h4>Recruiter in 5 Minutes</h4>
-            <ul class="clean-list">
-              <li>Open two or three flagship item pages.</li>
-              <li>Use the richer SQL copilot or lead automation demo if needed.</li>
-              <li>Read the executive memo or governance outputs for the strongest signal.</li>
-            </ul>
-          </article>
-          <article class="mini-panel">
-            <h4>Client / Mission Fit</h4>
-            <ul class="clean-list">
-              <li>Check the business problem and operational outputs first.</li>
-              <li>Review ownership, next-step logic and delivery posture.</li>
-              <li>Use market-fit notes to map the item to France, Switzerland or USA East.</li>
-            </ul>
-          </article>
-          <article class="mini-panel">
-            <h4>Technical Reviewer</h4>
-            <ul class="clean-list">
-              <li>Open the item page, then jump to the linked outputs and source folder.</li>
-              <li>Check tests on `09` and `13`, then the generated artifacts.</li>
-              <li>Review CI and Pages workflows only after the business outputs are clear.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <div>
-            <div class="eyebrow eyebrow-light">Automation</div>
-            <h3>Lead Automation Snapshot</h3>
-          </div>
-        </div>
-        <p class="muted">
-          This snapshot shows how the showcase handles cross-market qualification with explicit ownership, prioritization and next-step logic.
-        </p>
-        <div class="table-shell">
-          <table>
-            <thead>
-              <tr>
-                <th>Company</th>
-                <th>Market</th>
-                <th>Score</th>
-                <th>Offer Angle</th>
-                <th>Owner</th>
-              </tr>
-            </thead>
-            <tbody id="lead-table-body"></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <div>
-            <div class="eyebrow eyebrow-light">Client Value</div>
-            <h3>What a Client Team Could Use</h3>
-          </div>
-        </div>
-        <div class="two-column">
-          <article class="mini-panel">
-            <h4>Operational outputs</h4>
-            <div class="pill-row">
-              <span class="pill">executive memo</span>
-              <span class="pill">route log</span>
-              <span class="pill">approval queue</span>
-              <span class="pill">governance report</span>
-              <span class="pill">CRM payload</span>
+        <section id="offers" class="section-panel reveal">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">Offres</div>
+              <h2>Une offre calée sur ce que les entreprises achetent en 2026</h2>
             </div>
-          </article>
-          <article class="mini-panel">
-            <h4>Action themes from the KPI demo</h4>
-            <ul id="home-actions" class="clean-list"></ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section cta-section">
-        <div class="cta-shell">
-          <div>
-            <div class="eyebrow eyebrow-light">Next Step</div>
-            <h3>Continue with the KPI demo or move directly into the repository.</h3>
-            <p class="muted">
-              The KPI page gives the quickest browser-based proof of delivery. The repository remains the best place to inspect generated artifacts, source files and the full review surface.
+            <p>
+              Le marche n’achete plus seulement un “chatbot IA”. Il achete un dispositif fiable, relie a
+              un usage, avec des garde-fous, des integrations et une logique d’adoption.
             </p>
           </div>
-          <div class="button-row">
-            <a class="button button-primary" href="kpi-demo.html">Open KPI Demo</a>
-            <a class="button button-secondary" href="https://github.com/VinBourg/executive-applied-ai-showcase">Open GitHub Repository</a>
+
+          <div class="offer-grid">
+            <article class="offer-card">
+              <div class="offer-index">01</div>
+              <h3>Assistants IA & copilotes metier</h3>
+              <p>
+                Knowledge assistants, copilotes documentaires, support interne et systemes RAG pour
+                accelerer l’acces a la bonne information.
+              </p>
+            </article>
+
+            <article class="offer-card">
+              <div class="offer-index">02</div>
+              <h3>Workflows LLM & automation n8n</h3>
+              <p>
+                Sequences d’automatisation pour intake documentaire, support, enrichment, validation
+                humaine et production de livrables directement utilisables.
+              </p>
+            </article>
+
+            <article class="offer-card">
+              <div class="offer-index">03</div>
+              <h3>Agentic systems & tool integration</h3>
+              <p>
+                Orchestration d’outils, APIs, knowledge layers et agents multi-etapes pour des flux qui
+                doivent aller au-dela du simple prompting.
+              </p>
+            </article>
+
+            <article class="offer-card">
+              <div class="offer-index">04</div>
+              <h3>Evaluation, guardrails & readiness</h3>
+              <p>
+                Cadres d’evaluation, mesures de qualite, garde-fous metiers et definitions concretes de
+                ce qui est “pret pour la production”.
+              </p>
+            </article>
+
+            <article class="offer-card">
+              <div class="offer-index">05</div>
+              <h3>SQL copilots & decision support</h3>
+              <p>
+                Copilotes analytiques, priorisation, scorecards, memos executives et requetes orientees
+                action pour soutenir des decisions rapides.
+              </p>
+            </article>
+
+            <article class="offer-card">
+              <div class="offer-index">06</div>
+              <h3>Data platform discipline</h3>
+              <p>
+                Qualite, ownership, release readiness, observabilite et gouvernance pour eviter que les
+                cas d’usage IA reposent sur des fondations fragiles.
+              </p>
+            </article>
           </div>
+        </section>
+
+        <section id="market" class="section-panel reveal">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">Marche 2026</div>
+              <h2>Ce que les offres recentes demandent vraiment</h2>
+            </div>
+            <p>
+              Synthese etablie a partir de signaux releves le <strong>20 avril 2026</strong> sur France,
+              Suisse et USA East.
+            </p>
+          </div>
+
+          <div class="market-grid">
+            <article class="market-card">
+              <h3>France</h3>
+              <ul class="clean-list">
+                <li>Python, FastAPI, RAG, fine-tuning, agents et APIs multimodales.</li>
+                <li>Solutions construites de l’ideation a la production.</li>
+                <li>Evaluation, impact business et data platforms robustes.</li>
+                <li>Postures Applied AI et forward deployment plus visibles que les roles purement labo.</li>
+              </ul>
+            </article>
+
+            <article class="market-card">
+              <h3>Suisse</h3>
+              <ul class="clean-list">
+                <li>MLOps, Kubernetes, observabilite, lifecycle management et platform thinking.</li>
+                <li>LLMs, RAG, tool integration, agentic applications et AI platforms securisees.</li>
+                <li>Attente forte sur la fiabilite, la securite, la gouvernance et la valeur metier.</li>
+                <li>Combinaison de software engineering, data discipline et AI delivery.</li>
+              </ul>
+            </article>
+
+            <article class="market-card">
+              <h3>USA East</h3>
+              <ul class="clean-list">
+                <li>Agentic RAG, KG-RAG, MCP integrations, REST APIs et cloud workloads.</li>
+                <li>Production experience sur LLMs, agentic systems et full-stack Python.</li>
+                <li>Ownership, mentoring, cross-functional delivery et orientation client.</li>
+                <li>Le niveau attendu est enterprise-grade, pas experimental.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="market-footnote">
+            <p>
+              Le fil conducteur est clair : le marche privilegie les profils capables de relier
+              <strong>GenAI</strong>, <strong>automation</strong>, <strong>engineering discipline</strong>,
+              <strong>evaluation</strong> et <strong>impact business</strong>.
+            </p>
+            <a class="text-link" href="market-signals.html">Voir les sources et notes de cadrage →</a>
+          </div>
+        </section>
+
+        <section id="proof" class="section-panel reveal">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">Preuves</div>
+              <h2>Un niveau de preuve visible, pas seulement un discours</h2>
+            </div>
+            <p>
+              La vitrine commerciale s’appuie sur un hub de preuves structurees, avec cas d’usage,
+              pages statiques, livrables et revue technique complete.
+            </p>
+          </div>
+
+          <div class="proof-grid">
+            <article class="proof-card proof-card-featured">
+              <div class="proof-tag">Primary proof surface</div>
+              <h3>Executive Applied AI Showcase</h3>
+              <p>
+                Hub de demonstration organise autour de workflows RAG, copilotes SQL, automatisations
+                n8n, evaluation LLM, governance et agentic routing.
+              </p>
+              <div class="button-row proof-actions">
+                <a class="button button-primary" href="showcase.html">Ouvrir le hub</a>
+                <a class="button button-secondary" href="sql-copilot.html">Voir SQL Copilot</a>
+              </div>
+            </article>
+
+            <article class="proof-card">
+              <h3>n8n Lead Enrichment</h3>
+              <p>
+                Workflow de qualification et enrichissement business avec score, next-step et payload CRM.
+              </p>
+              <a class="text-link" href="lead-automation.html">Voir la demo →</a>
+            </article>
+
+            <article class="proof-card">
+              <h3>Cloud Data Platform Governance</h3>
+              <p>
+                Signal fort pour les environnements exigeants : qualite, contracts, release readiness et
+                discipline platform.
+              </p>
+              <a class="text-link" href="16-cloud-data-platform-governance.html">Voir la page item →</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="engagement" class="section-panel reveal">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">Execution</div>
+              <h2>Une logique d’engagement simple, serieuse et orientee resultat</h2>
+            </div>
+            <p>
+              La bonne approche consiste a cadrer vite, construire juste assez, mesurer, puis stabiliser ce
+              qui produit vraiment de la valeur.
+            </p>
+          </div>
+
+          <div class="engagement-grid">
+            <article class="engagement-card">
+              <span class="engagement-step">01</span>
+              <h3>Cadrage</h3>
+              <p>Besoin metier, flux cibles, donnees, risques, confidentialite, contraintes d’integration.</p>
+            </article>
+            <article class="engagement-card">
+              <span class="engagement-step">02</span>
+              <h3>Prototype utile</h3>
+              <p>Premier systeme testable, premier livrable concret, evaluation initiale et arbitrages techniques.</p>
+            </article>
+            <article class="engagement-card">
+              <span class="engagement-step">03</span>
+              <h3>Pilot</h3>
+              <p>Feedback metier, human-in-the-loop, instrumentation, guardrails et logique d’adoption.</p>
+            </article>
+            <article class="engagement-card">
+              <span class="engagement-step">04</span>
+              <h3>Stabilisation</h3>
+              <p>Documentation, ownership, gouvernance, monitoring et readiness pour la suite.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-panel narrative-panel reveal">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">Position de marche</div>
+              <h2>Ce qui ne suffit plus, et ce qui devient decisif</h2>
+            </div>
+            <p>
+              Une vitrine IA crediblise aujourd’hui une capacite a livrer sous contrainte, pas seulement a
+              montrer des demos de modele.
+            </p>
+          </div>
+
+          <div class="narrative-grid">
+            <article class="narrative-card">
+              <h3>Ce qui ne suffit plus</h3>
+              <ul class="clean-list">
+                <li>un chatbot generique sans architecture,</li>
+                <li>une promesse GenAI sans cadre d’evaluation,</li>
+                <li>une demo sans logique d’integration ou de gouvernance.</li>
+              </ul>
+            </article>
+            <article class="narrative-card">
+              <h3>Ce qui devient decisif</h3>
+              <ul class="clean-list">
+                <li>un use case precis,</li>
+                <li>des integrations outillees,</li>
+                <li>une discipline de fiabilite,</li>
+                <li>des livrables lisibles,</li>
+                <li>une execution qui parle a la fois technique et metier.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section-panel cta-panel reveal">
+          <div class="cta-copy">
+            <div class="eyebrow">Contact</div>
+            <h2>Si tu veux transformer un besoin IA en systeme exploitable, parlons d’un cas d’usage concret.</h2>
+            <p>
+              Le plus utile est de partir d’un flux reel, d’un goulot d’etranglement ou d’un cas de
+              decision qui vaut la peine d’etre outille.
+            </p>
+          </div>
+          <div class="button-row cta-actions">
+            <a class="button button-primary" href="mailto:vincent.bourgueil@laposte.net">
+              vincent.bourgueil@laposte.net
+            </a>
+            <a class="button button-secondary" href="https://github.com/VinBourg/executive-applied-ai-showcase" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-copy">
+          <strong>Data Crunch Limited</strong>
+          <span>Applied AI · LLM Systems · Agentic Automation · Decision Support</span>
         </div>
-      </section>
+        <div class="footer-links">
+          <a href="showcase.html">Showcase</a>
+          <a href="market-signals.html">Market Signals</a>
+        </div>
+      </footer>
     </div>
-    <script src="app.js"></script>
+
+    <script src="site.js"></script>
   </body>
 </html>

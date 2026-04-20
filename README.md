@@ -6,16 +6,31 @@
 
 Selected Applied AI, data, cloud data platform governance, n8n automation and agentic workflow examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
 
+## Public Pages
+
+The GitHub Pages surface now has two layers:
+
+- corporate landing page at `docs/index.html`
+- technical proof hub at `docs/showcase.html`
+
+Published URLs:
+
+- `https://vinbourg.github.io/executive-applied-ai-showcase/`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/showcase.html`
+
+The landing page presents the `Data Crunch Limited` positioning and links into the technical proof surface.
+
 ## Static Demo Hub
 
 The repository now includes a static demo hub under:
 
-- `docs/index.html`
+- `docs/showcase.html`
 - `docs/kpi-demo.html`
 - `docs/sql-copilot.html`
 - `docs/lead-automation.html`
+- `docs/market-signals.html`
 
-The hub now also includes one dedicated item page per showcase folder under `docs/*.html`, all linked directly from `docs/index.html`.
+The hub now also includes one dedicated item page per showcase folder under `docs/*.html`, all linked directly from `docs/showcase.html`.
 
 It is designed to give recruiters or clients a faster visual read of the strongest examples without installing anything locally.
 Deployment is wired for GitHub Pages through:

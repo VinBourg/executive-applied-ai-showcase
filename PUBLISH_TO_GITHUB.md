@@ -29,7 +29,7 @@ Compact portfolio of recruiter-friendly Applied AI, LLM, analytics and SQL examp
 - Keep `README.md` as the homepage.
 - Keep `assets/banner.svg` for the visual header.
 - Keep `.github/workflows/smoke-tests.yml` to show basic repository discipline.
-- Keep `.github/workflows/deploy-pages.yml` and `docs/` for a static GitHub Pages demo hub.
+- Keep `.github/workflows/deploy-pages.yml` and `docs/` for the GitHub Pages landing page plus the static technical proof hub.
 - Keep `requirements_optional.txt` to document the optional FastAPI and Streamlit entrypoints.
 
 ## GitHub Pages
@@ -38,7 +38,7 @@ The repository is now ready for a static Pages deployment from `docs/`.
 
 - In GitHub, go to `Settings` -> `Pages`.
 - Set the source to `GitHub Actions`.
-- After the next push, the static demo hub should deploy from `.github/workflows/deploy-pages.yml`.
+- After the next push, the public landing page and the technical proof hub should deploy from `.github/workflows/deploy-pages.yml`.
 
 Once enabled, the expected Pages URL should follow the standard pattern:
 
@@ -47,11 +47,13 @@ Once enabled, the expected Pages URL should follow the standard pattern:
 Useful static entry points:
 
 - `https://vinbourg.github.io/executive-applied-ai-showcase/`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/showcase.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/kpi-demo.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/sql-copilot.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/lead-automation.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/market-signals.html`
 
-The home page also links to one dedicated HTML page per item in the showcase.
+The technical hub also links to one dedicated HTML page per item in the showcase.
 
 ## Recommended first impression
 
