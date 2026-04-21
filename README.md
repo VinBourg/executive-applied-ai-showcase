@@ -19,6 +19,10 @@ Published URLs:
 - `https://vinbourg.github.io/executive-applied-ai-showcase/index-en.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/services.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/services-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/use-cases.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/use-cases-en.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/engagement-models.html`
+- `https://vinbourg.github.io/executive-applied-ai-showcase/engagement-models-en.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/contact.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/contact-en.html`
 - `https://vinbourg.github.io/executive-applied-ai-showcase/cgv.html`
@@ -34,6 +38,10 @@ The repository now includes a static demo hub under:
 - `docs/services.html`
 - `docs/index-en.html`
 - `docs/services-en.html`
+- `docs/use-cases.html`
+- `docs/use-cases-en.html`
+- `docs/engagement-models.html`
+- `docs/engagement-models-en.html`
 - `docs/contact.html`
 - `docs/contact-en.html`
 - `docs/cgv.html`
