@@ -1,0 +1,5 @@
+source_name,owner,contract_status,freshness_hours,freshness_sla_hours,tests_pass_rate,downstream_consumers,release_signal,issue_summary
+orders_core,Data Platform,active,3,4,0.99,"BI, AI, Finance",trusted,no issue
+crm_accounts,Analytics Engineering,active,5,6,0.97,"BI, AI, Sales Operations",trusted,no issue
+support_tickets,Customer Operations,draft,7,4,0.94,"BI, Operations",watch,"contract status is draft, tests pass rate is 0.94, freshness is 7h for a 4h SLA"
+finance_adjustments,Finance Data,active,9,8,0.98,"BI, AI, Finance",trusted,freshness is 9h for a 8h SLA

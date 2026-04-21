@@ -1073,6 +1073,72 @@
         "n8n",
         "Control layer"
       ]
+    },
+    {
+      "id": "19",
+      "slug": "19-modern-data-stack-analytics-engineering",
+      "title": "Modern Data Stack Analytics Engineering",
+      "folder": "19_Modern_Data_Stack_Analytics_Engineering",
+      "category": "Analytics Engineering / Trusted Metrics",
+      "summary": "A trusted-metrics and semantic-layer example showing how to move from raw commercial activity to BI-ready metrics, contract checks and release discipline.",
+      "business_problem": "Teams often have dashboards but not a stable metric layer. The operational need is trusted definitions, source discipline and a release signal that BI, analytics and AI consumers can share.",
+      "proves": [
+        "Trusted metrics and semantic-layer thinking rather than dashboard-only delivery.",
+        "Data contracts, freshness checks and release notes tied to actual metric publication.",
+        "A clear bridge from raw commercial activity to BI and AI consumption."
+      ],
+      "outputs": [
+        {
+          "file": "analytics_engineering_report.md",
+          "description": "Executive report summarizing metric trust, source issues and next actions."
+        },
+        {
+          "file": "trusted_metrics.csv",
+          "description": "Portfolio and market-level trusted metrics with publication status."
+        },
+        {
+          "file": "semantic_layer_spec.json",
+          "description": "Semantic metric definitions, dimensions and source dependencies."
+        },
+        {
+          "file": "data_contract_status.csv",
+          "description": "Contract, freshness and test status across upstream sources."
+        },
+        {
+          "file": "bi_release_brief.md",
+          "description": "Short BI release note showing what is ready and what remains under watch."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "dbt, Power BI, Snowflake, Databricks and analytics-engineering environments that need trusted metrics."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Regulated and stakeholder-heavy contexts where ownership, definitions and release signals matter."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise analytics engineering, semantic layers and trusted data-product delivery."
+        }
+      ],
+      "client_value": [
+        "Reduces dashboard churn by stabilising definitions and publication logic.",
+        "Creates a metric layer that BI and AI consumers can use without drifting apart.",
+        "Signals an ability to package analytics engineering as a client-facing deliverable."
+      ],
+      "review_path": [
+        "analytics_engineering_report.md",
+        "trusted_metrics.csv",
+        "semantic_layer_spec.json"
+      ],
+      "tags": [
+        "Analytics engineering",
+        "Trusted metrics",
+        "Semantic layer",
+        "Data contracts"
+      ]
     }
   ]
 }

@@ -1,0 +1,17 @@
+metric_name,label,grain,segment,value,unit,owner,trust_status,primary_use
+net_revenue_k,Net Revenue,portfolio,all_markets,878.0,k,Analytics Engineering,trusted,Executive reporting and forecast review
+net_revenue_k,Net Revenue,market,France,267.0,k,Analytics Engineering,trusted,Executive reporting and forecast review
+net_revenue_k,Net Revenue,market,Switzerland,263.0,k,Analytics Engineering,trusted,Executive reporting and forecast review
+net_revenue_k,Net Revenue,market,USA East,348.0,k,Analytics Engineering,trusted,Executive reporting and forecast review
+fulfillment_rate_pct,Fulfillment Rate,portfolio,all_markets,91.8,%,Operations Analytics,trusted,Operational health and service review
+fulfillment_rate_pct,Fulfillment Rate,market,France,91.4,%,Operations Analytics,trusted,Operational health and service review
+fulfillment_rate_pct,Fulfillment Rate,market,Switzerland,94.4,%,Operations Analytics,trusted,Operational health and service review
+fulfillment_rate_pct,Fulfillment Rate,market,USA East,90.5,%,Operations Analytics,trusted,Operational health and service review
+revenue_per_active_customer_k,Revenue per Active Customer,portfolio,all_markets,5.52,k,Analytics Engineering,trusted,Commercial performance analysis
+revenue_per_active_customer_k,Revenue per Active Customer,market,France,4.85,k,Analytics Engineering,trusted,Commercial performance analysis
+revenue_per_active_customer_k,Revenue per Active Customer,market,Switzerland,6.92,k,Analytics Engineering,trusted,Commercial performance analysis
+revenue_per_active_customer_k,Revenue per Active Customer,market,USA East,5.27,k,Analytics Engineering,trusted,Commercial performance analysis
+support_case_rate_pct,Support Case Rate,portfolio,all_markets,29.3,%,Customer Operations Analytics,watch,Service quality watch metric
+support_case_rate_pct,Support Case Rate,market,France,32.8,%,Customer Operations Analytics,watch,Service quality watch metric
+support_case_rate_pct,Support Case Rate,market,Switzerland,21.6,%,Customer Operations Analytics,watch,Service quality watch metric
+support_case_rate_pct,Support Case Rate,market,USA East,31.6,%,Customer Operations Analytics,watch,Service quality watch metric

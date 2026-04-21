@@ -78,11 +78,12 @@ For a repository-wide view of business outcomes and deliverables, see:
 
 ## Repository Scope
 
-The repository is intentionally balanced across five themes:
+The repository is intentionally balanced across seven themes:
 
 - Applied AI and LLM workflows
 - Predictive analytics and decision support
 - Data engineering and governance
+- Analytics engineering and trusted metrics
 - AI automation with n8n-style workflow design
 - Agentic task routing and executive briefing logic
 - No-code / low-code orchestration and AI tool control layers
@@ -104,9 +105,10 @@ If you want the fastest cross-section of the repository, start here:
 3. `09_n8n_Lead_Enrichment_Automation`
 4. `15_n8n_Document_Intake_Approval`
 5. `16_Cloud_Data_Platform_Governance`
-6. `14_LLM_Evaluation_Guardrails`
-7. `17_NoCode_Agentic_Workflow_Studio`
-8. `18_AI_Tool_Orchestration_Control_Layer`
+6. `19_Modern_Data_Stack_Analytics_Engineering`
+7. `14_LLM_Evaluation_Guardrails`
+8. `17_NoCode_Agentic_Workflow_Studio`
+9. `18_AI_Tool_Orchestration_Control_Layer`
 
 ## Flagship Projects
 
@@ -117,6 +119,7 @@ If the objective is to assess the most market-relevant and recruiter-friendly ex
 - `09_n8n_Lead_Enrichment_Automation`
 - `15_n8n_Document_Intake_Approval`
 - `16_Cloud_Data_Platform_Governance`
+- `19_Modern_Data_Stack_Analytics_Engineering`
 - `14_LLM_Evaluation_Guardrails`
 - `08_Agentic_Knowledge_Routing`
 - `17_NoCode_Agentic_Workflow_Studio`
@@ -124,8 +127,8 @@ If the objective is to assess the most market-relevant and recruiter-friendly ex
 
 If you want to review by theme:
 
-- Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`, `13_AI_SQL_Analytics_Copilot`
-- Data engineering and governance: `16_Cloud_Data_Platform_Governance`, `04_SQL_Decision_Support`
+- Data and analytics: `02_Fraud_Risk_Scoring`, `03_KPI_Reporting_Pipeline`, `06_Customer_Segmentation_Clustering`, `07_Time_Series_Forecasting`, `10_Dashboard_Brief_Generator`, `13_AI_SQL_Analytics_Copilot`, `19_Modern_Data_Stack_Analytics_Engineering`
+- Data engineering and governance: `16_Cloud_Data_Platform_Governance`, `19_Modern_Data_Stack_Analytics_Engineering`, `04_SQL_Decision_Support`
 - Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`, `14_LLM_Evaluation_Guardrails`
 - n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`, `15_n8n_Document_Intake_Approval`, `17_NoCode_Agentic_Workflow_Studio`
 - Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`, `17_NoCode_Agentic_Workflow_Studio`, `18_AI_Tool_Orchestration_Control_Layer`
@@ -153,6 +156,7 @@ If you want to review by theme:
 | `16_Cloud_Data_Platform_Governance` | Data quality rules, governance checks, release readiness and cloud-style platform discipline | Data engineering, governance, trusted BI delivery and cloud platform operations |
 | `17_NoCode_Agentic_Workflow_Studio` | No-code / low-code workflow design, agentic steps, ownership mapping and human control points | n8n-style automation, transformation delivery and AI-enabled operational workflows |
 | `18_AI_Tool_Orchestration_Control_Layer` | Multi-tool routing, fallback logic, orchestration policy and human review design | Enterprise AI operations, tool orchestration and controlled multi-model delivery |
+| `19_Modern_Data_Stack_Analytics_Engineering` | Trusted metrics, semantic-layer thinking, data contracts and BI release discipline | Analytics engineering, modern data stack delivery and stable metric governance |
 
 ## Market Alignment
 
@@ -177,6 +181,7 @@ This showcase is meant to reflect a profile able to combine:
 - SQL-based reasoning,
 - LLM evaluation and guardrail discipline,
 - data platform, governance and release-readiness thinking,
+- trusted metrics, semantic definitions and analytics-engineering delivery,
 - n8n-style automation thinking,
 - no-code / low-code orchestration thinking,
 - multi-tool AI routing and orchestration control,
@@ -208,6 +213,7 @@ python3 15_n8n_Document_Intake_Approval/app.py
 python3 16_Cloud_Data_Platform_Governance/app.py
 python3 17_NoCode_Agentic_Workflow_Studio/app.py
 python3 18_AI_Tool_Orchestration_Control_Layer/app.py
+python3 19_Modern_Data_Stack_Analytics_Engineering/app.py
 ```
 
 ## Optional Premium Entry Points
@@ -234,6 +240,7 @@ It is a selective showcase of significant know-how consistent with my CV:
 - LLM evaluation and guardrail logic,
 - predictive analytics and fraud-related reasoning,
 - KPI reporting and dashboard framing,
+- analytics engineering and trusted metrics,
 - n8n-style AI automation,
 - agentic decision-support workflows.
 

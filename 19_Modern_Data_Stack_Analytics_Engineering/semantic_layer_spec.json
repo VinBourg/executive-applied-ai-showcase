@@ -1,0 +1,148 @@
+{
+  "domain": "Commercial performance and service quality",
+  "semantic_layer_style": "dbt-ready metric layer with BI and AI consumption notes",
+  "grain": [
+    "day",
+    "market",
+    "channel",
+    "customer_segment"
+  ],
+  "dimensions": [
+    {
+      "name": "business_date",
+      "type": "date"
+    },
+    {
+      "name": "market",
+      "type": "string"
+    },
+    {
+      "name": "channel",
+      "type": "string"
+    },
+    {
+      "name": "customer_segment",
+      "type": "string"
+    }
+  ],
+  "metrics": [
+    {
+      "name": "net_revenue_k",
+      "label": "Net Revenue",
+      "formula": "sum(gross_revenue_k) - sum(refunds_k)",
+      "unit": "k",
+      "owner": "Analytics Engineering",
+      "dependencies": [
+        "orders_core",
+        "finance_adjustments"
+      ],
+      "primary_use": "Executive reporting and forecast review",
+      "publication_grains": [
+        "portfolio",
+        "market"
+      ],
+      "trust_status": "trusted"
+    },
+    {
+      "name": "fulfillment_rate_pct",
+      "label": "Fulfillment Rate",
+      "formula": "sum(orders_fulfilled) / sum(orders_created)",
+      "unit": "%",
+      "owner": "Operations Analytics",
+      "dependencies": [
+        "orders_core"
+      ],
+      "primary_use": "Operational health and service review",
+      "publication_grains": [
+        "portfolio",
+        "market"
+      ],
+      "trust_status": "trusted"
+    },
+    {
+      "name": "revenue_per_active_customer_k",
+      "label": "Revenue per Active Customer",
+      "formula": "net_revenue_k / active_customers",
+      "unit": "k",
+      "owner": "Analytics Engineering",
+      "dependencies": [
+        "orders_core",
+        "finance_adjustments",
+        "crm_accounts"
+      ],
+      "primary_use": "Commercial performance analysis",
+      "publication_grains": [
+        "portfolio",
+        "market"
+      ],
+      "trust_status": "trusted"
+    },
+    {
+      "name": "support_case_rate_pct",
+      "label": "Support Case Rate",
+      "formula": "sum(support_cases) / sum(orders_fulfilled)",
+      "unit": "%",
+      "owner": "Customer Operations Analytics",
+      "dependencies": [
+        "orders_core",
+        "support_tickets"
+      ],
+      "primary_use": "Service quality watch metric",
+      "publication_grains": [
+        "portfolio",
+        "market"
+      ],
+      "trust_status": "watch"
+    }
+  ],
+  "source_contracts": [
+    {
+      "source_name": "orders_core",
+      "owner": "Data Platform",
+      "contract_status": "active",
+      "tests_pass_rate": 0.99,
+      "freshness_hours": 3,
+      "freshness_sla_hours": 4,
+      "release_signal": "trusted"
+    },
+    {
+      "source_name": "crm_accounts",
+      "owner": "Analytics Engineering",
+      "contract_status": "active",
+      "tests_pass_rate": 0.97,
+      "freshness_hours": 5,
+      "freshness_sla_hours": 6,
+      "release_signal": "trusted"
+    },
+    {
+      "source_name": "support_tickets",
+      "owner": "Customer Operations",
+      "contract_status": "draft",
+      "tests_pass_rate": 0.94,
+      "freshness_hours": 7,
+      "freshness_sla_hours": 4,
+      "release_signal": "watch"
+    },
+    {
+      "source_name": "finance_adjustments",
+      "owner": "Finance Data",
+      "contract_status": "active",
+      "tests_pass_rate": 0.98,
+      "freshness_hours": 9,
+      "freshness_sla_hours": 8,
+      "release_signal": "trusted"
+    }
+  ],
+  "current_portfolio_snapshot": {
+    "orders_created": 208.0,
+    "orders_fulfilled": 191.0,
+    "gross_revenue_k": 918.0,
+    "refunds_k": 40.0,
+    "net_revenue_k": 878.0,
+    "active_customers": 159.0,
+    "support_cases": 56.0,
+    "fulfillment_rate_pct": 91.8,
+    "revenue_per_active_customer_k": 5.52,
+    "support_case_rate_pct": 29.3
+  }
+}

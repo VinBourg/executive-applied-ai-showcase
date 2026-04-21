@@ -42,7 +42,8 @@ jobs:
             15_n8n_Document_Intake_Approval/app.py \
             16_Cloud_Data_Platform_Governance/app.py \
             17_NoCode_Agentic_Workflow_Studio/app.py \
-            18_AI_Tool_Orchestration_Control_Layer/app.py
+            18_AI_Tool_Orchestration_Control_Layer/app.py \
+            19_Modern_Data_Stack_Analytics_Engineering/app.py
 
       - name: Run core demos
         run: |
@@ -66,3 +67,4 @@ jobs:
           python 16_Cloud_Data_Platform_Governance/app.py
           python 17_NoCode_Agentic_Workflow_Studio/app.py
           python 18_AI_Tool_Orchestration_Control_Layer/app.py
+          python 19_Modern_Data_Stack_Analytics_Engineering/app.py

@@ -22,6 +22,7 @@ This repository is meant to be read through a client-value lens, not only throug
 | `14_LLM_Evaluation_Guardrails` | GenAI use cases need quality control | evaluation report and scorecard | safer LLM deployment and clearer fallback rules |
 | `15_n8n_Document_Intake_Approval` | Operations need controlled document automation | intake approval report and approval queue | faster document handling with human-in-the-loop control |
 | `16_Cloud_Data_Platform_Governance` | Teams need trusted data products before BI, ML or AI consumption | governance report, dataset health scorecard, release checklist, contracts registry | lower delivery risk and stronger data platform reliability |
+| `19_Modern_Data_Stack_Analytics_Engineering` | Teams need stable shared metrics before BI and AI consumers drift apart | analytics engineering report, trusted metrics table, semantic layer spec, contract status, BI release brief | stronger metric trust and less dashboard churn |
 
 ## Reading recommendation
 
@@ -33,3 +34,4 @@ If the question is "What could create direct value for a client quickly?", start
 4. `03_KPI_Reporting_Pipeline`
 5. `01_RAG_Knowledge_Assistant`
 6. `16_Cloud_Data_Platform_Governance`
+7. `19_Modern_Data_Stack_Analytics_Engineering`

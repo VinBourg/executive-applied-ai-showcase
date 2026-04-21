@@ -1,0 +1,44 @@
+{
+  "metrics": [
+    {
+      "name": "net_revenue_k",
+      "label": "Net Revenue",
+      "formula": "sum(gross_revenue_k) - sum(refunds_k)",
+      "unit": "k",
+      "owner": "Analytics Engineering",
+      "dependencies": ["orders_core", "finance_adjustments"],
+      "primary_use": "Executive reporting and forecast review",
+      "publish_by_market": true
+    },
+    {
+      "name": "fulfillment_rate_pct",
+      "label": "Fulfillment Rate",
+      "formula": "sum(orders_fulfilled) / sum(orders_created)",
+      "unit": "%",
+      "owner": "Operations Analytics",
+      "dependencies": ["orders_core"],
+      "primary_use": "Operational health and service review",
+      "publish_by_market": true
+    },
+    {
+      "name": "revenue_per_active_customer_k",
+      "label": "Revenue per Active Customer",
+      "formula": "net_revenue_k / active_customers",
+      "unit": "k",
+      "owner": "Analytics Engineering",
+      "dependencies": ["orders_core", "finance_adjustments", "crm_accounts"],
+      "primary_use": "Commercial performance analysis",
+      "publish_by_market": true
+    },
+    {
+      "name": "support_case_rate_pct",
+      "label": "Support Case Rate",
+      "formula": "sum(support_cases) / sum(orders_fulfilled)",
+      "unit": "%",
+      "owner": "Customer Operations Analytics",
+      "dependencies": ["orders_core", "support_tickets"],
+      "primary_use": "Service quality watch metric",
+      "publish_by_market": true
+    }
+  ]
+}

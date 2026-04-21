@@ -73,24 +73,33 @@ Examples reviewed:
 - `03_KPI_Reporting_Pipeline`
 - `09_n8n_Lead_Enrichment_Automation`
 - `10_Dashboard_Brief_Generator`
+- `19_Modern_Data_Stack_Analytics_Engineering`
 
 These match the continued demand for KPI automation, Power BI-oriented delivery, analytics framing and business-friendly AI automation.
+
+This item adds a stronger signal around dbt-style metrics layers, semantic consistency and BI readiness, which is increasingly visible in France alongside Databricks, Snowflake, dbt and Power BI environments.
 
 ### Stronger Switzerland fit
 
 - `02_Fraud_Risk_Scoring`
 - `11_n8n_AI_Support_Automation`
 - `15_n8n_Document_Intake_Approval`
+- `19_Modern_Data_Stack_Analytics_Engineering`
 
 These are especially coherent with finance, insurance, operational AI and compliance-sensitive workflows.
+
+This item also fits Switzerland well because it speaks directly to trusted metrics, release discipline and data ownership in regulated or stakeholder-heavy environments.
 
 ### Stronger USA East fit
 
 - `08_Agentic_Knowledge_Routing`
 - `13_AI_SQL_Analytics_Copilot`
 - `14_LLM_Evaluation_Guardrails`
+- `19_Modern_Data_Stack_Analytics_Engineering`
 
 These align well with enterprise GenAI, agentic workflow systems, analytics copilots and operational risk controls.
+
+This item reinforces the US East signal around analytics engineering, trusted metrics, semantic layers and enterprise-ready data products.
 
 ## Why item 16 was added
 
@@ -117,3 +126,9 @@ With the addition of `16_Cloud_Data_Platform_Governance`, the repository now rea
 - AI automation specialist,
 - cloud data platform / data governance consultant,
 - senior freelance profiles serving regulated or enterprise clients.
+
+With the addition of `19_Modern_Data_Stack_Analytics_Engineering`, the repository also reads more clearly for:
+- analytics engineering,
+- trusted metrics / semantic-layer work,
+- BI and data-product readiness,
+- AI + data delivery roles where the data layer must stay as strong as the model layer.
