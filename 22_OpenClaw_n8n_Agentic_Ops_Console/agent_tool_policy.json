@@ -1,0 +1,34 @@
+{
+  "policies": [
+    {
+      "status": "blocked_by_policy",
+      "required_action": "owner_approval",
+      "handoff": "n8n approval task",
+      "runbook": "pause execution, preserve trace, request owner sign-off"
+    },
+    {
+      "status": "needs_human_approval",
+      "required_action": "human_validation",
+      "handoff": "n8n approval task",
+      "runbook": "send extracted context to reviewer and wait before external action"
+    },
+    {
+      "status": "escalated",
+      "required_action": "incident_bridge",
+      "handoff": "n8n alert and ticket",
+      "runbook": "notify owner, create incident ticket and freeze downstream automation"
+    },
+    {
+      "status": "ready_to_sync",
+      "required_action": "crm_sync",
+      "handoff": "n8n CRM update",
+      "runbook": "sync payload when confidence and sensitivity gates are satisfied"
+    },
+    {
+      "status": "ready_for_review",
+      "required_action": "business_review",
+      "handoff": "n8n reviewer notification",
+      "runbook": "send draft output to owner for sampled review"
+    }
+  ]
+}

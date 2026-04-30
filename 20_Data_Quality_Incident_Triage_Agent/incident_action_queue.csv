@@ -1,0 +1,7 @@
+incident_id,market,system,owner,risk_score,risk_band,ai_consumer,contract_status,next_action
+DQ-2026-044,Switzerland,portfolio_metrics,BI Product Owner,100,critical,True,breached,"stop downstream publication, open executive incident bridge and require owner sign-off"
+DQ-2026-046,France,payment_risk,Risk Analytics Lead,91,critical,True,watch,"stop downstream publication, open executive incident bridge and require owner sign-off"
+DQ-2026-041,Switzerland,claims_intake,Data Platform Lead,77,high,True,active,run freshness remediation and notify consumers of delayed publication
+DQ-2026-042,USA East,support_events,Support Operations Manager,60,high,True,watch,"flag AI consumer, route to data owner through n8n and rerun validation before release"
+DQ-2026-043,France,commercial_activity,Revenue Analytics Owner,59,medium,False,active,run freshness remediation and notify consumers of delayed publication
+DQ-2026-045,USA East,lead_enrichment,Growth Operations Lead,36,low,True,active,assign owner review and monitor the next load cycle

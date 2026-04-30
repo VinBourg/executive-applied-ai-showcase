@@ -1,0 +1,6 @@
+event_id,workflow,market,agent,status,urgency_score,urgency_band,required_action,handoff
+OPS-005,data_quality_incident_triage,France,OpenClaw data quality triage agent,escalated,99,critical,incident_bridge,n8n alert and ticket
+OPS-003,sql_decision_support,USA East,OpenClaw SQL copilot,blocked_by_policy,98,critical,owner_approval,n8n approval task
+OPS-001,client_document_intake,Switzerland,OpenClaw document analyst,needs_human_approval,64,high,human_validation,n8n approval task
+OPS-004,kpi_narrative_generation,France,OpenClaw reporting assistant,ready_for_review,37,medium,business_review,n8n reviewer notification
+OPS-002,lead_enrichment,USA East,OpenClaw growth research agent,ready_to_sync,30,low,crm_sync,n8n CRM update

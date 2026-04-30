@@ -1,0 +1,69 @@
+{
+  "events": [
+    {
+      "event_id": "OPS-001",
+      "workflow": "client_document_intake",
+      "market": "Switzerland",
+      "channel": "n8n",
+      "agent": "OpenClaw document analyst",
+      "status": "needs_human_approval",
+      "confidence": 0.81,
+      "business_impact": "high",
+      "data_sensitivity": "restricted",
+      "sla_minutes_remaining": 42,
+      "last_action": "classified document and extracted missing-field list"
+    },
+    {
+      "event_id": "OPS-002",
+      "workflow": "lead_enrichment",
+      "market": "USA East",
+      "channel": "n8n",
+      "agent": "OpenClaw growth research agent",
+      "status": "ready_to_sync",
+      "confidence": 0.9,
+      "business_impact": "medium",
+      "data_sensitivity": "managed",
+      "sla_minutes_remaining": 160,
+      "last_action": "built CRM enrichment payload and outreach angle"
+    },
+    {
+      "event_id": "OPS-003",
+      "workflow": "sql_decision_support",
+      "market": "USA East",
+      "channel": "OpenClaw",
+      "agent": "OpenClaw SQL copilot",
+      "status": "blocked_by_policy",
+      "confidence": 0.74,
+      "business_impact": "high",
+      "data_sensitivity": "restricted",
+      "sla_minutes_remaining": 25,
+      "last_action": "generated query plan but policy gate requires owner approval"
+    },
+    {
+      "event_id": "OPS-004",
+      "workflow": "kpi_narrative_generation",
+      "market": "France",
+      "channel": "n8n",
+      "agent": "OpenClaw reporting assistant",
+      "status": "ready_for_review",
+      "confidence": 0.88,
+      "business_impact": "medium",
+      "data_sensitivity": "managed",
+      "sla_minutes_remaining": 90,
+      "last_action": "drafted weekly KPI narrative and alert summary"
+    },
+    {
+      "event_id": "OPS-005",
+      "workflow": "data_quality_incident_triage",
+      "market": "France",
+      "channel": "OpenClaw",
+      "agent": "OpenClaw data quality triage agent",
+      "status": "escalated",
+      "confidence": 0.79,
+      "business_impact": "high",
+      "data_sensitivity": "restricted",
+      "sla_minutes_remaining": 18,
+      "last_action": "flagged downstream AI consumers and opened remediation path"
+    }
+  ]
+}

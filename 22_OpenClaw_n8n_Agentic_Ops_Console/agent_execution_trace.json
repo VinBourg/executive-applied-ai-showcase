@@ -1,0 +1,56 @@
+{
+  "operating_model": "OpenClaw handles controlled agent reasoning; n8n handles workflow orchestration, notifications and system handoffs.",
+  "trace_policy": "Every agent decision keeps status, confidence, sensitivity, SLA pressure and human-control requirement.",
+  "events": [
+    {
+      "event_id": "OPS-005",
+      "agent": "OpenClaw data quality triage agent",
+      "last_action": "flagged downstream AI consumers and opened remediation path",
+      "status": "escalated",
+      "confidence": 0.79,
+      "required_action": "incident_bridge",
+      "handoff": "n8n alert and ticket",
+      "urgency_score": 99
+    },
+    {
+      "event_id": "OPS-003",
+      "agent": "OpenClaw SQL copilot",
+      "last_action": "generated query plan but policy gate requires owner approval",
+      "status": "blocked_by_policy",
+      "confidence": 0.74,
+      "required_action": "owner_approval",
+      "handoff": "n8n approval task",
+      "urgency_score": 98
+    },
+    {
+      "event_id": "OPS-001",
+      "agent": "OpenClaw document analyst",
+      "last_action": "classified document and extracted missing-field list",
+      "status": "needs_human_approval",
+      "confidence": 0.81,
+      "required_action": "human_validation",
+      "handoff": "n8n approval task",
+      "urgency_score": 64
+    },
+    {
+      "event_id": "OPS-004",
+      "agent": "OpenClaw reporting assistant",
+      "last_action": "drafted weekly KPI narrative and alert summary",
+      "status": "ready_for_review",
+      "confidence": 0.88,
+      "required_action": "business_review",
+      "handoff": "n8n reviewer notification",
+      "urgency_score": 37
+    },
+    {
+      "event_id": "OPS-002",
+      "agent": "OpenClaw growth research agent",
+      "last_action": "built CRM enrichment payload and outreach angle",
+      "status": "ready_to_sync",
+      "confidence": 0.9,
+      "required_action": "crm_sync",
+      "handoff": "n8n CRM update",
+      "urgency_score": 30
+    }
+  ]
+}

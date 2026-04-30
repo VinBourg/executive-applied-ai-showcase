@@ -1,0 +1,7 @@
+use_case,risk_level,integration_complexity,control_required,decision_gate,target_stack
+AI SQL portfolio copilot,42,46,standard evaluation and owner sign-off,governed pilot review,OpenClaw analyst agent + SQL review workflow
+Claims document intake agent,68,52,standard evaluation and owner sign-off,governed pilot review,OpenClaw reasoning layer + n8n approval workflow
+KPI narrative generation,35,30,standard evaluation and owner sign-off,governed pilot review,n8n scheduled reporting + LLM narrative review
+Internal policy RAG assistant,48,34,standard evaluation and owner sign-off,framing review,RAG assistant + n8n feedback capture
+Regulated client onboarding copilot,76,68,mandatory human approval and legal/compliance review,governed pilot review,OpenClaw guided copilot + n8n compliance gate
+Autonomous customer outreach agent,82,72,mandatory human approval and legal/compliance review,governed pilot review,OpenClaw agent with strict n8n human approval gate

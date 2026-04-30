@@ -1,0 +1,90 @@
+{
+  "agentic_runtime": "OpenClaw for controlled agent reasoning, n8n for operational handoffs",
+  "control_objective": "prioritize data-quality incidents before they contaminate analytics, AI agents or executive reporting",
+  "routing_policy": "critical and regulated incidents require human approval; AI-consuming pipelines are flagged before downstream reuse",
+  "decisions": [
+    {
+      "incident_id": "DQ-2026-044",
+      "risk_score": 100,
+      "risk_band": "critical",
+      "agent_path": [
+        "openclaw_summarize_signal",
+        "attach_lineage_context",
+        "open_contract_review",
+        "pause_or_flag_downstream_ai_output",
+        "n8n_owner_handoff",
+        "mandatory_human_approval"
+      ],
+      "next_action": "stop downstream publication, open executive incident bridge and require owner sign-off"
+    },
+    {
+      "incident_id": "DQ-2026-046",
+      "risk_score": 91,
+      "risk_band": "critical",
+      "agent_path": [
+        "openclaw_summarize_signal",
+        "attach_lineage_context",
+        "open_contract_review",
+        "trigger_freshness_check",
+        "pause_or_flag_downstream_ai_output",
+        "n8n_owner_handoff",
+        "mandatory_human_approval"
+      ],
+      "next_action": "stop downstream publication, open executive incident bridge and require owner sign-off"
+    },
+    {
+      "incident_id": "DQ-2026-041",
+      "risk_score": 77,
+      "risk_band": "high",
+      "agent_path": [
+        "openclaw_summarize_signal",
+        "attach_lineage_context",
+        "trigger_freshness_check",
+        "pause_or_flag_downstream_ai_output",
+        "n8n_owner_handoff",
+        "mandatory_human_approval"
+      ],
+      "next_action": "run freshness remediation and notify consumers of delayed publication"
+    },
+    {
+      "incident_id": "DQ-2026-042",
+      "risk_score": 60,
+      "risk_band": "high",
+      "agent_path": [
+        "openclaw_summarize_signal",
+        "attach_lineage_context",
+        "open_contract_review",
+        "pause_or_flag_downstream_ai_output",
+        "n8n_owner_handoff",
+        "owner_review"
+      ],
+      "next_action": "flag AI consumer, route to data owner through n8n and rerun validation before release"
+    },
+    {
+      "incident_id": "DQ-2026-043",
+      "risk_score": 59,
+      "risk_band": "medium",
+      "agent_path": [
+        "openclaw_summarize_signal",
+        "attach_lineage_context",
+        "trigger_freshness_check",
+        "n8n_owner_handoff",
+        "owner_review"
+      ],
+      "next_action": "run freshness remediation and notify consumers of delayed publication"
+    },
+    {
+      "incident_id": "DQ-2026-045",
+      "risk_score": 36,
+      "risk_band": "low",
+      "agent_path": [
+        "openclaw_summarize_signal",
+        "attach_lineage_context",
+        "pause_or_flag_downstream_ai_output",
+        "n8n_owner_handoff",
+        "owner_review"
+      ],
+      "next_action": "assign owner review and monitor the next load cycle"
+    }
+  ]
+}

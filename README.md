@@ -4,7 +4,7 @@
 
 # Executive Applied AI Showcase
 
-Selected Applied AI, data, cloud data platform governance, n8n automation and agentic workflow examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
+Selected Applied AI, data, cloud data platform governance, OpenClaw, n8n automation and agentic workflow examples built to demonstrate practical business execution with clarity, discipline and usable outputs.
 
 ## Public Pages
 
@@ -86,7 +86,7 @@ For a repository-wide view of business outcomes and deliverables, see:
 
 ## Repository Scope
 
-The repository is intentionally balanced across seven themes:
+The repository is intentionally balanced across eight themes:
 
 - Applied AI and LLM workflows
 - Predictive analytics and decision support
@@ -95,6 +95,7 @@ The repository is intentionally balanced across seven themes:
 - AI automation with n8n-style workflow design
 - Agentic task routing and executive briefing logic
 - No-code / low-code orchestration and AI tool control layers
+- OpenClaw + n8n agentic operations, readiness assessment and supervised execution
 
 ## Intended Audience
 
@@ -117,6 +118,9 @@ If you want the fastest cross-section of the repository, start here:
 7. `14_LLM_Evaluation_Guardrails`
 8. `17_NoCode_Agentic_Workflow_Studio`
 9. `18_AI_Tool_Orchestration_Control_Layer`
+10. `22_OpenClaw_n8n_Agentic_Ops_Console`
+11. `20_Data_Quality_Incident_Triage_Agent`
+12. `21_AI_Readiness_Value_Risk_Assessment`
 
 ## Flagship Projects
 
@@ -132,6 +136,9 @@ If the objective is to assess the most market-relevant and recruiter-friendly ex
 - `08_Agentic_Knowledge_Routing`
 - `17_NoCode_Agentic_Workflow_Studio`
 - `18_AI_Tool_Orchestration_Control_Layer`
+- `22_OpenClaw_n8n_Agentic_Ops_Console`
+- `20_Data_Quality_Incident_Triage_Agent`
+- `21_AI_Readiness_Value_Risk_Assessment`
 
 If you want to review by theme:
 
@@ -139,8 +146,8 @@ If you want to review by theme:
 - Data engineering and governance: `16_Cloud_Data_Platform_Governance`, `19_Modern_Data_Stack_Analytics_Engineering`, `04_SQL_Decision_Support`
 - Applied AI and LLM workflows: `01_RAG_Knowledge_Assistant`, `05_Brochure_Content_Workflow`, `14_LLM_Evaluation_Guardrails`
 - n8n automation: `09_n8n_Lead_Enrichment_Automation`, `11_n8n_AI_Support_Automation`, `15_n8n_Document_Intake_Approval`, `17_NoCode_Agentic_Workflow_Studio`
-- Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`, `17_NoCode_Agentic_Workflow_Studio`, `18_AI_Tool_Orchestration_Control_Layer`
-- No-code and orchestration: `17_NoCode_Agentic_Workflow_Studio`, `18_AI_Tool_Orchestration_Control_Layer`
+- Agentic workflows: `08_Agentic_Knowledge_Routing`, `12_Agentic_Research_Briefing`, `17_NoCode_Agentic_Workflow_Studio`, `18_AI_Tool_Orchestration_Control_Layer`, `20_Data_Quality_Incident_Triage_Agent`, `21_AI_Readiness_Value_Risk_Assessment`, `22_OpenClaw_n8n_Agentic_Ops_Console`
+- No-code and orchestration: `17_NoCode_Agentic_Workflow_Studio`, `18_AI_Tool_Orchestration_Control_Layer`, `22_OpenClaw_n8n_Agentic_Ops_Console`
 
 ## Selected Work
 
@@ -165,6 +172,9 @@ If you want to review by theme:
 | `17_NoCode_Agentic_Workflow_Studio` | No-code / low-code workflow design, agentic steps, ownership mapping and human control points | n8n-style automation, transformation delivery and AI-enabled operational workflows |
 | `18_AI_Tool_Orchestration_Control_Layer` | Multi-tool routing, fallback logic, orchestration policy and human review design | Enterprise AI operations, tool orchestration and controlled multi-model delivery |
 | `19_Modern_Data_Stack_Analytics_Engineering` | Trusted metrics, semantic-layer thinking, data contracts and BI release discipline | Analytics engineering, modern data stack delivery and stable metric governance |
+| `20_Data_Quality_Incident_Triage_Agent` | OpenClaw-style incident reasoning, n8n owner handoff and agentic data-quality routing | Data reliability, AI incident control and supervised agentic operations |
+| `21_AI_Readiness_Value_Risk_Assessment` | Value/risk/readiness scoring for selecting agentic AI pilots | AI opportunity framing, controlled pilot selection and executive decision support |
+| `22_OpenClaw_n8n_Agentic_Ops_Console` | OpenClaw reasoning layer, n8n orchestration layer and supervised execution queue | Agentic operations, approval gates, handoffs and business-owner visibility |
 
 ## Market Alignment
 
@@ -191,6 +201,7 @@ This showcase is meant to reflect a profile able to combine:
 - data platform, governance and release-readiness thinking,
 - trusted metrics, semantic definitions and analytics-engineering delivery,
 - n8n-style automation thinking,
+- OpenClaw + n8n agentic operations thinking,
 - no-code / low-code orchestration thinking,
 - multi-tool AI routing and orchestration control,
 - agentic planning and synthesis,
@@ -222,6 +233,9 @@ python3 16_Cloud_Data_Platform_Governance/app.py
 python3 17_NoCode_Agentic_Workflow_Studio/app.py
 python3 18_AI_Tool_Orchestration_Control_Layer/app.py
 python3 19_Modern_Data_Stack_Analytics_Engineering/app.py
+python3 20_Data_Quality_Incident_Triage_Agent/app.py
+python3 21_AI_Readiness_Value_Risk_Assessment/app.py
+python3 22_OpenClaw_n8n_Agentic_Ops_Console/app.py
 ```
 
 ## Optional Premium Entry Points
@@ -234,6 +248,9 @@ For a more polished demonstration format, the repository also includes optional 
 - `docs/kpi-demo.html`
 - `docs/sql-copilot.html`
 - `docs/lead-automation.html`
+- `docs/20-data-quality-incident-triage-agent.html`
+- `docs/21-ai-readiness-value-risk-assessment.html`
+- `docs/22-openclaw-n8n-agentic-ops-console.html`
 - `docs/*-*.html` item pages linked from the hub
 - `requirements_optional.txt`
 
@@ -251,6 +268,7 @@ It is a selective showcase of significant know-how consistent with my CV:
 - analytics engineering and trusted metrics,
 - n8n-style AI automation,
 - agentic decision-support workflows.
+- OpenClaw + n8n supervised agentic operations.
 
 ## Additional Reading
 

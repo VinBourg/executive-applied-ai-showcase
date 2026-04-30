@@ -1139,6 +1139,192 @@
         "Semantic layer",
         "Data contracts"
       ]
+    },
+    {
+      "id": "20",
+      "slug": "20-data-quality-incident-triage-agent",
+      "title": "Data Quality Incident Triage Agent",
+      "folder": "20_Data_Quality_Incident_Triage_Agent",
+      "category": "Agentic AI / Data Reliability",
+      "summary": "An agentic triage workflow that prioritizes data-quality incidents before they affect AI assistants, BI reporting or operational decisions.",
+      "business_problem": "AI agents and dashboards inherit upstream data problems. Data owners need a controlled way to decide what must be paused, escalated, fixed or monitored before downstream consumers reuse broken signals.",
+      "proves": [
+        "Agentic triage logic that scores risk and routes incidents by business impact.",
+        "OpenClaw-style reasoning combined with n8n-style owner handoffs.",
+        "A practical bridge between data governance, AI reliability and operational incident response."
+      ],
+      "outputs": [
+        {
+          "file": "incident_triage_report.md",
+          "description": "Executive incident review with priority queue, agent path and recommended next action."
+        },
+        {
+          "file": "incident_action_queue.csv",
+          "description": "Operational queue for data owners, BI owners and AI product owners."
+        },
+        {
+          "file": "agent_decision_log.json",
+          "description": "Traceable decision log showing OpenClaw and n8n-style control steps."
+        },
+        {
+          "file": "escalation_playbook.md",
+          "description": "Escalation rules and owner handoff playbook."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Data-quality remediation, AI reliability and operational reporting contexts."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Regulated data and AI environments where controls, ownership and traceability matter."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise data reliability and agentic operations programs that require visible incident control."
+        }
+      ],
+      "client_value": [
+        "Prevents bad data from silently contaminating AI and reporting workflows.",
+        "Turns technical incidents into an owner-ready queue with clear next actions.",
+        "Shows how OpenClaw reasoning and n8n orchestration can work together in a controlled operating model."
+      ],
+      "review_path": [
+        "incident_triage_report.md",
+        "incident_action_queue.csv",
+        "agent_decision_log.json"
+      ],
+      "tags": [
+        "Agentic AI",
+        "OpenClaw",
+        "n8n",
+        "Data reliability"
+      ]
+    },
+    {
+      "id": "21",
+      "slug": "21-ai-readiness-value-risk-assessment",
+      "title": "AI Readiness Value Risk Assessment",
+      "folder": "21_AI_Readiness_Value_Risk_Assessment",
+      "category": "AI Strategy / Agentic Readiness",
+      "summary": "A consulting-style value, risk and readiness assessment for selecting the right agentic AI use cases before building.",
+      "business_problem": "Many AI initiatives fail because the use case is attractive but not ready. Clients need a disciplined way to compare value, data readiness, adoption feasibility, controls and integration complexity.",
+      "proves": [
+        "Business-readable scoring across value, risk, data readiness and adoption.",
+        "Clear recommendations for pilot now, pilot with controls, or postpone.",
+        "Practical positioning of OpenClaw and n8n only when the operating model justifies them."
+      ],
+      "outputs": [
+        {
+          "file": "readiness_assessment_report.md",
+          "description": "Executive assessment showing what to pilot, control or postpone."
+        },
+        {
+          "file": "use_case_portfolio.csv",
+          "description": "Portfolio scoring table across candidate agentic AI use cases."
+        },
+        {
+          "file": "control_matrix.csv",
+          "description": "Risk and integration controls by use case."
+        },
+        {
+          "file": "thirty_day_pilot_roadmap.md",
+          "description": "30-day roadmap for controlled pilot delivery."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "AI opportunity framing, use-case prioritization and pragmatic pilot scoping."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Value/risk assessment for regulated or stakeholder-heavy AI programs."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise GenAI and agentic AI portfolio selection with explicit controls."
+        }
+      ],
+      "client_value": [
+        "Avoids starting the wrong AI initiative for the wrong reason.",
+        "Creates a clear decision surface for business, data and risk stakeholders.",
+        "Connects OpenClaw, n8n and agentic automation to value and control rather than hype."
+      ],
+      "review_path": [
+        "readiness_assessment_report.md",
+        "use_case_portfolio.csv",
+        "control_matrix.csv"
+      ],
+      "tags": [
+        "Agentic readiness",
+        "OpenClaw",
+        "n8n",
+        "Value-risk assessment"
+      ]
+    },
+    {
+      "id": "22",
+      "slug": "22-openclaw-n8n-agentic-ops-console",
+      "title": "OpenClaw n8n Agentic Ops Console",
+      "folder": "22_OpenClaw_n8n_Agentic_Ops_Console",
+      "category": "Agentic AI / Operations",
+      "summary": "A lightweight operations console for supervising agentic workflows where OpenClaw handles controlled reasoning and n8n handles approvals and handoffs.",
+      "business_problem": "Once several agents run across operations, teams need visibility into what is blocked, what is ready, what requires human approval and what should be escalated. Agentic execution must become observable.",
+      "proves": [
+        "A concrete OpenClaw + n8n operating model for agentic workflows.",
+        "Status, confidence, sensitivity, SLA and policy gates translated into a handoff queue.",
+        "A practical control surface for moving beyond isolated AI demos."
+      ],
+      "outputs": [
+        {
+          "file": "ops_console_report.md",
+          "description": "Executive operations report for active agentic events."
+        },
+        {
+          "file": "handoff_queue.csv",
+          "description": "Prioritized queue of actions, approvals and handoffs."
+        },
+        {
+          "file": "agent_execution_trace.json",
+          "description": "Trace of agent status, confidence, required action and orchestration handoff."
+        },
+        {
+          "file": "openclaw_n8n_runbook.md",
+          "description": "Runbook describing how OpenClaw and n8n should cooperate in supervised execution."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Agentic automation, n8n workflows and controlled AI enablement."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Supervised agentic workflows where restricted data and approvals must remain visible."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise agent operations, AI workflow monitoring and business-owner handoff."
+        }
+      ],
+      "client_value": [
+        "Makes agentic execution observable and governable for operations teams.",
+        "Separates OpenClaw reasoning from n8n operational handoff in a way clients can understand.",
+        "Turns agent status into a queue that business owners can act on immediately."
+      ],
+      "review_path": [
+        "ops_console_report.md",
+        "handoff_queue.csv",
+        "openclaw_n8n_runbook.md"
+      ],
+      "tags": [
+        "OpenClaw",
+        "n8n",
+        "Agentic ops",
+        "Human-in-the-loop"
+      ]
     }
   ]
 }

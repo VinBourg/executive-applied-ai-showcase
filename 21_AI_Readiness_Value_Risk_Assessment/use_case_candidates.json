@@ -1,0 +1,82 @@
+{
+  "use_cases": [
+    {
+      "use_case": "Claims document intake agent",
+      "market": "Switzerland",
+      "business_owner": "Claims Operations Director",
+      "value_potential": 92,
+      "data_readiness": 78,
+      "process_clarity": 86,
+      "integration_complexity": 52,
+      "risk_level": 68,
+      "adoption_readiness": 74,
+      "target_stack": "OpenClaw reasoning layer + n8n approval workflow",
+      "evidence": "High document volume, manual classification and visible approval bottlenecks."
+    },
+    {
+      "use_case": "AI SQL portfolio copilot",
+      "market": "USA East",
+      "business_owner": "Revenue Operations Lead",
+      "value_potential": 86,
+      "data_readiness": 82,
+      "process_clarity": 80,
+      "integration_complexity": 46,
+      "risk_level": 42,
+      "adoption_readiness": 78,
+      "target_stack": "OpenClaw analyst agent + SQL review workflow",
+      "evidence": "Recurring portfolio reviews need faster query-to-memo cycles."
+    },
+    {
+      "use_case": "Internal policy RAG assistant",
+      "market": "France",
+      "business_owner": "Operations Excellence Lead",
+      "value_potential": 78,
+      "data_readiness": 70,
+      "process_clarity": 76,
+      "integration_complexity": 34,
+      "risk_level": 48,
+      "adoption_readiness": 72,
+      "target_stack": "RAG assistant + n8n feedback capture",
+      "evidence": "Knowledge is scattered across procedures, FAQs and support notes."
+    },
+    {
+      "use_case": "Autonomous customer outreach agent",
+      "market": "USA East",
+      "business_owner": "Growth Lead",
+      "value_potential": 88,
+      "data_readiness": 55,
+      "process_clarity": 58,
+      "integration_complexity": 72,
+      "risk_level": 82,
+      "adoption_readiness": 48,
+      "target_stack": "OpenClaw agent with strict n8n human approval gate",
+      "evidence": "Revenue upside exists, but approval, brand and CRM controls are not mature."
+    },
+    {
+      "use_case": "KPI narrative generation",
+      "market": "France",
+      "business_owner": "Performance Manager",
+      "value_potential": 70,
+      "data_readiness": 84,
+      "process_clarity": 82,
+      "integration_complexity": 30,
+      "risk_level": 35,
+      "adoption_readiness": 86,
+      "target_stack": "n8n scheduled reporting + LLM narrative review",
+      "evidence": "Weekly reporting cycle is repetitive and already has trusted source tables."
+    },
+    {
+      "use_case": "Regulated client onboarding copilot",
+      "market": "Switzerland",
+      "business_owner": "Client Operations Head",
+      "value_potential": 84,
+      "data_readiness": 64,
+      "process_clarity": 70,
+      "integration_complexity": 68,
+      "risk_level": 76,
+      "adoption_readiness": 62,
+      "target_stack": "OpenClaw guided copilot + n8n compliance gate",
+      "evidence": "Strong operational pain, but controls and validation gates must be designed first."
+    }
+  ]
+}

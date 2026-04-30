@@ -1,0 +1,7 @@
+use_case,market,business_owner,readiness_score,recommendation,value_potential,data_readiness,risk_level,target_stack,primary_control
+AI SQL portfolio copilot,USA East,Revenue Operations Lead,62.3,start pilot now,86,82,42,OpenClaw analyst agent + SQL review workflow,standard evaluation and owner sign-off
+Claims document intake agent,Switzerland,Claims Operations Director,61.4,pilot with controls,92,78,68,OpenClaw reasoning layer + n8n approval workflow,standard evaluation and owner sign-off
+KPI narrative generation,France,Performance Manager,60.6,start pilot now,70,84,35,n8n scheduled reporting + LLM narrative review,standard evaluation and owner sign-off
+Internal policy RAG assistant,France,Operations Excellence Lead,56.2,keep in discovery backlog,78,70,48,RAG assistant + n8n feedback capture,standard evaluation and owner sign-off
+Regulated client onboarding copilot,Switzerland,Client Operations Head,49.7,frame controls before pilot,84,64,76,OpenClaw guided copilot + n8n compliance gate,mandatory human approval and legal/compliance review
+Autonomous customer outreach agent,USA East,Growth Lead,44.6,frame controls before pilot,88,55,82,OpenClaw agent with strict n8n human approval gate,mandatory human approval and legal/compliance review

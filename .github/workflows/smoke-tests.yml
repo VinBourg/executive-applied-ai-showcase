@@ -43,7 +43,10 @@ jobs:
             16_Cloud_Data_Platform_Governance/app.py \
             17_NoCode_Agentic_Workflow_Studio/app.py \
             18_AI_Tool_Orchestration_Control_Layer/app.py \
-            19_Modern_Data_Stack_Analytics_Engineering/app.py
+            19_Modern_Data_Stack_Analytics_Engineering/app.py \
+            20_Data_Quality_Incident_Triage_Agent/app.py \
+            21_AI_Readiness_Value_Risk_Assessment/app.py \
+            22_OpenClaw_n8n_Agentic_Ops_Console/app.py
 
       - name: Run core demos
         run: |
@@ -68,3 +71,6 @@ jobs:
           python 17_NoCode_Agentic_Workflow_Studio/app.py
           python 18_AI_Tool_Orchestration_Control_Layer/app.py
           python 19_Modern_Data_Stack_Analytics_Engineering/app.py
+          python 20_Data_Quality_Incident_Triage_Agent/app.py
+          python 21_AI_Readiness_Value_Risk_Assessment/app.py
+          python 22_OpenClaw_n8n_Agentic_Ops_Console/app.py
