@@ -1,0 +1,8 @@
+control_id,control_area,check,threshold,owner,action
+CTRL-001,Schema,Required columns are present,100 percent,Analytics owner,Pause workflow and request corrected extract
+CTRL-002,Completeness,Missing business owner rate,Less than 2 percent,Business operations,Route missing owners to exception queue
+CTRL-003,Reconciliation,Unmatched keys after join,Less than 1 percent,Data steward,Review mapping table and update reference file
+CTRL-004,Duplicates,Duplicate transaction or account keys,Zero critical duplicates,Analytics owner,Deduplicate or escalate before dashboard refresh
+CTRL-005,Freshness,Input extract age,Less than 24 hours,Source system owner,Block publication if source is stale
+CTRL-006,Thresholds,Variance against prior period,Less than 15 percent unless explained,Finance or operations lead,Validate variance before executive reporting
+CTRL-007,Handoff,Exception queue has assigned owner,100 percent,Workflow owner,Do not publish unresolved critical exceptions

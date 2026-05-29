@@ -1325,6 +1325,68 @@
         "Agentic ops",
         "Human-in-the-loop"
       ]
+    },
+    {
+      "id": "23",
+      "slug": "23-alteryx-analytics-automation",
+      "title": "Alteryx Analytics Automation",
+      "folder": "23_Alteryx_Analytics_Automation",
+      "category": "Alteryx / Analytics Automation",
+      "summary": "A business-facing Alteryx workflow pattern for automating data preparation, reconciliation, quality checks and BI-ready outputs without losing control.",
+      "business_problem": "Business and analytics teams often rely on manual Excel consolidation before dashboards, reporting or AI workflows can be trusted. The need is a governed Alteryx-style workflow that makes preparation, checks, exceptions and handoff explicit.",
+      "proves": [
+        "Alteryx-style automation for repeatable data preparation and reconciliation.",
+        "Quality checks, exception handling and business-owner handoff before BI or AI reuse.",
+        "A pragmatic bridge between Excel-heavy operations, Power BI reporting and controlled AI workflows."
+      ],
+      "outputs": [
+        {
+          "file": "alteryx_workflow_brief.md",
+          "description": "Executive workflow brief describing inputs, transformation logic, controls and expected outputs."
+        },
+        {
+          "file": "workflow_control_matrix.csv",
+          "description": "Control matrix mapping data checks, exception thresholds, owners and escalation rules."
+        },
+        {
+          "file": "data_prep_quality_report.md",
+          "description": "Readable quality report summarizing detected issues, remediation priorities and reporting readiness."
+        },
+        {
+          "file": "automation_runbook.md",
+          "description": "Runbook showing how the workflow should be executed, reviewed and handed off to BI or AI consumers."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Finance, operations and reporting teams moving from Excel consolidation to repeatable Alteryx workflows."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Controlled analytics preparation in regulated environments where checks, ownership and auditability matter."
+        },
+        {
+          "market": "USA East",
+          "detail": "Analytics automation and BI enablement programs that need reliable data prep before dashboard or AI consumption."
+        }
+      ],
+      "client_value": [
+        "Reduces manual Excel work while keeping business teams close to the logic.",
+        "Creates a trusted preparation layer before Power BI, reporting or AI workflows.",
+        "Makes quality exceptions explicit so owners can act before bad data reaches dashboards or agents."
+      ],
+      "review_path": [
+        "alteryx_workflow_brief.md",
+        "workflow_control_matrix.csv",
+        "data_prep_quality_report.md"
+      ],
+      "tags": [
+        "Alteryx",
+        "Excel automation",
+        "Power BI",
+        "Data quality"
+      ]
     }
   ]
 }
