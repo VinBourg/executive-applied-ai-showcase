@@ -1,205 +1,1561 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenClaw Academy | Formations IA opérationnelle</title>
-    <meta
-      name="description"
-      content="OpenClaw Academy présente des formations IA opérationnelle, avec OpenClaw comme formation phare pour apprendre à monter une équipe digitale IA."
-    />
-    <link rel="stylesheet" href="site.css" />
-  </head>
-  <body class="page-home">
-    <div class="ambient ambient-left"></div>
-    <div class="ambient ambient-right"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formations IA opérationnelle | OpenClaw Academy</title>
+  <meta
+    name="description"
+    content="Formations IA opérationnelle à Vélizy : OpenClaw pour créer une équipe digitale IA, Claude Code pour développer avec l'IA et Claude Cowork pour structurer la collaboration humain-IA."
+  />
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1727;
+      --panel: rgba(14, 25, 42, 0.78);
+      --panel-strong: #101c30;
+      --text: #edf3ff;
+      --muted: #9caec8;
+      --line: rgba(149, 177, 220, 0.18);
+      --accent: #74f2ce;
+      --accent-2: #7aa2ff;
+      --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+      --radius: 22px;
+      --max: 1180px;
+    }
 
-    <div class="site-shell">
-      <header class="site-topbar">
-        <a class="site-brand" href="index.html">
-          <span class="brand-dot"></span>
-          <span class="brand-copy">
-            <strong>OpenClaw Academy</strong>
-            <span>Formations IA opérationnelle</span>
-          </span>
-        </a>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(122, 162, 255, 0.18), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(116, 242, 206, 0.15), transparent 22%),
+        linear-gradient(180deg, #050b15 0%, #07111f 45%, #091423 100%);
+      line-height: 1.6;
+    }
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          Menu
-        </button>
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
 
-        <nav id="site-nav" class="site-nav">
-          <a href="index.html">Accueil</a>
-          <a href="services.html">Services</a>
-          <a href="showcase.html">Showcase</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </header>
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
 
-      <main>
-        <section id="hero" class="hero-panel reveal">
-          <div class="hero-copy">
-            <div class="eyebrow">Formation phare · OpenClaw à Vélizy</div>
-            <h1>Monter une équipe digitale IA en 1 journée.</h1>
-            <p class="lead">
-              OpenClaw Academy aide les indépendants, dirigeants, consultants et équipes métier à passer
-              de l'usage ponctuel de l'IA à une organisation plus productive : secrétaire IA, assistant administratif,
-              analyste, opérateur contenu et agent de recherche, pilotés avec des règles claires.
-            </p>
-            <div class="hero-pills">
-              <span>790 € HT / personne</span>
-              <span>1 journée · 7h</span>
-              <span>Présentiel à Vélizy</span>
-              <span>Équipe digitale IA</span>
-              <span>Supervision humaine</span>
-            </div>
-            <div class="button-row hero-actions">
-              <a class="button button-primary" href="#training-calendar">Voir le calendrier</a>
-              <a class="button button-secondary" href="contact.html">Échanger sur la formation</a>
-            </div>
-          </div>
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(10, 20, 35, 0.65);
+      color: #d3e1ff;
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
+    }
 
-          <aside class="hero-manifesto">
-            <div class="eyebrow eyebrow-soft">Formation opérationnelle</div>
-            <h2>OpenClaw</h2>
-            <p>
-              La formation phare apprend à construire, organiser et superviser une équipe de collaborateurs
-              digitaux capable de produire, suivre, rechercher, synthétiser et préparer des livrables.
-            </p>
-            <div class="manifesto-line"></div>
-            <ul class="clean-list">
-              <li>Créer des rôles IA utiles et responsabilisés</li>
-              <li>Structurer les workflows et les consignes</li>
-              <li>Définir les validations et garde-fous humains</li>
-              <li>Repartir avec un plan de déploiement simple</li>
-            </ul>
-          </aside>
-        </section>
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 18px rgba(116, 242, 206, 0.6);
+    }
 
-        <section class="section-panel reveal">
-          <div class="section-heading">
-            <div>
-              <div class="eyebrow">Pourquoi cette offre</div>
-              <h2>Une formation vendue sur un résultat concret</h2>
-            </div>
-            <p>
-              Le marché ne manque pas d'initiations IA. OpenClaw se distingue en vendant une capacité :
-              organiser une petite force de travail digitale, exploitable dans une activité réelle.
-            </p>
-          </div>
+    .button,
+    .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 24px;
+      border-radius: 14px;
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
 
-          <div class="offer-grid">
-            <article class="offer-card">
-              <div class="offer-index">01</div>
-              <h3>Capacité opérationnelle</h3>
-              <p>Déléguer recherche, reporting, contenu, relances, préparation de rendez-vous et tâches administratives.</p>
-            </article>
-            <article class="offer-card">
-              <div class="offer-index">02</div>
-              <h3>Prix compétitif</h3>
-              <p>790 € HT / personne pour une journée structurée autour d'un livrable réutilisable et d'un plan d'action.</p>
-            </article>
-            <article class="offer-card">
-              <div class="offer-index">03</div>
-              <h3>Adoption pragmatique</h3>
-              <p>Une méthode accessible sans lancer un grand projet SI, avec des garde-fous et une supervision claire.</p>
-            </article>
-          </div>
-        </section>
+    .button {
+      color: #04111d;
+      background: linear-gradient(135deg, var(--accent), #9cf7df);
+      box-shadow: 0 18px 40px rgba(116, 242, 206, 0.18);
+    }
 
-        <section id="training-calendar" class="section-panel reveal">
-          <div class="section-heading">
-            <div>
-              <div class="eyebrow">Calendrier des formations</div>
-              <h2>Trois modules IA courts et directement exploitables</h2>
-            </div>
-            <p>
-              OpenClaw est l'offre principale. Claude Code et Claude Cowork complètent le dispositif pour les usages
-              techniques et les routines de collaboration humain-IA.
-            </p>
-          </div>
+    .button-secondary {
+      border: 1px solid var(--line);
+      background: rgba(9, 18, 31, 0.65);
+      color: var(--text);
+    }
 
-          <div class="package-grid">
-            <article class="package-card">
-              <div class="offer-index">01</div>
-              <h3>OpenClaw</h3>
-              <p>
-                Construire une équipe de collaborateurs digitaux : rôles, consignes, workflows, permissions,
-                supervision et plan de déploiement.
-              </p>
-              <ul class="clean-list">
-                <li>Prix : 790 € HT / personne</li>
-                <li>Durée : 1 journée · 7h</li>
-                <li>Date : 2 juillet 2026 · 09h30</li>
-                <li>Lieu : Vélizy</li>
-              </ul>
-              <a class="text-link" href="https://buy.stripe.com/7sY6oG5a10l54Bc4W81ZS02">Réserver OpenClaw →</a>
-            </article>
+    .button-training {
+      color: #07111f;
+      background: linear-gradient(135deg, #ffd166, #ff8a3d);
+      box-shadow: 0 18px 42px rgba(255, 138, 61, 0.28);
+      border: 1px solid rgba(255, 209, 102, 0.45);
+    }
 
-            <article class="package-card">
-              <div class="offer-index">02</div>
-              <h3>Claude Code</h3>
-              <p>
-                Utiliser l'IA pour accélérer le développement : prompts de production, relecture de code,
-                garde-fous qualité et mini-projet.
-              </p>
-              <ul class="clean-list">
-                <li>Prix : 690 € HT / personne</li>
-                <li>Durée : 1 journée · 7h</li>
-                <li>Date : 18 juin 2026 · 09h30</li>
-                <li>Lieu : Vélizy</li>
-              </ul>
-              <a class="text-link" href="https://buy.stripe.com/bJedR831Tgk34Bcbkw1ZS00">Réserver Claude Code →</a>
-            </article>
+    .button:hover,
+    .button-secondary:hover,
+    .button-training:hover {
+      transform: translateY(-2px);
+    }
 
-            <article class="package-card">
-              <div class="offer-index">03</div>
-              <h3>Claude Cowork</h3>
-              <p>
-                Installer des routines de collaboration humain-IA : copilotes métier, préparation de livrables,
-                gouvernance d'usage et adoption.
-              </p>
-              <ul class="clean-list">
-                <li>Prix : 390 € HT / personne</li>
-                <li>Durée : 1/2 journée · 3h30</li>
-                <li>Date : 25 juin 2026 · 14h00</li>
-                <li>Lieu : Vélizy</li>
-              </ul>
-              <a class="text-link" href="https://buy.stripe.com/6oUcN4fOF5Fpd7I4W81ZS01">Réserver Claude Cowork →</a>
-            </article>
-          </div>
-        </section>
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(5, 11, 21, 0.55);
+      border-bottom: 1px solid rgba(149, 177, 220, 0.08);
+    }
 
-        <section class="section-panel cta-panel reveal">
-          <div class="cta-copy">
-            <div class="eyebrow">Positionnement</div>
-            <h2>OpenClaw complète le showcase Applied AI par une offre de formation vendable.</h2>
-            <p>
-              Le showcase démontre la capacité technique. OpenClaw Academy transforme cette capacité en offre
-              pédagogique lisible : former des clients à monter leurs propres équipes digitales IA.
-            </p>
-          </div>
-          <div class="button-row cta-actions">
-            <a class="button button-primary" href="contact.html">Échanger sur OpenClaw</a>
-            <a class="button button-secondary" href="showcase.html">Voir les preuves techniques</a>
-          </div>
-        </section>
-      </main>
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 78px;
+      gap: 20px;
+    }
 
-      <footer class="site-footer">
-        <div class="footer-copy">
-          <strong>OpenClaw Academy</strong>
-          <span>Formations IA opérationnelle · équipes digitales · agentic automation</span>
-        </div>
-        <div class="footer-links">
-          <a href="index.html">Accueil</a>
-          <a href="services.html">Services</a>
-          <a href="showcase.html">Showcase</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </footer>
+    .brand {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 1.1rem;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .brand,
+    .nav-links button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+      font: inherit;
+      padding: 0;
+    }
+
+    .nav-links button:hover {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 72px 0 34px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .hero-copy h1 {
+      margin: 18px 0 18px;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 0.96;
+      letter-spacing: -0.06em;
+      max-width: 11ch;
+    }
+
+    .hero-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.12rem;
+      max-width: 62ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .hero-note {
+      margin-top: 16px;
+      color: #7f93b2;
+      font-size: 0.93rem;
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .proof-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(116, 242, 206, 0.22);
+      background: rgba(116, 242, 206, 0.07);
+      color: #dffbf4;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .hero-panel,
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-panel {
+      padding: 26px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-panel.featured-training {
+      border-color: rgba(255, 209, 102, 0.38);
+      background:
+        radial-gradient(circle at top right, rgba(255, 209, 102, 0.18), transparent 34%),
+        linear-gradient(180deg, rgba(24, 31, 48, 0.96), rgba(8, 18, 32, 0.94));
+    }
+
+    .hero-offer {
+      margin: 4px 0 20px;
+      padding: 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 209, 102, 0.22);
+      background: rgba(255, 209, 102, 0.07);
+    }
+
+    .hero-offer strong {
+      display: block;
+      font-size: clamp(2.4rem, 5vw, 3.7rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+      color: #fff3c4;
+    }
+
+    .hero-offer span {
+      color: #d8cda9;
+      font-weight: 700;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(122, 162, 255, 0.28), transparent 64%);
+      pointer-events: none;
+    }
+
+    .stack-title {
+      margin: 0 0 16px;
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #87a1c7;
+    }
+
+    .metric-list,
+    .bullet-list,
+    .mini-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .metric-list li,
+    .bullet-list li,
+    .mini-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .metric-list li + li,
+    .bullet-list li + li,
+    .mini-list li + li {
+      margin-top: 16px;
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(116, 242, 206, 0.12);
+      border: 1px solid rgba(116, 242, 206, 0.28);
+      color: var(--accent);
+      font-size: 0.86rem;
+      margin-top: 2px;
+    }
+
+    section {
+      padding: 34px 0;
+    }
+
+    .section-head {
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .section-head h2 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .grid-3,
+    .grid-4,
+    .grid-2 {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .card {
+      padding: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.18rem;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .feature-card {
+      padding: 22px;
+      min-height: 200px;
+    }
+
+    .feature-card .tag {
+      display: inline-flex;
+      margin-bottom: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: #b7cae8;
+      font-size: 0.82rem;
+      background: rgba(10, 18, 30, 0.65);
+    }
+
+    .comparison {
+      overflow: hidden;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(10, 18, 30, 0.55);
+    }
+
+    .comparison-grid > div {
+      padding: 18px 18px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .comparison-grid > div:nth-child(3n) { border-right: none; }
+    .comparison-grid .head {
+      font-weight: 800;
+      color: #dfe9ff;
+      background: rgba(122, 162, 255, 0.06);
+    }
+
+    .comparison-grid .label {
+      color: #dfe9ff;
+      font-weight: 700;
+    }
+
+    .comparison-grid .muted {
+      color: var(--muted);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .pricing-card {
+      position: relative;
+      padding: 26px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .pricing-card.featured {
+      border-color: rgba(116, 242, 206, 0.45);
+      background:
+        radial-gradient(circle at top right, rgba(116, 242, 206, 0.12), transparent 32%),
+        linear-gradient(180deg, rgba(17, 31, 52, 0.96), rgba(9, 18, 31, 0.92));
+    }
+
+    .pricing-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 1px solid var(--line);
+      color: #d6e6ff;
+      background: rgba(11, 19, 31, 0.6);
+    }
+
+    .pricing-card.featured .pricing-badge {
+      color: #07111f;
+      background: linear-gradient(135deg, var(--accent), #9cf7df);
+      border-color: transparent;
+    }
+
+    .pricing-price {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .pricing-subtitle {
+      margin: 10px 0 16px;
+      color: #dbe8ff;
+      font-weight: 700;
+    }
+
+    .pricing-note {
+      margin-top: 16px;
+      color: #8ea5c7;
+      font-size: 0.92rem;
+    }
+
+    .pricing-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .pricing-inline-note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(122, 162, 255, 0.18);
+      background: rgba(122, 162, 255, 0.06);
+      color: #cad9f2;
+      font-size: 0.95rem;
+    }
+
+    .offer-outcome {
+      margin-top: 12px;
+      color: #dffbf4;
+      font-weight: 800;
+    }
+
+    .training-panel {
+      padding: 26px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at top right, rgba(255, 209, 102, 0.12), transparent 26%),
+        linear-gradient(180deg, rgba(14, 25, 42, 0.9), rgba(9, 18, 31, 0.88));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .training-table,
+    .reservation-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(6, 14, 26, 0.55);
+    }
+
+    .training-table th,
+    .training-table td,
+    .reservation-table th,
+    .reservation-table td {
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .training-table th,
+    .reservation-table th {
+      color: #dfe9ff;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: rgba(122, 162, 255, 0.07);
+    }
+
+    .training-table td,
+    .reservation-table td {
+      color: var(--muted);
+    }
+
+    .training-table tr:last-child td,
+    .reservation-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .training-table tr.featured-training-row td {
+      background:
+        linear-gradient(90deg, rgba(255, 209, 102, 0.12), rgba(116, 242, 206, 0.045));
+      border-top: 1px solid rgba(255, 209, 102, 0.24);
+      border-bottom: 1px solid rgba(255, 209, 102, 0.24);
+    }
+
+    .training-table tr.featured-training-row .training-name {
+      color: #fff3c4;
+    }
+
+    .training-name {
+      display: block;
+      color: #edf3ff;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .training-badge,
+    .payment-valid {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .training-badge {
+      color: #07111f;
+      background: linear-gradient(135deg, #ffd166, #ff8a3d);
+    }
+
+    .payment-valid {
+      color: #dfffee;
+      background: rgba(38, 215, 135, 0.14);
+      border: 1px solid rgba(38, 215, 135, 0.32);
+    }
+
+    .payment-valid::before {
+      content: "✓";
+      display: inline-grid;
+      place-items: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: #26d787;
+      color: #06120c;
+      font-weight: 900;
+    }
+
+    .button-stripe {
+      min-width: 150px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #635bff, #8b5cf6);
+      box-shadow: 0 18px 40px rgba(99, 91, 255, 0.22);
+    }
+
+    .integration-note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 209, 102, 0.24);
+      background: rgba(255, 209, 102, 0.065);
+      color: #d8cda9;
+      font-size: 0.95rem;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+      margin-top: 22px;
+    }
+
+    .quote {
+      padding: 28px;
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, rgba(13, 24, 40, 0.92), rgba(9, 18, 31, 0.9)),
+        rgba(11, 18, 32, 0.95);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .quote p {
+      margin: 0;
+      font-size: clamp(1.25rem, 3vw, 1.8rem);
+      line-height: 1.3;
+      letter-spacing: -0.03em;
+    }
+
+    .quote small {
+      display: block;
+      margin-top: 14px;
+      color: var(--muted);
+    }
+
+    .cta {
+      padding: 26px;
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1.2fr auto;
+      align-items: center;
+    }
+
+    .cta h3 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      letter-spacing: -0.04em;
+    }
+
+    .cta p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 58ch;
+    }
+
+    .footer {
+      padding: 12px 0 48px;
+      color: #7d8ea9;
+      font-size: 0.92rem;
+    }
+
+    .contact-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(3, 8, 16, 0.78);
+      backdrop-filter: blur(14px);
+    }
+
+    .contact-card {
+      width: min(100%, 460px);
+      padding: 30px;
+      border-radius: 26px;
+      border: 1px solid rgba(149, 177, 220, 0.24);
+      background:
+        radial-gradient(circle at top right, rgba(116, 242, 206, 0.14), transparent 32%),
+        linear-gradient(180deg, rgba(16, 28, 48, 0.98), rgba(8, 18, 32, 0.98));
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-card h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .contact-card p {
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 12px;
+      margin: 22px 0 24px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact-details li {
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(149, 177, 220, 0.16);
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .contact-details strong {
+      display: block;
+      color: #dfe9ff;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .reservation-card {
+      width: min(100%, 760px);
+    }
+
+    .reservation-summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .summary-item,
+    .form-field {
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(149, 177, 220, 0.16);
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .summary-item strong,
+    .form-field label {
+      display: block;
+      margin-bottom: 6px;
+      color: #dfe9ff;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .summary-item span {
+      color: var(--muted);
+    }
+
+    .reservation-form {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .form-field input {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+    }
+
+    .form-field input::placeholder {
+      color: #6f819d;
+    }
+
+    .form-field-wide {
+      grid-column: 1 / -1;
+    }
+
+    .reservation-status {
+      grid-column: 1 / -1;
+      min-height: 24px;
+      color: #d8cda9;
+      font-size: 0.94rem;
+    }
+
+    .reservation-actions {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .grid-4,
+      .grid-2,
+      .pricing-grid,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-grid > div {
+        border-right: none;
+      }
+
+      .training-table,
+      .reservation-table {
+        min-width: 1040px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding-top: 42px;
+      }
+
+      .container {
+        width: min(var(--max), calc(100% - 24px));
+      }
+
+      .reservation-summary,
+      .reservation-form {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel,
+      .card,
+      .quote,
+      .cta {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <button class="brand" type="button" data-scroll-target="top">OpenClaw <span>Academy</span></button>
+      <nav class="nav-links">
+        <button type="button" data-scroll-target="benefits">Pourquoi</button>
+        <button type="button" data-scroll-target="pricing-license">OpenClaw</button>
+        <button type="button" data-scroll-target="features">Programme</button>
+        <button type="button" data-scroll-target="training-calendar">Formations</button>
+        <button type="button" data-scroll-target="positioning">Pour qui ?</button>
+        <button type="button" data-contact-open>Réserver un appel</button>
+      </nav>
     </div>
+  </header>
 
-    <script src="site.js"></script>
-  </body>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Formation phare · OpenClaw à Vélizy</span>
+          <h1>Montez votre équipe digitale IA en 1 journée.</h1>
+          <p>
+            Apprenez à créer une équipe de collaborateurs digitaux : secrétaire IA, assistant administratif,
+            analyste, ingénieur, opérateur contenu et agent de recherche. L'objectif est concret : automatiser
+            les tâches répétitives, produire plus vite, mieux suivre vos priorités et garder le contrôle humain.
+          </p>
+          <div class="hero-actions">
+            <button class="button button-training" type="button" data-scroll-target="training-calendar">Réserver OpenClaw</button>
+            <button class="button-secondary" type="button" data-scroll-target="features">Voir le programme</button>
+            <button class="button-secondary" type="button" data-contact-open>Appeler Vincent</button>
+          </div>
+          <div class="hero-proof" aria-label="Points forts de la formation">
+            <span class="proof-pill">790 € HT / personne</span>
+            <span class="proof-pill">1 journée · 7h</span>
+            <span class="proof-pill">Présentiel à Vélizy</span>
+            <span class="proof-pill">Équipe digitale prête à déployer</span>
+          </div>
+          <div class="hero-note">
+            Une formation pensée pour les indépendants, dirigeants, consultants et équipes qui veulent passer
+            de “j'utilise l'IA” à “je pilote une vraie équipe digitale”.
+          </div>
+        </div>
+
+        <aside class="hero-panel featured-training">
+          <p class="stack-title">Formation opérationnelle</p>
+          <div class="hero-offer">
+            <span>Formation OpenClaw</span>
+            <strong>790 € HT</strong>
+            <span>par personne</span>
+            <span>Construire, organiser et superviser une équipe digitale IA.</span>
+          </div>
+          <ul class="metric-list">
+            <li>
+              <span class="check">✓</span>
+              <div>
+                <strong>Créer les rôles digitaux</strong><br />
+                Secrétariat, administratif, prospection, contenu, recherche, reporting et support opérationnel.
+              </div>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <div>
+                <strong>Structurer les workflows</strong><br />
+                Définir les consignes, les passages de relais, les garde-fous et les livrables attendus.
+              </div>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <div>
+                <strong>Repartir avec un plan d'action</strong><br />
+                Un modèle réutilisable pour déployer une ou plusieurs équipes digitales dans votre activité.
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pourquoi cette formation se vend facilement.</h2>
+          <p>
+            Le besoin est simple : tout le monde veut utiliser l'IA, mais peu savent organiser une équipe digitale utile,
+            pilotable et réellement productive.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Passer de l'outil IA à l'organisation IA</h3>
+            <p>
+              La formation ne se limite pas à “faire des prompts”. Elle apprend à distribuer le travail entre
+              plusieurs rôles IA et à coordonner leur production comme une petite équipe opérationnelle.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Créer de la capacité sans recruter immédiatement</h3>
+            <p>
+              Les participants apprennent à déléguer recherche, reporting, contenu, relances, préparation de rendez-vous
+              et tâches administratives à des collaborateurs digitaux supervisés.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Un prix très compétitif pour un résultat concret</h3>
+            <p>
+              À 790 € HT par personne, OpenClaw donne une méthode, une architecture et des exemples directement adaptables.
+              C'est lisible, actionnable et beaucoup moins coûteux qu'un accompagnement long ou un recrutement.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing-license">
+      <div class="container">
+        <div class="section-head">
+          <h2>La formation phare : OpenClaw.</h2>
+          <p>
+            OpenClaw est l'offre à pousser en priorité : elle apprend à monter une équipe de collaborateurs digitaux
+            capable d'aider concrètement une activité à produire, suivre, relancer, analyser et décider plus vite.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card featured">
+            <span class="pricing-badge">Formation phare</span>
+            <h3>OpenClaw</h3>
+            <p class="pricing-price">790 € HT<span style="font-size: 1rem; letter-spacing: 0; color: var(--muted);"> / personne</span></p>
+            <p class="pricing-subtitle">Pour apprendre à construire une équipe digitale IA en une journée.</p>
+            <ul class="bullet-list">
+              <li><span class="check">✓</span><div>Création de rôles IA : secrétaire, analyste, opérateur contenu, assistant administratif, agent recherche</div></li>
+              <li><span class="check">✓</span><div>Mise en place de workflows et routines de supervision</div></li>
+              <li><span class="check">✓</span><div>Plan de déploiement simple pour votre activité ou celle de vos clients</div></li>
+            </ul>
+            <p class="offer-outcome">Résultat attendu : une équipe digitale exploitable, pas une simple collection de prompts.</p>
+            <div class="pricing-actions">
+              <button class="button button-training" type="button" data-scroll-target="training-calendar">Réserver OpenClaw</button>
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <span class="pricing-badge">Complément technique</span>
+            <h3>Claude Code</h3>
+            <p class="pricing-price">690 € HT<span style="font-size: 1rem; letter-spacing: 0; color: var(--muted);"> / personne</span></p>
+            <p class="pricing-subtitle">Pour apprendre à utiliser l'IA comme accélérateur de développement logiciel.</p>
+            <ul class="bullet-list">
+              <li><span class="check">✓</span><div>Structurer des prompts de développement utiles</div></li>
+              <li><span class="check">✓</span><div>Faire produire, relire et améliorer du code avec méthode</div></li>
+              <li><span class="check">✓</span><div>Livrer un mini-projet avec garde-fous qualité</div></li>
+            </ul>
+            <p class="pricing-note">Idéal pour les profils techniques ou les équipes qui veulent accélérer leur delivery.</p>
+            <div class="pricing-actions">
+              <button class="button-secondary" type="button" data-scroll-target="training-calendar">Voir Claude Code</button>
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <span class="pricing-badge">Complément adoption</span>
+            <h3>Claude Cowork</h3>
+            <p class="pricing-price">390 € HT<span style="font-size: 1rem; letter-spacing: 0; color: var(--muted);"> / personne</span></p>
+            <p class="pricing-subtitle">Pour installer de bonnes routines de collaboration humain-IA.</p>
+            <ul class="bullet-list">
+              <li><span class="check">✓</span><div>Organiser les échanges avec l'IA dans le travail quotidien</div></li>
+              <li><span class="check">✓</span><div>Créer des copilotes métier simples et utiles</div></li>
+              <li><span class="check">✓</span><div>Préparer des livrables plus vite avec une méthode claire</div></li>
+            </ul>
+            <p class="pricing-note">Un module court pour aider les équipes à adopter l'IA sans complexité inutile.</p>
+            <div class="pricing-actions">
+              <button class="button-secondary" type="button" data-scroll-target="training-calendar">Voir Claude Cowork</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="pricing-inline-note">
+          <strong>Angle commercial :</strong> OpenClaw est la formation la plus différenciante. Elle vend une capacité très concrète :
+          monter une équipe digitale IA pour gagner du temps, produire plus et structurer une activité avec un prix d'entrée très compétitif.
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>Programme OpenClaw : construire une équipe digitale utile.</h2>
+          <p>
+            Une journée dense, pratique et orientée production. Le but n'est pas de comprendre l'IA en théorie,
+            mais de repartir avec une méthode pour créer des collaborateurs digitaux opérationnels.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <article class="card feature-card">
+            <span class="tag">Diagnostic</span>
+            <h3>Identifier les tâches à déléguer</h3>
+            <p>Repérer les tâches répétitives, chronophages ou mal suivies qui peuvent devenir des missions IA.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Rôles IA</span>
+            <h3>Créer des collaborateurs digitaux</h3>
+            <p>Définir le rôle, la responsabilité, les limites, le style de travail et les livrables attendus de chaque agent.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Orchestration</span>
+            <h3>Faire travailler les agents ensemble</h3>
+            <p>Organiser les passages de relais entre assistant, analyste, rédacteur, ingénieur et superviseur humain.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Garde-fous</span>
+            <h3>Superviser sans perdre le contrôle</h3>
+            <p>Mettre en place validations, limites, traçabilité et points de contrôle pour éviter l'IA incontrôlée.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Prompts</span>
+            <h3>Créer des consignes réutilisables</h3>
+            <p>Transformer une demande floue en playbooks, prompts, routines et checklists exploitables.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Automatisation</span>
+            <h3>Relier tâches, outils et livrables</h3>
+            <p>Comprendre comment connecter l'IA à des workflows simples : email, notes, recherche, documents, reporting.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Cas réels</span>
+            <h3>Appliquer à votre activité</h3>
+            <p>Travailler sur des cas concrets : prospection, contenu, support client, reporting, veille, administration.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Déploiement</span>
+            <h3>Plan 30 jours</h3>
+            <p>Repartir avec les prochaines étapes pour lancer une première équipe digitale sans se disperser.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="positioning">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pour qui OpenClaw est fait.</h2>
+          <p>
+            La formation s'adresse aux personnes qui veulent obtenir un effet de levier rapide avec l'IA,
+            sans dépendre d'un grand projet technique ou d'une équipe data complète.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="quote">
+            <p>« Ne recrutez pas une équipe avant d'avoir appris à piloter votre première équipe digitale. »</p>
+            <small>OpenClaw vend une capacité : produire plus, mieux suivre, mieux déléguer et garder une supervision humaine.</small>
+          </div>
+          <div class="card">
+            <p class="stack-title">Profils concernés</p>
+            <ul class="bullet-list">
+              <li><span class="check">✓</span><div><strong>Indépendants et consultants</strong><br />Créer une équipe digitale pour absorber plus de missions sans exploser la charge mentale.</div></li>
+              <li><span class="check">✓</span><div><strong>Dirigeants de TPE / PME</strong><br />Automatiser l'administratif, le suivi commercial, la veille, la production de contenus et le reporting.</div></li>
+              <li><span class="check">✓</span><div><strong>Équipes métier</strong><br />Structurer des usages IA concrets sans attendre une transformation complète du système d'information.</div></li>
+              <li><span class="check">✓</span><div><strong>Formateurs et intégrateurs IA</strong><br />Réutiliser une méthode claire pour accompagner des clients sur des cas pratiques.</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="competitive-view">
+      <div class="container comparison">
+        <div class="section-head">
+          <h2>Pourquoi c'est plus fort qu'une formation IA généraliste.</h2>
+          <p>
+            Le marché propose beaucoup d'initiations à ChatGPT, de prompts ou de démonstrations d'outils.
+            OpenClaw se positionne sur un résultat plus vendeur : organiser une force de travail digitale.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="head">Approche classique</div>
+          <div class="head">Limite</div>
+          <div class="head">Approche OpenClaw</div>
+
+          <div class="label">Formation prompt engineering</div>
+          <div class="muted">Utile, mais souvent limitée à améliorer une conversation avec l'IA.</div>
+          <div class="muted">Créer des rôles IA, des routines, des livrables et une logique de supervision.</div>
+
+          <div class="label">Démo d'outils IA</div>
+          <div class="muted">Impressionnant sur le moment, mais difficile à transformer en organisation quotidienne.</div>
+          <div class="muted">Repartir avec une architecture de travail et des cas d'usage directement exploitables.</div>
+
+          <div class="label">Automatisation pure</div>
+          <div class="muted">Peut devenir technique, fragile ou trop dépendante d'outils spécifiques.</div>
+          <div class="muted">Combiner rôles IA, décisions humaines, scripts simples et priorisation métier.</div>
+
+          <div class="label">Conseil IA long</div>
+          <div class="muted">Plus coûteux, plus lent et parfois trop abstrait pour des besoins immédiats.</div>
+          <div class="muted">Un format court, concret et très compétitif à 790 € HT par personne.</div>
+
+          <div class="label">Recrutement ou externalisation</div>
+          <div class="muted">Coût fixe élevé avant même d'avoir clarifié ce qui peut être automatisé.</div>
+          <div class="muted">Tester d'abord une équipe digitale IA pour identifier les vrais besoins humains à recruter ensuite.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="section-head" style="margin-bottom: 0;">
+            <h2>La promesse vendue : une équipe digitale sous contrôle.</h2>
+            <p>
+              OpenClaw ne promet pas une IA magique. La formation montre comment créer une organisation digitale :
+              des rôles, des missions, des validations, des livrables et une supervision humaine claire.
+            </p>
+          </div>
+          <ul class="mini-list" style="margin-top: 20px;">
+            <li><span class="check">✓</span><div><strong>Un assistant administratif</strong> pour préparer, classer, synthétiser et suivre les informations.</div></li>
+            <li><span class="check">✓</span><div><strong>Un opérateur contenu</strong> pour transformer idées, notes et offres en supports réutilisables.</div></li>
+            <li><span class="check">✓</span><div><strong>Un analyste / chercheur</strong> pour produire des briefs, veilles, comparatifs et décisions argumentées.</div></li>
+            <li><span class="check">✓</span><div><strong>Un superviseur humain</strong> qui garde la validation finale et évite l'automatisation aveugle.</div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="training-calendar">
+      <div class="container">
+        <div class="training-panel">
+          <div class="section-head">
+            <span class="eyebrow">Formations IA appliquée</span>
+            <h2>Calendrier des formations.</h2>
+            <p>
+              Trois formations courtes, concrètes et directement exploitables. La priorité commerciale est
+              <strong>OpenClaw</strong> : apprendre à monter une <strong>équipe de collaborateurs digitaux</strong>
+              pour gagner du temps, produire davantage et structurer une activité avec une supervision humaine claire.
+              Les formations ont lieu en présentiel à <strong>Vélizy</strong>.
+            </p>
+          </div>
+
+          <div class="table-scroll" aria-label="Tableau des formations disponibles">
+            <table class="training-table">
+              <thead>
+                <tr>
+                  <th>Nom de la formation</th>
+                  <th>Durée</th>
+                  <th>Contenu</th>
+                  <th>Prix</th>
+                  <th>Date</th>
+                  <th>Lieu</th>
+                  <th>Réservation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="featured-training-row">
+                  <td>
+                    <span class="training-name">OpenClaw</span>
+                    <span class="training-badge">Formation phare · équipe digitale</span>
+                  </td>
+                  <td>1 journée · 7h</td>
+                  <td>
+                    Construire une équipe de collaborateurs digitaux : secrétaire IA, assistant administratif,
+                    analyste, opérateur contenu, agent de recherche. Définir les rôles, les consignes, les permissions,
+                    les workflows et la supervision pour accélérer l'exécution sans perdre le contrôle.
+                  </td>
+                  <td>790 € HT / personne</td>
+                  <td>2 juillet 2026 · 09h30</td>
+                  <td>Vélizy</td>
+                  <td>
+                    <button
+                      class="button button-stripe"
+                      type="button"
+                      data-training-open
+                      data-training-name="OpenClaw"
+                      data-training-duration="1 journée · 7h"
+                      data-training-content="Construire une équipe de collaborateurs digitaux : secrétaire IA, assistant administratif, analyste, opérateur contenu, agent de recherche. Définir les rôles, les consignes, les permissions, les workflows et la supervision pour accélérer l'exécution sans perdre le contrôle."
+                      data-training-price="790 € HT / personne"
+                      data-training-date="2 juillet 2026 · 09h30"
+                      data-training-location="Vélizy"
+                      data-stripe-url="https://buy.stripe.com/7sY6oG5a10l54Bc4W81ZS02"
+                    >
+                      Réserver OpenClaw
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="training-name">Claude Code</span>
+                    <span class="training-badge">Développement augmenté</span>
+                  </td>
+                  <td>1 journée · 7h</td>
+                  <td>
+                    Mise en place d'un environnement de développement augmenté par IA, prompts de production,
+                    relecture de code, garde-fous qualité et livraison d'un mini-projet.
+                  </td>
+                  <td>690 € HT / personne</td>
+                  <td>18 juin 2026 · 09h30</td>
+                  <td>Vélizy</td>
+                  <td>
+                    <button
+                      class="button button-stripe"
+                      type="button"
+                      data-training-open
+                      data-training-name="Claude Code"
+                      data-training-duration="1 journée · 7h"
+                      data-training-content="Mise en place d'un environnement de développement augmenté par IA, prompts de production, relecture de code, garde-fous qualité et livraison d'un mini-projet."
+                      data-training-price="690 € HT / personne"
+                      data-training-date="18 juin 2026 · 09h30"
+                      data-training-location="Vélizy"
+                      data-stripe-url="https://buy.stripe.com/bJedR831Tgk34Bcbkw1ZS00"
+                    >
+                      Réserver Claude Code
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="training-name">Claude Cowork</span>
+                    <span class="training-badge">Collaboration IA</span>
+                  </td>
+                  <td>1/2 journée · 3h30</td>
+                  <td>
+                    Méthodes de collaboration humain-IA, création de copilotes métier, routines de travail,
+                    préparation de livrables et gouvernance d'usage.
+                  </td>
+                  <td>390 € HT / personne</td>
+                  <td>25 juin 2026 · 14h00</td>
+                  <td>Vélizy</td>
+                  <td>
+                    <button
+                      class="button button-stripe"
+                      type="button"
+                      data-training-open
+                      data-training-name="Claude Cowork"
+                      data-training-duration="1/2 journée · 3h30"
+                      data-training-content="Méthodes de collaboration humain-IA, création de copilotes métier, routines de travail, préparation de livrables et gouvernance d'usage."
+                      data-training-price="390 € HT / personne"
+                      data-training-date="25 juin 2026 · 14h00"
+                      data-training-location="Vélizy"
+                      data-stripe-url="https://buy.stripe.com/6oUcN4fOF5Fpd7I4W81ZS01"
+                    >
+                      Réserver Claude Cowork
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-scroll" aria-label="Aperçu du tableau Google Sheet des réservations">
+            <table class="reservation-table">
+              <thead>
+                <tr>
+                  <th>Formation</th>
+                  <th>Date</th>
+                  <th>Lieu</th>
+                  <th>Nom</th>
+                  <th>Prénom</th>
+                  <th>Téléphone</th>
+                  <th>Email</th>
+                  <th>Paiement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>OpenClaw</td>
+                  <td>2 juillet 2026 · 09h30</td>
+                  <td>Vélizy</td>
+                  <td>Durand</td>
+                  <td>Alexandre</td>
+                  <td>07 15 00 00 00</td>
+                  <td>alexandre.durand@example.com</td>
+                  <td><span class="payment-valid">Paiement validé</span></td>
+                </tr>
+                <tr>
+                  <td>Claude Code</td>
+                  <td>18 juin 2026 · 09h30</td>
+                  <td>Vélizy</td>
+                  <td>Martin</td>
+                  <td>Camille</td>
+                  <td>06 24 00 00 00</td>
+                  <td>camille.martin@example.com</td>
+                  <td><span class="payment-valid">Paiement validé</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="integration-note">
+            Les réservations sont envoyées vers Google Sheets avant redirection vers Stripe.
+            Le paiement Stripe ajoute une référence de réservation pour rapprocher les inscriptions et les paiements.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book-call">
+      <div class="container">
+        <div class="panel cta">
+          <div>
+            <h3>Vous voulez monter votre équipe digitale IA ?</h3>
+            <p>
+              Réservez une place OpenClaw ou appelez directement pour vérifier si la formation correspond à votre activité.
+              L'objectif est simple : repartir avec une méthode concrète pour organiser vos collaborateurs digitaux.
+            </p>
+          </div>
+          <div>
+            <button class="button button-training" type="button" data-scroll-target="training-calendar">Voir les dates</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="contact" class="contact-modal" aria-label="Coordonnées de contact">
+    <div class="contact-card" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <h2 id="contact-title">Coordonnées</h2>
+      <p>Contact direct pour échanger sur les formations IA, OpenClaw et la mise en place d'équipes digitales.</p>
+      <ul class="contact-details">
+        <li><strong>Nom</strong>Vincent Bourgueil</li>
+        <li><strong>Téléphone</strong><a href="tel:+33611967861">06 11 96 78 61</a></li>
+        <li><strong>Ville</strong>Clamart</li>
+        <li><strong>Pays</strong>France</li>
+      </ul>
+      <div class="contact-actions">
+        <a class="button" href="tel:+33611967861">Appeler maintenant</a>
+        <button class="button-secondary" type="button" data-contact-close>Fermer</button>
+      </div>
+    </div>
+  </aside>
+
+  <aside id="reservation" class="contact-modal" aria-label="Formulaire de réservation de formation">
+    <div class="contact-card reservation-card" role="dialog" aria-modal="true" aria-labelledby="reservation-title">
+      <h2 id="reservation-title">Réserver une formation</h2>
+      <p>
+        Renseignez vos coordonnées. La réservation est envoyée dans Google Sheets, puis vous êtes redirigé vers Stripe
+        pour finaliser le paiement.
+      </p>
+
+      <div class="reservation-summary" aria-label="Récapitulatif de la formation sélectionnée">
+        <div class="summary-item"><strong>Formation</strong><span data-summary="formation">-</span></div>
+        <div class="summary-item"><strong>Durée</strong><span data-summary="duree">-</span></div>
+        <div class="summary-item"><strong>Prix</strong><span data-summary="prix">-</span></div>
+        <div class="summary-item"><strong>Date</strong><span data-summary="date">-</span></div>
+        <div class="summary-item"><strong>Lieu</strong><span data-summary="lieu">-</span></div>
+        <div class="summary-item form-field-wide"><strong>Contenu</strong><span data-summary="contenu">-</span></div>
+      </div>
+
+      <form id="reservation-form" class="reservation-form">
+        <div class="form-field">
+          <label for="reservation-last-name">Nom</label>
+          <input id="reservation-last-name" name="nom" type="text" placeholder="Dupont" required />
+        </div>
+        <div class="form-field">
+          <label for="reservation-first-name">Prénom</label>
+          <input id="reservation-first-name" name="prenom" type="text" placeholder="Marie" required />
+        </div>
+        <div class="form-field">
+          <label for="reservation-phone">Téléphone</label>
+          <input id="reservation-phone" name="telephone" type="tel" placeholder="06 00 00 00 00" required />
+        </div>
+        <div class="form-field">
+          <label for="reservation-email">Email</label>
+          <input id="reservation-email" name="email" type="email" placeholder="marie.dupont@example.com" required />
+        </div>
+        <div id="reservation-status" class="reservation-status" aria-live="polite"></div>
+        <div class="reservation-actions">
+          <button class="button button-stripe" type="submit">Envoyer vers Google Sheets et payer</button>
+          <button class="button-secondary" type="button" data-reservation-close>Fermer</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <script>
+    const GOOGLE_SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyKsS3mVsz1OqGxZJtCvZepOzYAU1OcGH_03OYBei97hpavCdAQgRdP5N1uphfiPf7Krg/exec";
+    const contactModal = document.getElementById("contact");
+    const reservationModal = document.getElementById("reservation");
+    const reservationForm = document.getElementById("reservation-form");
+    const reservationStatus = document.getElementById("reservation-status");
+    const openContactButtons = document.querySelectorAll("[data-contact-open]");
+    const trainingButtons = document.querySelectorAll("[data-training-open]");
+    const scrollButtons = document.querySelectorAll("[data-scroll-target]");
+    let selectedTraining = null;
+
+    openContactButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        contactModal.style.display = "flex";
+        contactModal.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    document.querySelectorAll("[data-contact-close]").forEach((button) => {
+      button.addEventListener("click", () => {
+        contactModal.style.display = "none";
+        contactModal.setAttribute("aria-hidden", "true");
+      });
+    });
+
+    scrollButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = document.getElementById(button.dataset.scrollTarget);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+
+    trainingButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedTraining = {
+          formation: button.dataset.trainingName,
+          duree: button.dataset.trainingDuration,
+          contenu: button.dataset.trainingContent,
+          prix: button.dataset.trainingPrice,
+          date: button.dataset.trainingDate,
+          lieu: button.dataset.trainingLocation,
+          stripeUrl: button.dataset.stripeUrl,
+        };
+
+        Object.entries(selectedTraining).forEach(([key, value]) => {
+          const target = document.querySelector(`[data-summary="${key}"]`);
+          if (target) target.textContent = value;
+        });
+
+        reservationStatus.textContent = "";
+        reservationModal.style.display = "flex";
+        reservationModal.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    document.querySelectorAll("[data-reservation-close]").forEach((button) => {
+      button.addEventListener("click", () => {
+        reservationModal.style.display = "none";
+        reservationModal.setAttribute("aria-hidden", "true");
+      });
+    });
+
+    reservationForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!selectedTraining) {
+        reservationStatus.textContent = "Veuillez sélectionner une formation.";
+        return;
+      }
+
+      if (!GOOGLE_SHEET_WEBHOOK_URL.startsWith("https://script.google.com/")) {
+        reservationStatus.textContent =
+          "Google Sheets n'est pas encore connecté. Remplacez GOOGLE_SHEET_WEBHOOK_URL par l'URL Apps Script.";
+        return;
+      }
+
+      const formData = new FormData(reservationForm);
+      const reservationId = `res_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+      const payload = {
+        ...selectedTraining,
+        reservationId,
+        nom: formData.get("nom"),
+        prenom: formData.get("prenom"),
+        telephone: formData.get("telephone"),
+        email: formData.get("email"),
+        statutPaiement: "En attente de confirmation Stripe",
+        paiementValide: false,
+        source: "Site OpenClaw Academy",
+        horodatage: new Date().toISOString(),
+      };
+
+      reservationStatus.textContent = "Envoi de la réservation vers Google Sheets...";
+
+      try {
+        await fetch(GOOGLE_SHEET_WEBHOOK_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload),
+        });
+
+        reservationStatus.textContent = "Réservation enregistrée. Redirection vers Stripe...";
+        window.setTimeout(() => {
+          const stripeUrl = new URL(selectedTraining.stripeUrl);
+          stripeUrl.searchParams.set("client_reference_id", reservationId);
+          stripeUrl.searchParams.set("prefilled_email", String(formData.get("email") || ""));
+          window.location.href = stripeUrl.toString();
+        }, 700);
+      } catch (error) {
+        reservationStatus.textContent =
+          "La réservation n'a pas pu être envoyée. Vérifiez l'URL Google Apps Script.";
+      }
+    });
+  </script>
+
+  <footer class="footer">
+    <div class="container">
+      OpenClaw Academy — formations IA opérationnelle pour créer, piloter et superviser des équipes digitales.
+    </div>
+  </footer>
+</body>
 </html>
