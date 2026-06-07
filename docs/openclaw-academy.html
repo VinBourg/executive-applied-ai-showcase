@@ -503,6 +503,49 @@
       font-weight: 800;
     }
 
+    .fit-grid,
+    .faq-grid,
+    .proof-link-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .fit-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .faq-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .proof-link-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .fit-card-positive {
+      border-color: rgba(116, 242, 206, 0.34);
+      background:
+        radial-gradient(circle at top right, rgba(116, 242, 206, 0.1), transparent 30%),
+        var(--panel);
+    }
+
+    .fit-card-negative {
+      border-color: rgba(255, 138, 61, 0.32);
+      background:
+        radial-gradient(circle at top right, rgba(255, 138, 61, 0.1), transparent 30%),
+        var(--panel);
+    }
+
+    .proof-link-card a,
+    .faq-item strong {
+      display: inline-flex;
+      margin-top: 14px;
+    }
+
+    .faq-item {
+      min-height: 170px;
+    }
+
     .training-panel {
       padding: 26px;
       border-radius: var(--radius);
@@ -819,6 +862,9 @@
       .grid-3,
       .grid-4,
       .grid-2,
+      .fit-grid,
+      .faq-grid,
+      .proof-link-grid,
       .pricing-grid,
       .cta {
         grid-template-columns: 1fr;
@@ -1187,6 +1233,146 @@
       </div>
     </section>
 
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Ce que vous repartez avec.</h2>
+          <p>
+            La formation est conçue pour produire des éléments réutilisables immédiatement, pas seulement de la théorie.
+            Vous repartez avec une base concrète pour lancer votre première équipe digitale.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Templates de collaborateurs digitaux</h3>
+            <p>Des fiches de rôles prêtes à adapter : secrétaire IA, assistant administratif, analyste, opérateur contenu, agent de recherche.</p>
+          </article>
+          <article class="card">
+            <h3>Bibliothèque de prompts opérationnels</h3>
+            <p>Des consignes structurées pour déléguer, contrôler, faire produire, résumer, relancer et préparer des livrables.</p>
+          </article>
+          <article class="card">
+            <h3>Workflows de délégation</h3>
+            <p>Des modèles simples pour savoir quoi confier à l'IA, quand valider, quand escalader et comment tracer le résultat.</p>
+          </article>
+          <article class="card">
+            <h3>Plan de déploiement 30 jours</h3>
+            <p>Une feuille de route courte pour passer d'un premier cas d'usage à une organisation IA durable.</p>
+          </article>
+          <article class="card">
+            <h3>Grille de supervision</h3>
+            <p>Des garde-fous pour éviter l'automatisation aveugle : validation humaine, limites, qualité attendue et critères de réussite.</p>
+          </article>
+          <article class="card">
+            <h3>Cas d'usage prêt à adapter</h3>
+            <p>Un scénario complet applicable à votre activité : contenu, administratif, prospection, reporting ou veille concurrentielle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Des preuves concrètes, pas un discours abstrait.</h2>
+          <p>
+            OpenClaw s'appuie sur une pratique réelle des agents, de l'orchestration d'outils et des systèmes de pilotage IA.
+          </p>
+        </div>
+
+        <div class="proof-link-grid">
+          <article class="card proof-link-card">
+            <h3>Console agentique OpenClaw + n8n</h3>
+            <p>Exemple de supervision d'agents IA avec handoffs, approvals et traces d'exécution.</p>
+            <a class="button-secondary" href="https://vinbourg.github.io/executive-applied-ai-showcase/22-openclaw-n8n-agentic-ops-console.html">Voir la preuve</a>
+          </article>
+          <article class="card proof-link-card">
+            <h3>AI Tool Orchestration Control Layer</h3>
+            <p>Exemple d'orchestration d'outils IA, de responsabilités agentiques et de contrôle opérationnel.</p>
+            <a class="button-secondary" href="https://vinbourg.github.io/executive-applied-ai-showcase/18-ai-tool-orchestration-control-layer.html">Voir l'orchestration</a>
+          </article>
+          <article class="card proof-link-card">
+            <h3>Executive Applied AI Showcase</h3>
+            <p>Hub complet de démonstration : RAG, agents, automatisations, data systems, évaluation et gouvernance.</p>
+            <a class="button-secondary" href="https://vinbourg.github.io/executive-applied-ai-showcase/showcase.html">Ouvrir le showcase</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Pour qui / pas pour qui.</h2>
+          <p>
+            La formation est volontairement pratique. Elle convient si vous voulez mettre l'IA au travail rapidement,
+            pas si vous cherchez uniquement une conférence d'inspiration.
+          </p>
+        </div>
+
+        <div class="fit-grid">
+          <article class="card fit-card-positive">
+            <p class="stack-title">C'est pour vous si</p>
+            <ul class="bullet-list">
+              <li><span class="check">✓</span><div>Vous voulez structurer une équipe digitale pour gagner du temps dès maintenant.</div></li>
+              <li><span class="check">✓</span><div>Vous avez des tâches récurrentes à déléguer : administratif, contenu, veille, reporting, préparation commerciale.</div></li>
+              <li><span class="check">✓</span><div>Vous voulez garder le contrôle humain tout en augmentant votre capacité opérationnelle.</div></li>
+              <li><span class="check">✓</span><div>Vous êtes indépendant, dirigeant, consultant, formateur ou membre d'une équipe métier.</div></li>
+            </ul>
+          </article>
+
+          <article class="card fit-card-negative">
+            <p class="stack-title">Ce n'est pas pour vous si</p>
+            <ul class="bullet-list">
+              <li><span class="check">!</span><div>Vous cherchez une formation purement théorique sur les modèles IA.</div></li>
+              <li><span class="check">!</span><div>Vous voulez déléguer sans aucun contrôle humain ni validation.</div></li>
+              <li><span class="check">!</span><div>Vous attendez une intégration technique lourde et complète de tout votre système d'information en une journée.</div></li>
+              <li><span class="check">!</span><div>Vous ne souhaitez pas travailler sur vos propres cas d'usage ou vos vrais processus.</div></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Questions fréquentes.</h2>
+          <p>
+            Les réponses simples aux objections principales avant de réserver.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="card faq-item">
+            <h3>Quel niveau faut-il avoir ?</h3>
+            <p>Aucun niveau technique avancé n'est requis. Il faut surtout venir avec des tâches, processus ou idées que vous voulez rendre plus efficaces.</p>
+          </article>
+          <article class="card faq-item">
+            <h3>Quels outils sont nécessaires ?</h3>
+            <p>Un ordinateur portable est recommandé. La formation s'appuie sur des outils IA courants et sur une méthode OpenClaw adaptable à votre contexte.</p>
+          </article>
+          <article class="card faq-item">
+            <h3>Le paiement est-il simple ?</h3>
+            <p>Oui. Vous choisissez la formation, renseignez vos coordonnées, puis vous finalisez le paiement via Stripe.</p>
+          </article>
+          <article class="card faq-item">
+            <h3>Est-ce adapté à une entreprise ?</h3>
+            <p>Oui. La formation peut servir à former une personne clé, un binôme métier/ops ou une petite équipe qui doit structurer ses usages IA.</p>
+          </article>
+          <article class="card faq-item">
+            <h3>Combien de places ?</h3>
+            <p>Le format est volontairement limité pour rester pratique, interactif et applicable aux cas réels des participants.</p>
+          </article>
+          <article class="card faq-item">
+            <h3>Que se passe-t-il après la formation ?</h3>
+            <p>Vous repartez avec vos premiers rôles IA, des prompts, des workflows, des garde-fous et un plan de déploiement sur 30 jours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="training-calendar">
       <div class="container">
         <div class="training-panel">
@@ -1310,48 +1496,9 @@
             </table>
           </div>
 
-          <div class="table-scroll" aria-label="Aperçu du tableau Google Sheet des réservations">
-            <table class="reservation-table">
-              <thead>
-                <tr>
-                  <th>Formation</th>
-                  <th>Date</th>
-                  <th>Lieu</th>
-                  <th>Nom</th>
-                  <th>Prénom</th>
-                  <th>Téléphone</th>
-                  <th>Email</th>
-                  <th>Paiement</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>OpenClaw</td>
-                  <td>2 juillet 2026 · 09h30</td>
-                  <td>Vélizy</td>
-                  <td>Durand</td>
-                  <td>Alexandre</td>
-                  <td>07 15 00 00 00</td>
-                  <td>alexandre.durand@example.com</td>
-                  <td><span class="payment-valid">Paiement validé</span></td>
-                </tr>
-                <tr>
-                  <td>Claude Code</td>
-                  <td>18 juin 2026 · 09h30</td>
-                  <td>Vélizy</td>
-                  <td>Martin</td>
-                  <td>Camille</td>
-                  <td>06 24 00 00 00</td>
-                  <td>camille.martin@example.com</td>
-                  <td><span class="payment-valid">Paiement validé</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
           <div class="integration-note">
-            Les réservations sont envoyées vers Google Sheets avant redirection vers Stripe.
-            Le paiement Stripe ajoute une référence de réservation pour rapprocher les inscriptions et les paiements.
+            Inscription simple : choisissez votre formation, renseignez vos coordonnées, puis finalisez le paiement sécurisé.
+            Vous recevez ensuite les informations pratiques de préparation.
           </div>
         </div>
       </div>
@@ -1396,7 +1543,7 @@
     <div class="contact-card reservation-card" role="dialog" aria-modal="true" aria-labelledby="reservation-title">
       <h2 id="reservation-title">Réserver une formation</h2>
       <p>
-        Renseignez vos coordonnées. La réservation est envoyée dans Google Sheets, puis vous êtes redirigé vers Stripe
+        Renseignez vos coordonnées. Votre réservation est enregistrée, puis vous êtes redirigé vers Stripe
         pour finaliser le paiement.
       </p>
 
@@ -1428,7 +1575,7 @@
         </div>
         <div id="reservation-status" class="reservation-status" aria-live="polite"></div>
         <div class="reservation-actions">
-          <button class="button button-stripe" type="submit">Envoyer vers Google Sheets et payer</button>
+          <button class="button button-stripe" type="submit">Réserver et payer</button>
           <button class="button-secondary" type="button" data-reservation-close>Fermer</button>
         </div>
       </form>
@@ -1509,7 +1656,7 @@
 
       if (!GOOGLE_SHEET_WEBHOOK_URL.startsWith("https://script.google.com/")) {
         reservationStatus.textContent =
-          "Google Sheets n'est pas encore connecté. Remplacez GOOGLE_SHEET_WEBHOOK_URL par l'URL Apps Script.";
+          "Le système d'inscription n'est pas encore connecté. Appelez directement pour réserver.";
         return;
       }
 
@@ -1528,7 +1675,7 @@
         horodatage: new Date().toISOString(),
       };
 
-      reservationStatus.textContent = "Envoi de la réservation vers Google Sheets...";
+      reservationStatus.textContent = "Enregistrement de votre réservation...";
 
       try {
         await fetch(GOOGLE_SHEET_WEBHOOK_URL, {
@@ -1547,7 +1694,7 @@
         }, 700);
       } catch (error) {
         reservationStatus.textContent =
-          "La réservation n'a pas pu être envoyée. Vérifiez l'URL Google Apps Script.";
+          "La réservation n'a pas pu être envoyée. Réessayez ou appelez directement.";
       }
     });
   </script>
