@@ -1,0 +1,54 @@
+{
+  "request_id": "agentic-workspace-demo-001",
+  "entrypoint": "telegram",
+  "gateway": "Hermes",
+  "agent_runtime": "OpenClaw",
+  "tool_interface": "MCP-style connector registry",
+  "user_intent": "Prepare a morning operating briefing and highlight urgent actions.",
+  "steps": [
+    {
+      "step": 1,
+      "component": "Hermes",
+      "action": "receive_message",
+      "status": "completed",
+      "note": "Message received from an allowed Telegram user."
+    },
+    {
+      "step": 2,
+      "component": "OpenClaw",
+      "action": "load_context_and_memory",
+      "status": "completed",
+      "note": "Workspace context, user preferences and active projects loaded."
+    },
+    {
+      "step": 3,
+      "component": "MCP Gmail tool",
+      "action": "read_recent_messages",
+      "status": "completed",
+      "note": "Read-only access used for summarization."
+    },
+    {
+      "step": 4,
+      "component": "MCP Calendar tool",
+      "action": "read_today_events",
+      "status": "completed",
+      "note": "Calendar events added to the briefing context."
+    },
+    {
+      "step": 5,
+      "component": "OpenClaw",
+      "action": "generate_briefing",
+      "status": "completed",
+      "note": "Priorities, risks and next actions generated."
+    },
+    {
+      "step": 6,
+      "component": "Hermes",
+      "action": "send_summary",
+      "status": "completed",
+      "note": "Short briefing sent back to Telegram."
+    }
+  ],
+  "approval_required": false,
+  "audit_signal": "All actions were read-only; no destructive or external mutation occurred."
+}

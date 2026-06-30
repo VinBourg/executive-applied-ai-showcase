@@ -1,0 +1,9 @@
+tool,access_pattern,risk_level,approval_required,owner,control_note
+Telegram gateway,receive and send user messages,medium,no,AI operations owner,Restrict allowed users and log outbound summaries
+Gmail connector,read unread or recent messages,high,yes for destructive actions,User or delegated operator,Allow read and summarize first; require approval for send/delete
+Calendar connector,read and create events,medium,yes for creation,User or delegated operator,Separate read-only briefing from event creation
+Filesystem workspace,read/write project files,high,yes for writes,Technical owner,Keep project roots explicit and log modified files
+GitHub repository,pull commit push,high,yes for push,Technical owner,Require branch/status checks before publishing
+Browser or web search,collect public information,medium,no for search,Research owner,Track sources and avoid uncontrolled scraping
+Internal APIs,query or trigger business workflows,high,yes for mutations,System owner,Use scoped tokens and record request payloads
+MCP tool registry,expose approved tools to agents,high,yes for new tools,Platform owner,Document each tool contract and permission scope

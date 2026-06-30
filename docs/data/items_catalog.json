@@ -1387,6 +1387,68 @@
         "Power BI",
         "Data quality"
       ]
+    },
+    {
+      "id": "24",
+      "slug": "24-hermes-openclaw-mcp-agentic-workspace",
+      "title": "Hermes OpenClaw MCP Agentic Workspace",
+      "folder": "24_Hermes_OpenClaw_MCP_Agentic_Workspace",
+      "category": "Agentic AI / MCP Tooling",
+      "summary": "A mission-style agentic workspace combining Hermes, OpenClaw and MCP-style tool access to coordinate assistants, run controlled actions and keep execution observable.",
+      "business_problem": "Teams experimenting with AI agents often end up with scattered chats, unclear tool permissions and weak execution traceability. The operational need is a controlled workspace where agents can use tools, escalate approvals and leave a readable trail.",
+      "proves": [
+        "Hermes positioned as the conversational gateway and operating access point.",
+        "OpenClaw positioned as the structured agent runtime for tasks, memory, approvals and scheduled work.",
+        "MCP-style integration used to connect agents to external tools without losing governance, traceability or human control."
+      ],
+      "outputs": [
+        {
+          "file": "mcp_agentic_workspace_brief.md",
+          "description": "Executive brief describing the mission context, operating model and expected business value."
+        },
+        {
+          "file": "tooling_control_matrix.csv",
+          "description": "Control matrix mapping tools, permissions, risk level, approval requirement and owner."
+        },
+        {
+          "file": "execution_trace_example.json",
+          "description": "Example trace showing how an agent request moves from Telegram to Hermes, OpenClaw and MCP-connected tools."
+        },
+        {
+          "file": "implementation_runbook.md",
+          "description": "Runbook for deploying, checking and operating the Hermes + OpenClaw + MCP workspace."
+        }
+      ],
+      "market_fit": [
+        {
+          "market": "France",
+          "detail": "Agentic AI deployment, AI operations, Telegram/Slack-style assistant access and controlled automation."
+        },
+        {
+          "market": "Switzerland",
+          "detail": "Governed agentic workflows where tool access, approvals and audit trails must remain explicit."
+        },
+        {
+          "market": "USA East",
+          "detail": "Enterprise AI agent platforms that need MCP-style connectivity, evaluation-ready traces and operational control."
+        }
+      ],
+      "client_value": [
+        "Turns AI agents into an operating layer rather than isolated chat sessions.",
+        "Makes tool access explicit with permissions, owners and approval gates.",
+        "Shows how Hermes, OpenClaw and MCP can support a practical digital-team operating model."
+      ],
+      "review_path": [
+        "mcp_agentic_workspace_brief.md",
+        "tooling_control_matrix.csv",
+        "execution_trace_example.json"
+      ],
+      "tags": [
+        "Hermes",
+        "OpenClaw",
+        "MCP",
+        "Agentic workspace"
+      ]
     }
   ]
 }
